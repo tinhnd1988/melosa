@@ -224,6 +224,8 @@ body{
 	margin-top: 65px;
 	overflow-x: hidden;
 }
+#main .slider {position: relative;}
+#main .slider .caption {position: absolute; bottom: 10px; left: 10%}
 .drop{
 	position: relative;
 	display: inline-block;
