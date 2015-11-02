@@ -226,6 +226,9 @@ body{
 }
 #main .slider {position: relative;}
 #main .slider .caption {position: absolute; bottom: 10px; left: 20px}
+#main .slider .video_d_a {position: absolute; bottom: 0; right: 0; width: 180px;  background-color: #71c123; padding: 10px;}
+#main .slider .video_d_a .icon_video {background: url(../images/play-icon.png); width: 25px; height: 25px; display: inline-block; float: right;}
+#main .slider .video_d_a .text {padding-top: 4px; display: inline-block; color: #fff; font-family: 'RobotoRegular';}
 .drop{
 	position: relative;
 	display: inline-block;
