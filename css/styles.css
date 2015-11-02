@@ -157,6 +157,10 @@ body{
 #footer .left-footer {float: left; width: 25%}
 #footer .right-footer {float: left; width: 75%}
 #footer .right-footer ul li {float: left; width: 30%}
+#footer .title {display: inline-block; width: 100%}
+#footer .title_text {float: left; display: inline-block;}
+#footer .line {height: 2px; background-color: #71c123; width: 60%; display: inline-block; float: right;}
+
 .bottom_footer{
 	padding-top: 70px;
 	background: transparent url(../images/footer_bg.png) no-repeat top center;
