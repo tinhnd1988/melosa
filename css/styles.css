@@ -365,7 +365,7 @@ body{
 }
 @media (max-width: 980px) {
 	#footer .footerTop .left-footer {width: 100%; margin-bottom: 30px;}
-	#footer .footerTop .right-footer {width: 100%;}
+	#footer .footerTop .right-footer {width: 100%; margin-left: 0}
 }
 @media (max-width: 900px) {
 	#main .post_center ul li {width: 49.25%;}
