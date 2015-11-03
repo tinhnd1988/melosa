@@ -308,10 +308,11 @@ body{
 }
 
 
-#footer {display: inline-block; width: 100%; margin: 20px 0 10px; padding: 0 20px;}
+#footer {display: inline-block; width: 100%; margin: 20px 0 10px;}
 #footer .footerTop {
     margin-bottom: 20px;
     display: inline-block;
+    padding: 0 20px;
 }
 #footer .footerTop .left-footer {float: left; width: 25%}
 #footer .footerTop .footerContent {position: relative; border-top: 2px solid #71c123; padding-top: 25px;}
@@ -339,7 +340,7 @@ body{
 #footer .footerTop .right-footer ul li .website:hover {text-decoration: underline;}
 
 .bottom_footer{
-	padding-top: 70px;
+	padding: 70px 20px 0;
 	background: transparent url(../images/footer_bg.png) no-repeat top center;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
