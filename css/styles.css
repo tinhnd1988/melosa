@@ -153,16 +153,17 @@ body{
 	font-weight: 600;
 }
 
-#header .nav .langs{
-	display: inline-block;
+#header .langs{	
+	max-width: 980px; margin: 0 auto;
 }
-#header .nav .langs .lang-item{
-	padding: 0 5px;
+#header .langs .lang-item{
+	padding: 0 5px; float: right;
+	
 }
-.vi #header .nav .langs .lang-item-vi,
-.en #header .nav .langs .lang-item-en{
-	display: none;
-}
+#header .langs .lang-item a {background: url(../images/icon.png) no-repeat 0 0 ; width: 18px; height: 12px; display: inline-block;}
+#header .langs .lang-item-vi a { background-position: 0 0; }
+#header .langs .lang-item-en a { background-position: -38px 0;}
+
 .top-footer{
 	padding: 20px 0;
 	border-bottom: 1px solid #ebebeb;
