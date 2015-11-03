@@ -191,11 +191,11 @@
 				<div class="left-footer footerContent"> 
 					<h3 class="title">Thông tin mới</h3>
 					<ul> 
-						<li>Khang điền công bố mở bán dự án khu biệt thự cao cấp Lucasta</li>
-						<li>Đóng cửa sàn vàng: Tiền chảy sang bất động sản?</li>
-						<li>Thị trường bất động sản năm 2015</li>
-						<li>2015: Năm của giá mềm </li>
-						<li>Có thể bán 20% dự án nhà ở không qua sàn</li>
+						<li><a href="#">Khang điền công bố mở bán dự án khu biệt thự cao cấp Lucasta</a></li>
+						<li><a href="#">Đóng cửa sàn vàng: Tiền chảy sang bất động sản?</a></li>
+						<li><a href="#">Thị trường bất động sản năm 2015</a></li>
+						<li><a href="#">2015: Năm của giá mềm </a></li>
+						<li><a href="#">Có thể bán 20% dự án nhà ở không qua sàn</a></li>
 					</ul>
 					<a class="loadmore" href="#"><span>Xem thêm</span> >> </a>
 				</div>
@@ -242,7 +242,7 @@
 				</div>
 			</div>
 			<div class="bottom_footer copyrights">
-				<p>&copy; 2015 Melosa Garden-Khang dien JSC. All Rights Reserved. | Thỏa thuận sử dụng chính sách bảo mật</p>
+				<p>&copy; 2015 Melosa Garden-Khang dien JSC. All Rights Reserved. | <a href="#"> Thỏa thuận sử dụng chính sách bảo mật</a></p>
 				<div class="footer_social">
 					<ul>
 						<li><a class="youtube" href="#"></a></li>
@@ -266,6 +266,13 @@
 		        }
 		    });
 		});
+		jQuery(window).resize(function(){
+			if(jQuery(window).width() > 800){
+				jQuery('#header .nav').show();
+			}else{
+				jQuery('#header .nav').hide();
+			}
+		})
 	</script>
 </body>
 </html>
