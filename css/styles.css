@@ -237,8 +237,14 @@ body{
 #main .slider .call_us ul {display: inline-block;float: left; background-color: #f7b233; width: 150px; padding: 10px}
 #main .slider .call_us ul li {list-style: none; padding: 10px 5px; font-family: 'Roboto';}
 #main .slider .call_us ul li span {color: #fff;}
-#main .slider .flexslider:hover .flex-direction-nav .flex-prev {background: url(../images/slider_btn.png) no-repeat 0 0; display: inline-block; height: 83px; width: 43px; font-size: 0px; left: 0}
-#main .slider .flexslider:hover .flex-direction-nav .flex-next {background: url(../images/slider_btn.png) no-repeat 0 -83px; display: inline-block; height: 83px; width: 43px; font-size: 0px; right: 0}
+#main .slider .flexslider .flex-direction-nav .flex-prev{background: url(../images/slider_btn.png) no-repeat 0 0; display: inline-block; height: 83px; width: 43px; font-size: 0px; left: 0}
+#main .slider .flexslider:hover .flex-direction-nav .flex-prev { left: 0}
+#main .slider .flexslider:hover .flex-direction-nav .flex-prev:hover {background-position: -43px 0}
+#main .slider .flexslider .flex-direction-nav .flex-next{background: url(../images/slider_btn.png) no-repeat 0 -83px; display: inline-block; height: 83px; width: 43px; font-size: 0px; right: 0}
+#main .slider .flexslider:hover .flex-direction-nav .flex-next {right: 0;}
+#main .slider .flexslider:hover .flex-direction-nav .flex-next:hover{background-position: -43px -83px}
+
+#main .slider .flex-direction-nav a {font-size: 0}
 #main .slider .flex-direction-nav a::before, #main .slider .flex-direction-nav a.flex-next::before {content: none; font-size: 0}
 #main .post_center ul {display: inline-block;width: 100%;margin-bottom: 15px;}
 #main .post_center ul li {float: left; width: 24.375%; list-style: none; margin-left: 0.5%}
