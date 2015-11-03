@@ -121,8 +121,8 @@ body{
 	float: right;
 	width: 50px;
 	height: 50px;
-	margin: 20px 0 0;
-	background: transparent url(images/hambuger.png) no-repeat center center;
+	margin: 10px 0 0;
+	background: transparent url(../images/hambuger.png) no-repeat center center;
 	cursor: pointer;
 }
 #header .nav{
@@ -130,7 +130,7 @@ body{
 	z-index: 1;
 	display: block;
 	width: 100%;
-	margin: 35px 0 0;
+	margin: 15px 0 0;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -149,7 +149,7 @@ body{
 }
 
 #header .langs{	
-	max-width: 935px; margin: 0 auto;padding-top: 10px;
+	max-width: 935px; margin: 0 auto;padding-top: 15px;
 }
 #header .langs .lang-item{
 	padding: 0 5px; float: right;
@@ -345,10 +345,11 @@ body{
 .bottom_footer p{display: inline-block;}
 .bottom_footer .footer_social {display: inline-block; float: right;}
 .bottom_footer .footer_social li {margin-right: 10px; list-style: none; float: left;}
+.bottom_footer .footer_social li:last-child {padding-top: 3px;}
 .bottom_footer .footer_social .youtube {background: url(../images/icon.png) no-repeat 0 -15px; width: 29px; height: 24px; display: inline-block; }
 .bottom_footer .footer_social .skype {background: url(../images/icon.png) no-repeat -41px -15px; width: 24px; height: 24px; display: inline-block; }
 .bottom_footer .footer_social .face {background: url(../images/icon.png) no-repeat -74px -15px; width: 24px; height: 24px; display: inline-block; }
-.bottom_footer .footer_social .khangdien {background: url(../images/icon.png) no-repeat -112px -15px; width: 90px; height: 24px; display: inline-block; }
+.bottom_footer .footer_social .khangdien {background: url(../images/icon.png) no-repeat -112px -15px; width: 90px; height: 19px; display: inline-block; }
 
 
 
@@ -370,6 +371,10 @@ body{
 @media (max-width: 900px) {
 	#main .post_center ul li {width: 49.25%;}
 }
+@media (max-width: 710px) {
+	#main .slider .caption {left: 0; bottom: 45px;}
+	#main .slider .caption img {width: 100%}
+}
 @media (max-width: 640px) {
 	#header {height: 72px;position: absolute;}
 }
@@ -377,19 +382,6 @@ body{
 	#main .post_center ul li {width: 99%;}
 	#footer .footerTop .right-footer ul li {width: 100%; margin-right: 0;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*copied css*/
