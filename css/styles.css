@@ -127,8 +127,7 @@ body{
 	/*position: relative;*/
 	z-index: 1;
 	display: block;
-	width: 100%;
-	margin: 35px 0 0 65px;
+	margin: 35px 0 0 30px;
 	text-align: center;
 	text-transform: uppercase; float: left;
 }
@@ -213,7 +212,7 @@ body{
 
 
 #main{
-	margin-top: 65px;
+	margin-top: 105px;
 	overflow: hidden;
 }
 #main .slider {position: relative;}
