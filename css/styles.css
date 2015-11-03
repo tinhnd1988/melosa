@@ -237,6 +237,9 @@ body{
 #main .slider .call_us ul {display: inline-block;float: left; background-color: #f7b233; width: 150px; padding: 10px}
 #main .slider .call_us ul li {list-style: none; padding: 10px 5px; font-family: 'Roboto';}
 #main .slider .call_us ul li span {color: #fff;}
+#main .slider .flexslider:hover .flex-direction-nav .flex-prev {background: url(../images/slider_btn.png) no-repeat 0 0; display: inline-block; height: 83px; width: 43px; font-size: 0px;}
+#main .slider .flexslider:hover .flex-direction-nav .flex-next {background: url(../images/slider_btn.png) no-repeat 0 -83px; display: inline-block; height: 83px; width: 43px; font-size: 0px;}
+#main .slider .flex-direction-nav a::before {content: none;}
 #main .post_center ul {display: inline-block;width: 100%;margin-bottom: 15px;}
 #main .post_center ul li {float: left; width: 24.375%; list-style: none; margin-left: 0.5%}
 #main .post_center ul li .posr {}
@@ -340,7 +343,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 #footer .footerTop .right-footer ul li .website:hover {text-decoration: underline;}
 
 .bottom_footer{
-	padding: 35px 20px 0;
+	padding: 60px 20px 0;
 	background: transparent url(../images/footer_bg.png) no-repeat top center;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
