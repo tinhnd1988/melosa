@@ -345,7 +345,12 @@ body{
 	background-size: 100% auto;
 }
 
-
+.bottom_footer .footer_social {display: inline-block; float: right;}
+.bottom_footer .footer_social li {margin-right: 10px; list-style: none; float: left;}
+.bottom_footer .footer_social .youtube {background: url(../images/icon.png) no-repeat 0 -15px; width: 29px; height: 24px; display: inline-block; }
+.bottom_footer .footer_social .skype {background: url(../images/icon.png) no-repeat -41px -15px; width: 24px; height: 24px; display: inline-block; }
+.bottom_footer .footer_social .face {background: url(../images/icon.png) no-repeat -74px -15px; width: 24px; height: 24px; display: inline-block; }
+.bottom_footer .footer_social .khangdien {background: url(../images/icon.png) no-repeat -112px -15px; width: 90px; height: 24px; display: inline-block; }
 
 
 
