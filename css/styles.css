@@ -282,8 +282,8 @@ body{
     padding-bottom: 16px;
     position: relative;
 }
-#main .post_center li span::after {
-    background-color: #fff;
+/*#main .post_center li span::after {
+    background-color: #71c123;
     bottom: 0;
     content: "";
     height: 1px;
@@ -291,6 +291,9 @@ body{
     margin-left: -25px;
     position: absolute;
     width: 50px;
+}*/
+#main .post_center li .chitiet {text-transform: none; padding-bottom: 0; 
+border-bottom: 1px solid #71c123; width: 100px;
 }
 #main .post_center li:hover img {
     transform: scale(1.2);
