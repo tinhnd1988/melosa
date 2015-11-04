@@ -371,6 +371,12 @@ border-bottom: 1px solid #71c123; width: 100px;
 @media (min-width: 1111px){
 	#footer .footerTop .right-footer ul li:nth-child(3n){margin-right: 0;}
 }
+@media (max-width: 1155px){
+	#header .nav li {padding: 0 10px;}
+}
+@media (max-width: 1055px){
+	#header .nav li {padding: 0 5px;}
+}
 @media (max-width: 1110px) {
 	#footer .footerTop .right-footer ul li {width: 49%; margin-right: 2%;}
 	#footer .footerTop .right-footer ul li:nth-child(2n){margin-right: 0;}
@@ -393,6 +399,35 @@ border-bottom: 1px solid #71c123; width: 100px;
 	#main .post_center ul li {width: 99%;}
 	#footer .footerTop .right-footer ul li {width: 100%; margin-right: 0;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*copied css*/
