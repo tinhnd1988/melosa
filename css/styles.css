@@ -384,6 +384,44 @@ border-bottom: 1px solid #71c123; width: 100px;
 	#footer .footerTop .right-footer ul li:nth-child(2n){margin-right: 0;}
 }
 @media (max-width: 980px) {
+	#hambuger{
+		display: block;
+	}
+	#header .container{
+		position: relative; overflow: inherit;
+	}	
+	#header .langs.lsn{
+		display: none;
+	}
+	#header .nav{
+		display: none;
+		position: absolute;
+		top: 40px; right: 0;
+		z-index: 9980;
+		width: 100%;
+		padding: 40px 0 10px;
+		background-color: #fff;
+		box-shadow: 0 1px 2px #ebebeb;
+		text-align: right;
+	}
+	#header .nav li{
+		display: block;
+		float: none;
+		padding: 0 25px;
+	}
+	#header .nav li a{
+		display: block;
+		padding: 5px 0;
+		border-bottom: 1px solid #ebebeb;
+	}
+	#header .nav .langs{
+		text-align: center;
+		padding-top: 10px;
+		display: block;
+	}
+	#header .nav .langs .lang-item{
+		float: none;
+	}							
 	#footer .footerTop .left-footer {width: 100%; margin-bottom: 30px;}
 	#footer .footerTop .right-footer {width: 100%; margin-left: 0}
 }
@@ -882,112 +920,6 @@ border-bottom: 1px solid #71c123; width: 100px;
 
 	.section h2, .section h3{
 		padding: 0;
-	}
-}
-
-@media screen and (max-width: 980px) {
-	#header .alter-logo{
-		margin-left: 20px;
-		float: left;
-	}
-	#hambuger{
-		display: block;
-	}
-	#header .container{
-		position: relative; overflow: inherit;
-	}
-	#header .langs.lsn{
-		display: none;
-	}
-	#header .nav{
-		display: none;
-		position: absolute;
-		top: 40px; right: 0;
-		z-index: 9980;
-		width: 100%;
-		padding: 40px 0 10px;
-		background-color: #fff;
-		box-shadow: 0 1px 2px #ebebeb;
-		text-align: right;
-	}
-	#header .nav li{
-		display: block;
-		float: none;
-		padding: 0 25px;
-	}
-	#header .nav .langs{
-		text-align: center;
-		padding-top: 10px;
-		display: block;
-	}
-	#header .nav .langs .lang-item{
-		float: none;
-	}
-	#header .nav li a{
-		display: block;
-		padding: 5px 0;
-		border-bottom: 1px solid #ebebeb;
-	}
-
-	.top-footer li{
-		margin-bottom: 20px;
-	}
-	.tran-note li,
-	.bot-footer .grid2,
-	.bot-footer .grid10{
-		width: 100%;
-	}
-	.bot-footer .grid2 > a{
-		display: block;
-		float: none;
-		width: 163px;
-		margin: 0 auto;
-	}
-	.bot-footer .grid10 > p{
-		text-align: center;
-	}
-	#info-scroll, #menu-scroll{
-		display: none;
-	}
-
-
-	.section-home-slide .flex-viewport li a,
-	.section-apartment .slides li{
-		height: 320px;
-	}
-
-	.section-position .sec-title,
-	.section-transport .sec-title,
-	.section-apartment .sec-title,
-	#main .post_center .sec-title{
-		width: 85%;
-	}
-
-	.section-position ul.tran-list li,
-	#main .post_center .sec-content li,
-	.section-featured-floors .sec-content li,
-	.top-footer li{
-		width: 50%;
-	}
-	.section-position ul.tran-list li{
-		margin-bottom: 25px;
-	}
-	.section-position ul.tran-list li:nth-of-type(2n+1),
-	#main .post_center .sec-content li:nth-of-type(2n+1),
-	.section-featured-floors .sec-content li:nth-of-type(2n+1),
-	.top-footer li:nth-of-type(2n+1){
-		clear: both;
-	}
-
-	.section-download li{
-		width: 100%;
-	}
-
-	.section-transport .sec-content{
-		height: 480px;
-		background-image: url(images/map-mb.jpg);
-		-webkit-background-size: auto 100%;
-		background-size: auto 100%;
 	}
 }
 
