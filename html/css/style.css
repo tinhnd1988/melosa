@@ -22,7 +22,7 @@
 .item-pic a h3{color: #61676d;font-family: "MyriadLight";font-size: 26px;font-weight: normal;line-height:30px;padding:5px 20px 20px 20px; margin:20px 0;position: relative; text-align:center; display:block}
 .item-pic a h3:hover{color:#0071ab}
 
-.text-des{width:60%; height:auto; background-color:rgba(0,0,0,0.5); position:absolute; left:2px; bottom:2px; z-index:2; padding:20px}
+.text-des{width:100%; height:auto; background-color:rgba(0,0,0,0.5); position:absolute; left:2px; bottom:2px; z-index:2; padding:20px}
 .text-des h3{font-family:'MyriadLight'; font-size:24px; color:#fff; line-height:26px; position:relative;text-align:left;font-weight:normal; margin:0;}
 .text-des p{font-family:'MyriadLight'; font-size:16px; color:#fff; line-height:24px; position:relative;text-align:left;font-weight:normal;}
 
