@@ -396,20 +396,23 @@ border-bottom: 1px solid #71c123; width: 100px;
 
 .contact-us .post_content .contactContent .formSubscribe{
 	float: right; 
-	width: auto;	
+	width: 50%;	
 }
 .contact-us .post_content .contactContent .formContact{
 	display: inline-block;
 	width: auto;	
 }
-.contact-us .post_content .contactContent .formContact form legend{
+.contact-us .post_content .contactContent .formContact form legend, .contact-us .post_content .contactContent .formSubscribe form legend{
 	font-weight: bold;
 }
-.contact-us .post_content .contactContent .formContact form .input{
+.contact-us .post_content .contactContent .formContact form .input, .contact-us .post_content .contactContent .formSubscribe form .input, .contact-us .post_content .contactContent .formSubscribe form p{
 	margin-top: 10px;
 }
-.contact-us .post_content .contactContent .formContact form input, .contact-us .post_content .contactContent .formContact form textarea{
+.contact-us .post_content .contactContent form input, .contact-us .post_content .contactContent form textarea{
 	width: 300px
+}
+.contact-us .post_content .contactContent .formSubscribe form input{
+	width: 80%
 }
 /*END contactContent*/
 .contact-us #footer .footerTop{
