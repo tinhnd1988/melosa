@@ -366,7 +366,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 
 /*contact*/
 .pageHeader {
-	background: url(../images/main_img.jpg) no-repeat 0 -250px / 100% auto; 
+	background: url(../images/main_img.jpg) no-repeat 0 0 / 100% auto; 
 	height: 360px; 
 	position: relative;
 }
@@ -378,9 +378,21 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .contact-us .post_content .contactContent ul.phones{
 	float: left; 
-	width: 33%;
-	
+	width: auto;
+	background-color: #F9B431;
+	border-radius: 5px;
+	list-style: none;
+	padding: 20px;
+	margin-right: 2%;
 }
+.contact-us .post_content .contactContent ul.phones li{
+	margin-bottom: 10px;
+	color: #FFF;
+}
+.contact-us .post_content .contactContent ul.phones li span{
+	font-weight: bold;
+}
+
 .contact-us .post_content .contactContent .formSubscribe{
 	float: right; 
 	width: 33%;	
