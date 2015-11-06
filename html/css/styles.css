@@ -367,7 +367,9 @@ border-bottom: 1px solid #71c123; width: 100px;
 
 /*contact*/
 .pageHeader {
-	background: url(../images/main_img.jpg) no-repeat 0 0 / 100% auto; 
+	background-attachment: fixed;
+	background: url(../images/main_img.jpg) no-repeat 0 0; 
+	background-size: cover;
 	height: 360px; 
 	position: relative;
 }
