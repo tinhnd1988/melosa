@@ -3,9 +3,10 @@
 
 /*ALL-SLIDE*/
 .slide-pictures{width:100%; height:auto; position:relative; text-align:center; padding-bottom:30px; overflow:hidden}
-.slide-pictures h2{font-family:'MyriadLight'; font-size:48px; line-height:48px; position:relative;text-align:center;  font-weight:normal; padding:20px 0; width:100%;}
+.slide-pictures h2{font-family:'MyriadLight'; font-size:30px; line-height:48px; position:relative;text-align:center;  font-weight:normal; padding:20px 0; width:100%; text-transform: uppercase;}
 .slide-pictures h2.color{font-family:'MyriadLight'; font-size:40px; line-height:40px; position:relative;text-align:center;  font-weight:normal; padding:20px 0; width:100%; background:#e8edf1; margin:0 0 50px 0}
 
+.text_pic {padding-bottom: 10px;}
 .pic-content{width:100%; height:480px; position:relative; text-align:left; padding:0; margin:0 auto}
 .item-pic{width:auto; max-width:600px; height:auto; position:relative; display:block; text-align:center; margin:10px; display:none}
 .page-download{width:90%;height:auto;  position:relative; text-align:center; padding:0 0 50px 0; margin:0 auto}

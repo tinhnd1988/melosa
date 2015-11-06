@@ -134,9 +134,10 @@ body{
 }
 #header .nav li{
 	display: inline-block;	
-	padding: 0 15px;
+	padding: 0 15px 5px;
 	color: #6d6d6d;
 }
+#header .nav li.active,#header .nav li:hover { border-bottom: 2px solid #87B03E;}
 #header .nav li a:hover{
 	color: #92c020;
 }
@@ -371,6 +372,14 @@ border-bottom: 1px solid #71c123; width: 100px;
 	position: relative;
 }
 .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; padding: 40px 50px 10px 25px; color: #fff; background-color: #87B03E; font-size: 16px;}
+.project .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; background-color:rgba(0,0,0,0.3); width: 100%; padding: 0;}
+.project .pageHeader .titleBar h1 {background-color: #87B03E ;font-size: 16px; padding: 40px 50px 10px 25px; color: #fff; float: left;}
+.project .pageHeader .titleBar ul {float: left; padding-top: 37px; padding-left: 200px;}
+.project .pageHeader .titleBar ul li {float: left; margin-right: 10px; list-style: none;}
+.project .pageHeader .titleBar ul li:hover span {background-color: #fff; color: #000;}
+.project .pageHeader .titleBar ul li span {padding: 10px 15px; color: #fff; background-color:#87B03E; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+.post_content .project1 {text-align: center; padding-top: 20px;}
+.post_content .project1 h4 {text-transform: uppercase; font-size: 24px; padding: 10px;}
 
 /*BEGIN contactContent*/
 .contact-us .post_content .description{
