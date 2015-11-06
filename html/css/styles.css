@@ -395,12 +395,15 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 
 .contact-us .post_content .contactContent .formSubscribe{
-	float: right; 
-	width: 50%;	
+	display: inline-block;
+	float: left;
+	width: auto;
 }
 .contact-us .post_content .contactContent .formContact{
 	display: inline-block;
-	width: auto;	
+	float: left;
+	width: auto;
+	padding-right: 2%;
 }
 .contact-us .post_content .contactContent .formContact form legend, .contact-us .post_content .contactContent .formSubscribe form legend{
 	font-weight: bold;
