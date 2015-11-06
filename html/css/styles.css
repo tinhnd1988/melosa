@@ -372,6 +372,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; padding: 40px 50px 10px 25px; color: #fff; background-color: #87B03E; font-size: 16px;}
 
+/*BEGIN contactContent*/
 .contact-us .post_content .description{
 	margin: 20px 0 20px 0;
 	line-height: 20px;
@@ -382,11 +383,11 @@ border-bottom: 1px solid #71c123; width: 100px;
 	background-color: #F9B431;
 	border-radius: 5px;
 	list-style: none;
-	padding: 20px;
+	padding: 25px;
 	margin-right: 2%;
 }
 .contact-us .post_content .contactContent ul.phones li{
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	color: #FFF;
 }
 .contact-us .post_content .contactContent ul.phones li span{
@@ -395,13 +396,22 @@ border-bottom: 1px solid #71c123; width: 100px;
 
 .contact-us .post_content .contactContent .formSubscribe{
 	float: right; 
-	width: 33%;	
+	width: auto;	
 }
 .contact-us .post_content .contactContent .formContact{
 	display: inline-block;
-	width: 33%;	
+	width: auto;	
 }
-
+.contact-us .post_content .contactContent .formContact form legend{
+	font-weight: bold;
+}
+.contact-us .post_content .contactContent .formContact form .input{
+	margin-top: 10px;
+}
+.contact-us .post_content .contactContent .formContact form input, .contact-us .post_content .contactContent .formContact form textarea{
+	width: 300px
+}
+/*END contactContent*/
 .contact-us #footer .footerTop{
 	padding-top: 30px;
 }
