@@ -350,10 +350,10 @@ border-bottom: 1px solid #71c123; width: 100px;
 #footer .footerTop .right-footer ul li .website:hover {text-decoration: underline;}
 
 .bottom_footer{
-	padding: 60px 20px 0;
+	padding: 5% 20px 0;
 	background: transparent url(../images/footer_bg.png) no-repeat top center;
 	-webkit-background-size: 100% auto;
-	background-size: 100% auto;
+	background-size: 100% 100%;
 }
 .bottom_footer p{display: inline-block;}
 .bottom_footer .footer_social {display: inline-block; float: right;}
@@ -365,10 +365,37 @@ border-bottom: 1px solid #71c123; width: 100px;
 .bottom_footer .footer_social .khangdien {background: url(../images/icon.png) no-repeat -112px -15px; width: 90px; height: 19px; display: inline-block; }
 
 /*contact*/
-.pageHeader {background: url(../images/main_img.jpg) no-repeat 0 0 / 100% auto; height: 420px; position: relative;}
+.pageHeader {
+	background: url(../images/main_img.jpg) no-repeat 0 -250px / 100% auto; 
+	height: 360px; 
+	position: relative;
+}
 .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; padding: 40px 50px 10px 25px; color: #fff; background-color: #87B03E; font-size: 16px;}
 
+.contact-us .post_content .description{
+	margin: 20px 0 20px 0;
+	line-height: 20px;
+}
+.contact-us .post_content .contactContent ul.phones{
+	float: left; 
+	width: 33%;
+	
+}
+.contact-us .post_content .contactContent .formSubscribe{
+	float: right; 
+	width: 33%;	
+}
+.contact-us .post_content .contactContent .formContact{
+	display: inline-block;
+	width: 33%;	
+}
 
+.contact-us #footer .footerTop{
+	padding-top: 30px;
+}
+.contact-us #footer, .contact-us #footer .footerTop .title{
+	background-color: #F8F8F8;
+}
 
 
 
