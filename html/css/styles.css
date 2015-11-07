@@ -441,6 +441,9 @@ border-bottom: 1px solid #71c123; width: 100px;
     border: 1px solid transparent;
     border-top: none;
     outline: none;
+    resize: none;
+    padding: 8px;
+    font-family: 'Arial';
 }
 .contact-us .post_content .contactContent .formSubscribe form input{
 	width: 100%;
