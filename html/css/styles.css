@@ -365,7 +365,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 .bottom_footer .footer_social .face {background: url(../images/icon.png) no-repeat -74px -15px; width: 24px; height: 24px; display: inline-block; }
 .bottom_footer .footer_social .khangdien {background: url(../images/icon.png) no-repeat -112px -15px; width: 90px; height: 19px; display: inline-block; }
 
-/*contact*/
+
 .pageHeader {
 	background-attachment: fixed;
 	background: url(../images/main_img.jpg) no-repeat 0 0; 
@@ -374,6 +374,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 	position: relative;
 }
 .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; padding: 40px 50px 10px 25px; color: #fff; background-color: #87B03E; font-size: 16px;}
+
+/*BEGIN PROJECT*/
 .project .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; background-color:rgba(0,0,0,0.3); width: 100%; padding: 0;text-align: center;}
 .project .pageHeader .titleBar h1 {background-color: #87B03E ;font-size: 30px; padding: 40px 50px 10px 25px; color: #fff; float: left;}
 .project .pageHeader .titleBar ul {display: inline-block;
@@ -384,10 +386,10 @@ border-bottom: 1px solid #71c123; width: 100px;
 .project .pageHeader .titleBar ul li span {display:inline-block; padding: 10px 15px; color: #fff; background-color:#87B03E; border-top-left-radius: 4px; border-top-right-radius: 4px; }
 .post_content .project1 {text-align: center; padding-top: 20px;}
 .post_content .project1 h4 {text-transform: uppercase; font-size: 24px; padding: 10px;}
+/*END PROJECT*/
 
 
-
-/*BEGIN contactContent*/
+/*BEGIN CONTACT*/
 .contact-us .post_content .description{
 	margin: 20px 0 20px 0;
 	line-height: 20px;
@@ -443,14 +445,13 @@ border-bottom: 1px solid #71c123; width: 100px;
     border-top: none;
     outline: none;
 }
-/*END contactContent*/
 .contact-us #footer .footerTop{
 	padding-top: 30px;
 }
 .contact-us #footer, .contact-us #footer .footerTop .title{
 	background-color: #F8F8F8;
 }
-
+/*END CONTACT*/
 
 
 /*media*/
