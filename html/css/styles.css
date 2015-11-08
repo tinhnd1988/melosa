@@ -376,10 +376,11 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; padding: 40px 50px 10px 25px; color: #fff; background-color: #87B03E; font-size: 16px;}
 
-/*BEGIN PAGEHEADER PROJECT/ABOUT*/
+/*BEGIN PAGEHEADER PROJECT/ABOUT/NEWS*/
 .project .pageHeader .titleBar,
 .about .pageHeader .titleBar,
-.utilities .pageHeader .titleBar {
+.utilities .pageHeader .titleBar,
+.news .pageHeader .titleBar {
 	position: absolute; 
 	left: 0; 
 	bottom: 0; 
@@ -390,7 +391,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .project .pageHeader .titleBar h1,
 .about .pageHeader .titleBar h1,
-.utilities .pageHeader .titleBar h1 {
+.utilities .pageHeader .titleBar h1,
+.news .pageHeader .titleBar h1 {
 	background-color: #87B03E ; 
 	padding: 40px 50px 10px 25px; 
 	color: #fff; 
@@ -399,27 +401,31 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .project .pageHeader .titleBar ul,
 .about .pageHeader .titleBar ul,
-.utilities .pageHeader .titleBar ul {
+.utilities .pageHeader .titleBar ul,
+.news .pageHeader .titleBar ul {
 	display: inline-block;
     margin-top: 43px;
     margin-right: 15%;
     overflow: hidden; }
 .project .pageHeader .titleBar ul li,
 .about .pageHeader .titleBar ul li,
-.utilities .pageHeader .titleBar ul li {
+.utilities .pageHeader .titleBar ul li,
+.news .pageHeader .titleBar ul li {
 	display: inline-block;
 	margin-right: 10px; 
 	list-style: none;
 }
 .project .pageHeader .titleBar ul li:hover span,
 .about .pageHeader .titleBar ul li:hover span,
-.utilities .pageHeader .titleBar ul li:hover span {
+.utilities .pageHeader .titleBar ul li:hover span,
+.news .pageHeader .titleBar ul li:hover span {
 	background-color: #fff; 
 	color: #000;
 }
 .project .pageHeader .titleBar ul li span,
 .about .pageHeader .titleBar ul li span,
-.utilities .pageHeader .titleBar ul li span {
+.utilities .pageHeader .titleBar ul li span,
+.news .pageHeader .titleBar ul li span {
 	display:inline-block; 
 	padding: 10px 15px; 
 	color: #fff; 
@@ -429,11 +435,12 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .project .pageHeader .titleBar ul li.active span,
 .about .pageHeader .titleBar ul li.active span,
-.utilities .pageHeader .titleBar ul li.active span{
+.utilities .pageHeader .titleBar ul li.active span,
+.news .pageHeader .titleBar ul li.active span{
 	background-color: #FFF;
 	color: #61676d;
 }
-/*END PAGEHEADER PROJECT/ABOUT*/
+/*END PAGEHEADER PROJECT/ABOUT/NEWS*/
 
 
 /*BEGIN CONTACT*/
@@ -560,11 +567,43 @@ border-bottom: 1px solid #71c123; width: 100px;
 .utilities .post_content .content-desc h2{font-weight: normal;margin-bottom: 10px}
 /*END ULTILITIES*/
 
-/*BEGIN FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES*/
+/*BEGIN NEWS*/
+.news{background-color: #DCDCDC}
+.news .post_content{margin-top: 25px}
+.news .post_content .wrap-slide .item-news {
+	padding: 10px;
+	margin: 5px;
+	line-height: 18px;
+	background-color: #FFF;
+	cursor: pointer;
+	height: 142px;
+}
+.news .post_content .wrap-slide .item-news:hover {background-color: #F9B431;}
+.news .post_content .wrap-slide .item-news .thumbnail, .news .post_content .wrap-slide .item-news .content {
+	display: inline-block;
+	float: left;
+	width: 49%;
+	height: 100%;
+	font-size: 13px;
+}
+.news .post_content .wrap-slide .item-news .thumbnail{margin-right: 5px}
+.news .post_content .wrap-slide .item-news .thumbnail img {border: 1px #FFF solid;width: 100%;height: 100%}
+.news .post_content .wrap-slide .item-news .content {overflow: hidden}
+.news .post_content .wrap-slide .item-news .content h4 {text-transform: uppercase;line-height: 18px;}
+.news .post_content .wrap-slide .slide-item {min-height: initial !important;}
+.news .post_content .wrap-slide .slide-controls{position: absolute;top: 25%; margin-top: 0;}
+.news .post_content .wrap-slide .slide-pagination {display: none}
+.news .post_content .wrap-slide .slide-buttons {margin-top: 0%}
+.news .post_content .wrap-slide .slide-prev {left: -7%;}
+.news .post_content .wrap-slide .slide-next {right: -7%;}
+/*END NEWS*/
+
+/*BEGIN FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES/NEWS*/
 .contact-us #footer .footerTop, 
 .project #footer .footerTop, 
 .about #footer .footerTop,
-.utilities #footer .footerTop{
+.utilities #footer .footerTop,
+.news #footer .footerTop{
 	padding-top: 30px;
 }
 .contact-us #footer, 
@@ -574,13 +613,15 @@ border-bottom: 1px solid #71c123; width: 100px;
 .about #footer, 
 .about #footer .footerTop .title,
 .utilities #footer, 
-.utilities #footer .footerTop .title{
+.utilities #footer .footerTop .title,
+.news #footer, 
+.news #footer .footerTop .title{
 	background-color: #F8F8F8;
 }
 .project #footer{
 	margin-top: 0;
 }
-/*END FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES*/
+/*END FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES/NEWS*/
 
 
 /*media*/
