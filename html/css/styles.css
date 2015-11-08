@@ -666,4 +666,9 @@ border-bottom: 1px solid #71c123; width: 100px;
 @media (max-width: 480px) {
 	#main .post_center ul li {width: 99%;}
 	#footer .footerTop .right-footer ul li {width: 100%; margin-right: 0;}
+	.utilities .post_content .content-desc{
+		width: 95%;
+		padding: 25px;
+	}
+	.utilities .post_content .wrap-slide{ width: 95%}
 }
