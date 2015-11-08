@@ -532,6 +532,16 @@ border-bottom: 1px solid #71c123; width: 100px;
 .about .post_content .sponsor{text-align: center}
 /*END ABOUT*/
 
+/*BEGIN ULTILITIES*/
+.utilities .post_content{margin-top: 25px;color: #6d6d6d}
+
+.utilities .post_content .wrap-slide{text-align: center;width: 70%}
+.utilities .post_content .wrap-slide .item-pic,
+.utilities .post_content .wrap-slide .item-pic .over-pic{max-width: none}
+.utilities .post_content .wrap-slide .slide-item {min-height: initial !important;}
+.utilities .post_content .wrap-slide .slide-pagination {display: none}
+/*END ULTILITIES*/
+
 /*BEGIN FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES*/
 .contact-us #footer .footerTop, 
 .project #footer .footerTop, 

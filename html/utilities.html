@@ -12,7 +12,8 @@
     <!-- site css -->
     <link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-    <link rel="stylesheet" href="css/styles.css">    
+    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="css/slider.css">   
 	<script src="js/jquery.min.js"></script>
     <script src="js/jquery.flexslider.js" defer=""></script>
 	<!-- Add fancyBox main JS and CSS files -->
@@ -123,8 +124,24 @@
 				</div>
 			</div>
 			<div class="post_content">
-				<div class="container">
-
+				<div class="wrap-slide">
+					<div class="pic-content">
+						<div class="item-pic">
+							<div class="over-pic">
+								<img class="lazyload" data-src="images/utilities.jpg"  alt="">
+							</div>									
+						</div>
+						<div class="item-pic">
+							<div class="over-pic">
+								<img class="lazyload" data-src="images/utilities.jpg"  alt="">
+							</div>									
+						</div>
+						<div class="item-pic">
+							<div class="over-pic">
+								<img class="lazyload" data-src="images/utilities.jpg"  alt="">
+							</div>									
+						</div>						
+					</div>
 				</div>
 
 
@@ -222,7 +239,8 @@
 					}
 				}
 				$(element).BTQSlider({
-					items : 3,
+					items : 1,
+					singleItem: true,
 					autoPlay : TimePlay,
 	            	stopOnHover : true,
 					autoHeight : true,
