@@ -596,6 +596,24 @@ border-bottom: 1px solid #71c123; width: 100px;
 .news .post_content .wrap-slide .slide-buttons {margin-top: 0%}
 .news .post_content .wrap-slide .slide-prev {left: -7%;}
 .news .post_content .wrap-slide .slide-next {right: -7%;}
+
+.news .post_content .content-details{
+	background-color: #FFF;
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px;
+	padding-bottom: 40px;
+	color: #6d6d6d;
+}
+.news .post_content .content-details h1{
+	font-weight: normal;
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 20px auto;
+}
+.news .post_content .content-details img{margin: 15px auto;width: 100%}
+.news .post_content .content-details p{margin-bottom: 15px}
 /*END NEWS*/
 
 /*BEGIN FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES/NEWS*/
