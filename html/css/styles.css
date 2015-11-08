@@ -375,23 +375,57 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; padding: 40px 50px 10px 25px; color: #fff; background-color: #87B03E; font-size: 16px;}
 
-/*BEGIN PROJECT*/
-.project .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; background-color:rgba(0,0,0,0.3); width: 100%; padding: 0;text-align: center;}
-.project .pageHeader .titleBar h1 {background-color: #87B03E ; padding: 40px 50px 10px 25px; color: #fff; float: left;}
-.project .pageHeader .titleBar ul {display: inline-block;
+/*BEGIN PAGEHEADER PROJECT/ABOUT*/
+.project .pageHeader .titleBar,
+.about .pageHeader .titleBar {
+	position: absolute; 
+	left: 0; 
+	bottom: 0; 
+	background-color:rgba(0,0,0,0.3); 
+	width: 100%; 
+	padding: 0;
+	text-align: center;
+}
+.project .pageHeader .titleBar h1,
+.about .pageHeader .titleBar h1 {
+	background-color: #87B03E ; 
+	padding: 40px 50px 10px 25px; 
+	color: #fff; 
+	float: left;
+	font-weight: normal;
+}
+.project .pageHeader .titleBar ul,
+.about .pageHeader .titleBar ul {
+	display: inline-block;
     margin-top: 43px;
+    margin-right: 15%;
     overflow: hidden; }
-.project .pageHeader .titleBar ul li {display: inline-block; margin-right: 10px; list-style: none;}
-.project .pageHeader .titleBar ul li:hover span {background-color: #fff; color: #000;}
-.project .pageHeader .titleBar ul li span {display:inline-block; padding: 10px 15px; color: #fff; background-color:#87B03E; border-top-left-radius: 4px; border-top-right-radius: 4px; }
-.project .pageHeader .titleBar ul li.active span{
+.project .pageHeader .titleBar ul li,
+.about .pageHeader .titleBar ul li {
+	display: inline-block;
+	margin-right: 10px; 
+	list-style: none;
+}
+.project .pageHeader .titleBar ul li:hover span,
+.about .pageHeader .titleBar ul li:hover span {
+	background-color: #fff; 
+	color: #000;
+}
+.project .pageHeader .titleBar ul li span,
+.about .pageHeader .titleBar ul li span {
+	display:inline-block; 
+	padding: 10px 15px; 
+	color: #fff; 
+	background-color:#87B03E; 
+	border-top-left-radius: 4px; 
+	border-top-right-radius: 4px; 
+}
+.project .pageHeader .titleBar ul li.active span,
+.about .pageHeader .titleBar ul li.active span{
 	background-color: #FFF;
 	color: #61676d;
 }
-
-.post_content .project1 {text-align: center; padding-top: 20px;}
-.post_content .project1 h4 {text-transform: uppercase; font-size: 24px; padding: 10px;}
-/*END PROJECT*/
+/*END PAGEHEADER PROJECT/ABOUT*/
 
 
 /*BEGIN CONTACT*/
@@ -455,17 +489,42 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 /*END CONTACT*/
 
-/*BEGIN FOOTER FIX FOR CONTACT & PROJECT*/
-.contact-us #footer .footerTop, .project #footer .footerTop{
+/*BEGIN ABOUT*/
+.about .post_content{margin-top: 25px;}
+.about .post_content .stats{text-align: center;}
+.about .post_content .stats .item{
+	display: inline-block;
+	margin: 0 20px;
+	color: #87B03E;
+	text-align: left;
+}
+.about .post_content .stats .item .value{font-weight: bold;font-size: 70px;}
+.about .post_content .stats .item .unit{font-size: 35px;}
+.about .post_content .stats .item .desc{font-size: 25px;color: #6d6d6d}
+.about .post_content .stats .bottom-text{
+	color: #6d6d6d;
+	margin: 30px 0px;
+}
+/*END ABOUT*/
+
+/*BEGIN FOOTER FIX FOR CONTACT/PROJECT/ABOUT*/
+.contact-us #footer .footerTop, 
+.project #footer .footerTop, 
+.about #footer .footerTop{
 	padding-top: 30px;
 }
-.contact-us #footer, .contact-us #footer .footerTop .title, .project #footer, .project #footer .footerTop .title{
+.contact-us #footer, 
+.contact-us #footer .footerTop .title, 
+.project #footer, 
+.project #footer .footerTop .title,  
+.about #footer, 
+.about #footer .footerTop .title{
 	background-color: #F8F8F8;
 }
 .project #footer{
 	margin-top: 0;
 }
-/*END FOOTER FIX FOR CONTACT & PROJECT*/
+/*END FOOTER FIX FOR CONTACT/PROJECT/ABOUT*/
 
 
 /*media*/
