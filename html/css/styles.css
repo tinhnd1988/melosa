@@ -540,6 +540,15 @@ border-bottom: 1px solid #71c123; width: 100px;
 .utilities .post_content .wrap-slide .item-pic .over-pic{max-width: none}
 .utilities .post_content .wrap-slide .slide-item {min-height: initial !important;}
 .utilities .post_content .wrap-slide .slide-pagination {display: none}
+
+.utilities .post_content .content-desc{
+	width: 70%;
+	margin: 10px auto;
+	padding: 30px 50px;
+	background-color: rgba(0,0,0,0.1);
+	line-height: 20px;
+}
+.utilities .post_content .content-desc h2{font-weight: normal;margin-bottom: 10px}
 /*END ULTILITIES*/
 
 /*BEGIN FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES*/
