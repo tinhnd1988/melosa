@@ -372,12 +372,14 @@ border-bottom: 1px solid #71c123; width: 100px;
 	background-size: cover;
 	height: 360px; 
 	position: relative;
+	background-attachment: fixed;
 }
 .pageHeader .titleBar {position: absolute; left: 0; bottom: 0; padding: 40px 50px 10px 25px; color: #fff; background-color: #87B03E; font-size: 16px;}
 
 /*BEGIN PAGEHEADER PROJECT/ABOUT*/
 .project .pageHeader .titleBar,
-.about .pageHeader .titleBar {
+.about .pageHeader .titleBar,
+.utilities .pageHeader .titleBar {
 	position: absolute; 
 	left: 0; 
 	bottom: 0; 
@@ -387,7 +389,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 	text-align: center;
 }
 .project .pageHeader .titleBar h1,
-.about .pageHeader .titleBar h1 {
+.about .pageHeader .titleBar h1,
+.utilities .pageHeader .titleBar h1 {
 	background-color: #87B03E ; 
 	padding: 40px 50px 10px 25px; 
 	color: #fff; 
@@ -395,24 +398,28 @@ border-bottom: 1px solid #71c123; width: 100px;
 	font-weight: normal;
 }
 .project .pageHeader .titleBar ul,
-.about .pageHeader .titleBar ul {
+.about .pageHeader .titleBar ul,
+.utilities .pageHeader .titleBar ul {
 	display: inline-block;
     margin-top: 43px;
     margin-right: 15%;
     overflow: hidden; }
 .project .pageHeader .titleBar ul li,
-.about .pageHeader .titleBar ul li {
+.about .pageHeader .titleBar ul li,
+.utilities .pageHeader .titleBar ul li {
 	display: inline-block;
 	margin-right: 10px; 
 	list-style: none;
 }
 .project .pageHeader .titleBar ul li:hover span,
-.about .pageHeader .titleBar ul li:hover span {
+.about .pageHeader .titleBar ul li:hover span,
+.utilities .pageHeader .titleBar ul li:hover span {
 	background-color: #fff; 
 	color: #000;
 }
 .project .pageHeader .titleBar ul li span,
-.about .pageHeader .titleBar ul li span {
+.about .pageHeader .titleBar ul li span,
+.utilities .pageHeader .titleBar ul li span {
 	display:inline-block; 
 	padding: 10px 15px; 
 	color: #fff; 
@@ -421,7 +428,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 	border-top-right-radius: 4px; 
 }
 .project .pageHeader .titleBar ul li.active span,
-.about .pageHeader .titleBar ul li.active span{
+.about .pageHeader .titleBar ul li.active span,
+.utilities .pageHeader .titleBar ul li.active span{
 	background-color: #FFF;
 	color: #61676d;
 }
@@ -524,10 +532,11 @@ border-bottom: 1px solid #71c123; width: 100px;
 .about .post_content .sponsor{text-align: center}
 /*END ABOUT*/
 
-/*BEGIN FOOTER FIX FOR CONTACT/PROJECT/ABOUT*/
+/*BEGIN FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES*/
 .contact-us #footer .footerTop, 
 .project #footer .footerTop, 
-.about #footer .footerTop{
+.about #footer .footerTop,
+.utilities #footer .footerTop{
 	padding-top: 30px;
 }
 .contact-us #footer, 
@@ -535,13 +544,15 @@ border-bottom: 1px solid #71c123; width: 100px;
 .project #footer, 
 .project #footer .footerTop .title,  
 .about #footer, 
-.about #footer .footerTop .title{
+.about #footer .footerTop .title,
+.utilities #footer, 
+.utilities #footer .footerTop .title{
 	background-color: #F8F8F8;
 }
 .project #footer{
 	margin-top: 0;
 }
-/*END FOOTER FIX FOR CONTACT/PROJECT/ABOUT*/
+/*END FOOTER FIX FOR CONTACT/PROJECT/ABOUT/UTILITIES*/
 
 
 /*media*/
