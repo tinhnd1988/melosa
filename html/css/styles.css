@@ -490,8 +490,22 @@ border-bottom: 1px solid #71c123; width: 100px;
 /*END CONTACT*/
 
 /*BEGIN ABOUT*/
-.about .post_content{margin-top: 25px;}
-.about .post_content .stats{text-align: center;}
+.about .post_content{margin-top: 25px;color: #6d6d6d}
+.about .post_content .container{
+	max-width: 60%;
+}
+.about .post_content .rightCol{
+	width: 50%;
+	float: right;
+	display: inline-block;
+}
+.about .post_content .rightCol img{margin-bottom: 25px;}
+.about .post_content .leftCol{
+	width: 50%;
+	float: left;
+	display: inline-block;
+}
+.about .post_content .stats{text-align: center;margin-top: 35px}
 .about .post_content .stats .item{
 	display: inline-block;
 	margin: 0 20px;
@@ -500,7 +514,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .about .post_content .stats .item .value{font-weight: bold;font-size: 70px;}
 .about .post_content .stats .item .unit{font-size: 35px;}
-.about .post_content .stats .item .desc{font-size: 25px;color: #6d6d6d}
+.about .post_content .stats .item .desc{font-size: 25px;}
 .about .post_content .stats .bottom-text{
 	color: #6d6d6d;
 	margin: 30px 0px;
