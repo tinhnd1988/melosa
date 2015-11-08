@@ -499,7 +499,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 	float: right;
 	display: inline-block;
 }
-.about .post_content .rightCol img{margin-bottom: 25px;}
+.about .post_content .rightCol img{margin-bottom: 25px;width: 95%}
 .about .post_content .leftCol img{width: 95%}
 .about .post_content .leftCol{
 	width: 50%;
@@ -603,12 +603,26 @@ border-bottom: 1px solid #71c123; width: 100px;
 @media (max-width: 900px) {
 	#main .post_center ul li {width: 49.25%;}
 }
+@media (max-width: 760px) {
+	/*BEGIN REPONSIVE FOR ABOUT*/
+	.about .post_content .sponsor img{width: 100%}
+	.project .pageHeader .titleBar ul, .about .pageHeader .titleBar ul	{margin-right: 0}
+	/*END REPONSIVE FOR ABOUT*/
+}
 @media (max-width: 710px) {
 	#main .slider .caption {left: 0; bottom: 45px;}
 	#main .slider .caption img {width: 100%}
 }
 @media (max-width: 640px) {
 	/*#header {height: 72px;position: absolute;}*/
+	/*BEGIN REPONSIVE FOR ABOUT*/
+	.about .post_content .rightCol,
+	.about .post_content .leftCol{
+		width: 100%;
+		float: none;
+	}
+	.about .post_content .leftCol{margin-bottom: 20px;}	
+	/*END REPONSIVE FOR ABOUT*/	
 }
 @media (max-width: 480px) {
 	#main .post_center ul li {width: 99%;}
