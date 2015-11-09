@@ -74,7 +74,6 @@
 				</ul>
 			</div>
 			<ul class="langs lsn">
-				
 				<li class="lang-item lang-item-en">
 					<a href="http://melosa.vn/en/" hreflang="en"></a>
 				</li>
@@ -113,48 +112,64 @@
 				<div class="titleBar">
 					<h1>Giới thiệu</h1>
 					<ul>
-						<li><span>Melosa Garden</span></li>
-						<li class="active"><span>Chủ đầu tư</span></li>
-						<li><span>Đội ngũ</span></li>
+						<li class="ui_tabs"><span class="Tab1">Melosa Garden</span></li>
+						<li class="ui_tabs active"><span class="Tab2">Chủ đầu tư</span></li>
+						<li class="ui_tabs"><span class="Tab3">Đội ngũ</span></li>
 					</ul>
 				</div>
 			</div>
 			<div class="post_content">
-				<div class="container">
-					<div class="leftCol">
-						<img src="images/about-leftimg.jpg">
+				<div id="Tab1" class="content_tab" style="display:none;">
+					<div class="container">
+						<h4> TẬN HƯỞNG CUỘC SỐNG TINH HOA </h4>
+						<p>Những cung bậc bình yên, lắng đọng, nơi con người hòa mình trong ánh sáng, sông nước và thiên nhiên chính là những tinh hoa cuộc sống.</p>
+						<img src="images/gioi_thieu_1.png">
 					</div>
-					<div class="rightCol">
-						<img src="images/khangdien-logo.png">
-						<p>
-							Với 15 năm kinh nghiệm trong lĩnh vực đầu tư và phát triển bất động sản, Khang Điền tự hào là đơn vị tiên phong cho những dự án nhà có tiền ích được đầu tư cao tại Q.9 như: Chuỗi Mega Village, Mega Ruby, Mega Residence, Hoja Villa và PARCSpring						
-						</p>
+				</div><!-- end tab1 -->
+				<div id="Tab2" class="content_tab">
+					<div class="container">
+						<div class="leftCol">
+							<img src="images/about-leftimg.jpg">
+						</div>
+						<div class="rightCol">
+							<img src="images/khangdien-logo.png">
+							<p>
+								Với 15 năm kinh nghiệm trong lĩnh vực đầu tư và phát triển bất động sản, Khang Điền tự hào là đơn vị tiên phong cho những dự án nhà có tiền ích được đầu tư cao tại Q.9 như: Chuỗi Mega Village, Mega Ruby, Mega Residence, Hoja Villa và PARCSpring						
+							</p>
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="stats">
-					<div class="item">
-						<span class="value">15</span>
-						<span class="unit">năm</span>
-						<p class="desc">Kinh nghiệm</p>
+					<div class="stats">
+						<div class="item">
+							<span class="value">15</span>
+							<span class="unit">năm</span>
+							<p class="desc">Kinh nghiệm</p>
+						</div>
+						<div class="item">
+							<span class="value">100</span>
+							<span class="unit">ha</span>
+							<p class="desc">Quỹ đất sạch</p>
+						</div>
+						<div class="item">
+							<span class="value">17</span>
+							<span class="unit">dự án</span>
+							<p class="desc">Tập trung tại Q.2 và Q.9</p>
+						</div>
+						<div class="bottom-text">
+							<span>Khang Điền vinh dự được hợp tác cùng những đơn vị hàng đầu Việt Nam và Quốc tế</span>
+						</div>										
 					</div>
-					<div class="item">
-						<span class="value">100</span>
-						<span class="unit">ha</span>
-						<p class="desc">Quỹ đất sạch</p>
+					<div class="sponsor">
+						<img src="images/sponsor.jpg">
 					</div>
-					<div class="item">
-						<span class="value">17</span>
-						<span class="unit">dự án</span>
-						<p class="desc">Tập trung tại Q.2 và Q.9</p>
+				</div><!-- end tab2 -->
+				<div id="Tab3" class="content_tab" style="display:none;">
+					<div class="container">
+						<h4> TẬN HƯỞNG CUỘC SỐNG TINH HOA </h4>
+						<p>Những cung bậc bình yên, lắng đọng, nơi con người hòa mình trong ánh sáng, sông nước và thiên nhiên chính là những tinh hoa cuộc sống.</p>
+						<img src="images/gioi_thieu_1.png">
 					</div>
-					<div class="bottom-text">
-						<span>Khang Điền vinh dự được hợp tác cùng những đơn vị hàng đầu Việt Nam và Quốc tế</span>
-					</div>										
-				</div>
-				<div class="sponsor">
-					<img src="images/sponsor.jpg">
-				</div>
+				</div><!-- end tab3 -->
 			</div>
 		</div>
 		<div id="footer">
@@ -248,6 +263,13 @@
 		            menu.addClass('open').slideDown();
 		        }
 		    });
+		    jQuery('.ui_tabs').click(function(){
+		    	jQuery('.content_tab').hide();
+		    	jQuery('.ui_tabs').removeClass('active');
+		    	jQuery(this).addClass('active');
+		    	var class_ui = jQuery(this).find('span').attr('class');
+		    	jQuery('#'+class_ui).show();
+		    })
 		});
 		jQuery(window).resize(function(){
 			if(jQuery(window).width() > 980){
