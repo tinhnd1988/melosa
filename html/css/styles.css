@@ -620,6 +620,10 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 /*BEGIN LOCATION*/
 
+/*BEGIN VIEW360*/
+.view360 .post_content{padding: 20px}
+/*END VIEW360*/
+
 /*media*/
 @media (min-width: 1111px){
 	#footer .footerTop .right-footer ul li:nth-child(3n){margin-right: 0;}
