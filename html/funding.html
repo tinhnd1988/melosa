@@ -146,82 +146,90 @@
 				<div class="titleBar">
 					<h1>Hỗ trợ tài chính</h1>
 					<ul>
-						<li><span>Giới thiệu</span></li>
-						<li><span>Bảng tính tiến độ thanh toán</span></li>
-						<li class="active"><span>Bảng tính lãi vay ngân hàng</span></li>
+						<li class="ui_tabs"><span class="Tab1">Giới thiệu</span></li>
+						<li class="ui_tabs"><span class="Tab2">Bảng tính tiến độ thanh toán</span></li>
+						<li class="ui_tabs active"><span class="Tab3">Bảng tính lãi vay ngân hàng</span></li>
 					</ul>  
 				</div>
 			</div>
 			<div class="post_content">
 				<div class="container">
-					<div class="calculate">
-						<div class="leftCol">
-							<p>
-								Công cụ này cho phép khách hàng tính toán được số tiền (cả tiền gốc và tiền lãi) mà họ sẽ phải thanh toán vào một ngày nhất định mà 2 bên đã thỏa thuận trong hợp đồng 					
-							</p>
-							<p> Sau khi xác định số tiền vay, tỉ lệ vay , hình thức trả nợ, thời hạn và lãi suất vay, bạn có thể tính toán ngay số tiền trả nợ vay hằng tháng một cách nhanh chóng.	</p>
+					<div id="Tab1" class="content_tab" style="display:none;">
+						
+					</div><!-- end tab1 -->
+					<div id="Tab2" class="content_tab" style="display:none;">					
+											
+					</div><!-- end tab2 -->
+					<div id="Tab3" class="content_tab">
+						<div class="calculate">
+							<div class="leftCol">
+								<p>
+									Công cụ này cho phép khách hàng tính toán được số tiền (cả tiền gốc và tiền lãi) mà họ sẽ phải thanh toán vào một ngày nhất định mà 2 bên đã thỏa thuận trong hợp đồng 					
+								</p>
+								<p> Sau khi xác định số tiền vay, tỉ lệ vay , hình thức trả nợ, thời hạn và lãi suất vay, bạn có thể tính toán ngay số tiền trả nợ vay hằng tháng một cách nhanh chóng.	</p>
+							</div>
+							<div class="rightCol">
+								<table>
+									<tbody>
+										<tr>
+											<td><span>Tong tri gia hop dong</span> </td>
+											<td><input type="test" maxlength="9" onchange="EMI_calc();" size="11" id="amount_1a" name="amount_1a" value="0"></td>
+										</tr>
+										<tr>
+											<td><div id="slider"></div></td>
+										</tr>
+									</tbody>
+								</table>
+														
+							</div>
 						</div>
-						<div class="rightCol">
-							<table>
+						<div id="listRepayment">
+							<table bgcolor="#fafafa" cellspacing="0" cellpadding="0" bordercolor="#e2e2e2" border="1" class="tbl-list-repayment">
 								<tbody>
 									<tr>
-										<td><span>Tong tri gia hop dong</span> </td>
-										<td><input type="test" maxlength="9" onchange="EMI_calc();" size="11" id="amount_1a" name="amount_1a" value="0"></td>
+										<th width="20%" align="center" colspan="2">Kỳ trả nợ</th>
+										<th width="20%" align="center">Số gốc còn lại</th>
+										<th width="20%" align="center">Gốc</th>
+										<th width="20%" align="center">Lãi</th>
+										<th width="20%" align="center">Tổng gốc + Lãi</th>
 									</tr>
 									<tr>
-										<td><div id="slider"></div></td>
+										<td width="15%" align="center">9/01/2016</td>
+										<td width="5%" align="center">0</td>
+										<td width="20%" align="center">100,000,000</td>
+										<td width="20%" align="center"></td>
+										<td width="20%" align="center"></td>
+										<td width="20%" align="center"></td>
+									</tr>
+									<tr>
+										<td width="15%" align="center">9/02/2016</td>
+										<td width="5%" align="center">1</td>
+										<td width="20%" align="center">50,000,000</td>
+										<td width="20%" align="center">50,000,000</td>
+										<td width="20%" align="center">666,667</td>
+										<td width="20%" align="center">50,666,667</td>
+									</tr>
+									<tr>
+										<td width="15%" align="center">9/03/2016</td>
+										<td width="5%" align="center">2</td>
+										<td width="20%" align="center">0</td>
+										<td width="20%" align="center">50,000,000</td>
+										<td width="20%" align="center">333,333</td>
+										<td width="20%" align="center">50,333,333</td>
+									</tr>
+									<tr>
+										<th width="15%" align="center">Tổng</th>
+										<th width="5%" align="center"></th>
+										<th width="20%" align="center"></th>
+										<th width="20%" align="center">100,000,000</th>
+										<th width="20%" align="center">1,000,000</th>
+										<th width="20%" align="center">101,000,000</th>
 									</tr>
 								</tbody>
 							</table>
-													
 						</div>
-					</div>
-					<div id="listRepayment">
-						<table bgcolor="#fafafa" cellspacing="0" cellpadding="0" bordercolor="#e2e2e2" border="1" class="tbl-list-repayment">
-							<tbody>
-								<tr>
-									<th width="20%" align="center" colspan="2">Kỳ trả nợ</th>
-									<th width="20%" align="center">Số gốc còn lại</th>
-									<th width="20%" align="center">Gốc</th>
-									<th width="20%" align="center">Lãi</th>
-									<th width="20%" align="center">Tổng gốc + Lãi</th>
-								</tr>
-								<tr>
-									<td width="15%" align="center">9/01/2016</td>
-									<td width="5%" align="center">0</td>
-									<td width="20%" align="center">100,000,000</td>
-									<td width="20%" align="center"></td>
-									<td width="20%" align="center"></td>
-									<td width="20%" align="center"></td>
-								</tr>
-								<tr>
-									<td width="15%" align="center">9/02/2016</td>
-									<td width="5%" align="center">1</td>
-									<td width="20%" align="center">50,000,000</td>
-									<td width="20%" align="center">50,000,000</td>
-									<td width="20%" align="center">666,667</td>
-									<td width="20%" align="center">50,666,667</td>
-								</tr>
-								<tr>
-									<td width="15%" align="center">9/03/2016</td>
-									<td width="5%" align="center">2</td>
-									<td width="20%" align="center">0</td>
-									<td width="20%" align="center">50,000,000</td>
-									<td width="20%" align="center">333,333</td>
-									<td width="20%" align="center">50,333,333</td>
-								</tr>
-								<tr>
-									<th width="15%" align="center">Tổng</th>
-									<th width="5%" align="center"></th>
-									<th width="20%" align="center"></th>
-									<th width="20%" align="center">100,000,000</th>
-									<th width="20%" align="center">1,000,000</th>
-									<th width="20%" align="center">101,000,000</th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="clearfix"></div>
+						<div class="clearfix"></div>
+					</div><!-- end tab3 -->
 				</div>
 			</div>
 		</div>
@@ -307,6 +315,13 @@
 	</div>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
+			jQuery('.ui_tabs').click(function(){
+		    	jQuery('.content_tab').hide();
+		    	jQuery('.ui_tabs').removeClass('active');
+		    	jQuery(this).addClass('active');
+		    	var class_ui = jQuery(this).find('span').attr('class');
+		    	jQuery('#'+class_ui).show();
+		    })
 			jQuery('#hambuger').click(function(event) {
 		        var menu = jQuery(this).siblings('.nav');
 		        if( menu.hasClass('open') ){
