@@ -344,8 +344,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 
 #footer .footerTop .right-footer {float: left; width: 73%; margin-left: 2%;}
 #footer .footerTop .right-footer ul {list-style: none;}
-#footer .footerTop .right-footer ul li {float: left; width: 32%; margin-right: 1%; margin-bottom: 50px;}
-#footer .footerTop .right-footer ul li h4 {margin-bottom: 10px;}
+#footer .footerTop .right-footer ul li {float: left; width: 32%; margin-right: 1%; margin-bottom: 30px; min-height: 140px}
+#footer .footerTop .right-footer ul li h4 {margin-bottom: 10px; line-height: 18px;}
 #footer .footerTop .right-footer ul li p {line-height: 25px;}
 #footer .footerTop .right-footer ul li .website {color: #71c123;}
 #footer .footerTop .right-footer ul li .website:hover {text-decoration: underline;}
