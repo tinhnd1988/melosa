@@ -429,7 +429,6 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 /*END PAGEHEADER*/
 .post_content .container{max-width: 65%;}
-#listRepayment {display: inline-block;}
 
 /*BEGIN CONTACT*/
 .contact-us .post_content .description{
@@ -623,6 +622,20 @@ border-bottom: 1px solid #71c123; width: 100px;
 /*BEGIN VIEW360*/
 .view360 .post_content{padding: 20px}
 /*END VIEW360*/
+
+/*BEGIN FUNDING*/
+.funding .calculate {padding-top: 30px; width: 100%; overflow: hidden; text-align: center;}
+.funding .calculate .leftCol, .funding .calculate .rightCol {width: 50%; float: left;}
+.calculate > p {display: inline-block; margin-top: 50px;}
+.calculateForm {margin: 30px auto; width: 500px;}
+.calculateForm .form-group {margin: 10px 0; display: inline-block; width: 100%;}
+.calculateForm .form-group label{float: left; width: 40%;}
+.calculateForm .form-group .value{float: right; width: 55%;}
+.calculateForm .form-group .value input {text-align: right; border: none;}
+.calculateForm .form-group .ui-slider {margin-top: 10px; width: 100%; float: left;}
+
+#listRepayment {display: inline-block;}
+/*END FUNDING*/
 
 /*media*/
 @media (min-width: 1111px){

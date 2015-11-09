@@ -31,7 +31,7 @@
 	</script>
 	<script>
 	  jQuery(function() {
-			$( "#slider" ).slider({
+		$( "#slider" ).slider({
 			range: "min",
 			value: 170000000,
 			min: 10000000,
@@ -43,7 +43,23 @@
 			,change:function(){EMI_calc()}
 		});
 		$( "#amount_1a" ).val( "" + $( "#slider" ).slider( "value" ) );
+		$( "#slideryear" ).slider({
+			range: "min",
+			value: 2,
+			min: 1,
+			step: 1,
+			max:  30,
+			slide: function( event, ui ) {
+				$( "#year" ).val( "" + ui.value );
+			}
+			,change:function(){EMI_calc1()}
+		});
+		$( "#amount_1a" ).val( "" + $( "#slider" ).slider( "value" ) );
+		$( "#year" ).val( "" + $( "#slideryear" ).slider( "value" ) );
 	});
+	  function EMI_calc1(){
+
+	  }
 	  function EMI_calc(){
 		/*var emiPrincipal=jQuery("#amount_1a").val();
 		var emiRate=jQuery("#amount_intr").val()/12/100;
@@ -160,79 +176,236 @@
 					<div id="Tab2" class="content_tab" style="display:none;">					
 											
 					</div><!-- end tab2 -->
-					<div id="Tab3" class="content_tab">
+					<div id="Tab3" class="content_tab funding">
 						<div class="calculate">
 							<div class="leftCol">
-								<h4>Ho tro tai chinh</h4>
+								<h4>Hỗ trợ tài chính</h4>
 								<img src="images/vietinbank.png">
 							</div>
 							<div class="rightCol">
-								<h4>Dong ho tro</h4>
+								<h4>Đồng hỗ trợ</h4>
 								<img src="images/vietcombank.png">
 								<img src="images/download.png">
 														
 							</div>
 							<p>
-									Công cụ này cho phép khách hàng tính toán được số tiền (cả tiền gốc và tiền lãi) mà họ sẽ phải thanh toán vào một ngày nhất định mà 2 bên đã thỏa thuận trong hợp đồng 					
-									Sau khi xác định số tiền vay, tỉ lệ vay , hình thức trả nợ, thời hạn và lãi suất vay, bạn có thể tính toán ngay số tiền trả nợ vay hằng tháng một cách nhanh chóng.	
-								</p>
-							<table>
-									<tbody>
-										<tr>
-											<td><span>Tong tri gia hop dong</span> </td>
-											<td><input type="test" maxlength="9" onchange="EMI_calc();" size="11" id="amount_1a" name="amount_1a" value="0"></td>
-										</tr>
-										<tr>
-											<td><div id="slider"></div></td>
-										</tr>
-									</tbody>
-								</table>
+								Công cụ này cho phép khách hàng tính toán được số tiền (cả tiền gốc và tiền lãi) mà họ sẽ phải thanh toán vào một ngày nhất định mà 2 bên đã thỏa thuận trong hợp đồng 					
+								Sau khi xác định số tiền vay, tỉ lệ vay , hình thức trả nợ, thời hạn và lãi suất vay, bạn có thể tính toán ngay số tiền trả nợ vay hằng tháng một cách nhanh chóng.	
+							</p>
+							<div class="calculateForm">
+								<div class="form-group">
+									<label>Tổng giá trị hợp đồng</label>
+									<div class="value">
+										<input type="text" onchange="EMI_calc();" id="amount_1a" name="amount_1a" value="0">
+									</div>
+									<div id="slider"></div>
+								</div>
+								<div class="form-group">
+									<label>Tỷ lệ vay</label>
+									<div class="value">
+										<input type="text" value="65">
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Lãi suất</label>
+									<div class="value">
+										<input type="text" value="8">
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Thời hạn vay</label>
+									<div class="value">
+										<input type="text" onchange="EMI_calc1();" id="year" name="year" value="2">
+									</div>
+									<div id="slideryear"></div>
+								</div>
+								<div class="form-group">
+									<label>Ngày giải ngân</label>
+									<div class="value">
+										<input type="text" class="date" value="09/11/2015">
+									</div>
+								</div>
+							</div>
 							
 						</div>
 						<div id="listRepayment">
-							<table bgcolor="#fafafa" cellspacing="0" cellpadding="0" bordercolor="#e2e2e2" border="1" class="tbl-list-repayment">
-								<tbody>
-									<tr>
-										<th width="20%" align="center" colspan="2">Kỳ trả nợ</th>
-										<th width="20%" align="center">Số gốc còn lại</th>
-										<th width="20%" align="center">Gốc</th>
-										<th width="20%" align="center">Lãi</th>
-										<th width="20%" align="center">Tổng gốc + Lãi</th>
-									</tr>
-									<tr>
-										<td width="15%" align="center">9/01/2016</td>
-										<td width="5%" align="center">0</td>
-										<td width="20%" align="center">100,000,000</td>
-										<td width="20%" align="center"></td>
-										<td width="20%" align="center"></td>
-										<td width="20%" align="center"></td>
-									</tr>
-									<tr>
-										<td width="15%" align="center">9/02/2016</td>
-										<td width="5%" align="center">1</td>
-										<td width="20%" align="center">50,000,000</td>
-										<td width="20%" align="center">50,000,000</td>
-										<td width="20%" align="center">666,667</td>
-										<td width="20%" align="center">50,666,667</td>
-									</tr>
-									<tr>
-										<td width="15%" align="center">9/03/2016</td>
-										<td width="5%" align="center">2</td>
-										<td width="20%" align="center">0</td>
-										<td width="20%" align="center">50,000,000</td>
-										<td width="20%" align="center">333,333</td>
-										<td width="20%" align="center">50,333,333</td>
-									</tr>
-									<tr>
-										<th width="15%" align="center">Tổng</th>
-										<th width="5%" align="center"></th>
-										<th width="20%" align="center"></th>
-										<th width="20%" align="center">100,000,000</th>
-										<th width="20%" align="center">1,000,000</th>
-										<th width="20%" align="center">101,000,000</th>
-									</tr>
-								</tbody>
-							</table>
+	                        <div class="form-horizontal">
+	                            <div class="form-group">
+	                                <label class="col-sm-6">Số tiền vay</label>
+	                                <div class="col-sm-6">
+	                                    1.755.000.000 đồng
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="table-responsive">
+	                            
+	                            <table cellpadding="10" border="1" class="table">
+	                                <tbody><tr>
+	                                    <th class="col1">
+	                                        Số kỳ
+	                                    </th>
+	                                    <th class="col2">
+	                                        Ngày trả nợ
+	                                    </th>
+	                                    <th class="col3">
+	                                        Số ngày
+	                                    </th>
+	                                    <th class="col4">
+	                                        Số tiền phải trả hàng tháng
+	                                    </th>
+	                                    <th class="col5">
+	                                        Gốc
+	                                    </th>
+	                                    <th class="col6">
+	                                        Lãi
+	                                    </th>
+	                                    <th class="col7">
+	                                        Số dư nợ còn lại
+	                                    </th>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1"></td>
+	                                    <td class="col2">10/11/2015</td>
+	                                    <td class="col3"></td>
+	                                    <td class="col4"></td>
+	                                    <td class="col5"></td>
+	                                    <td class="col6">Giải ngân</td>
+	                                    <td class="col7">1.755.000.000</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">1</td>
+	                                    <td class="col2">10/12/2015</td>
+	                                    <td class="col3">30</td>
+	                                    <td class="col4">19.012.500</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.700.000</td>
+	                                    <td class="col7">1.747.687.500</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">2</td>
+	                                    <td class="col2">10/01/2016</td>
+	                                    <td class="col3">31</td>
+	                                    <td class="col4">19.352.125</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">12.039.625</td>
+	                                    <td class="col7">1.740.375.000</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">3</td>
+	                                    <td class="col2">10/02/2016</td>
+	                                    <td class="col3">31</td>
+	                                    <td class="col4">19.301.750</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.989.250</td>
+	                                    <td class="col7">1.733.062.500</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">4</td>
+	                                    <td class="col2">10/03/2016</td>
+	                                    <td class="col3">29</td>
+	                                    <td class="col4">18.481.125</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.168.625</td>
+	                                    <td class="col7">1.725.750.000</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">5</td>
+	                                    <td class="col2">10/04/2016</td>
+	                                    <td class="col3">31</td>
+	                                    <td class="col4">19.201.000</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.888.500</td>
+	                                    <td class="col7">1.718.437.500</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">6</td>
+	                                    <td class="col2">10/05/2016</td>
+	                                    <td class="col3">30</td>
+	                                    <td class="col4">18.768.750</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.456.250</td>
+	                                    <td class="col7">1.711.125.000</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">7</td>
+	                                    <td class="col2">10/06/2016</td>
+	                                    <td class="col3">31</td>
+	                                    <td class="col4">19.100.250</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.787.750</td>
+	                                    <td class="col7">1.703.812.500</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">8</td>
+	                                    <td class="col2">10/07/2016</td>
+	                                    <td class="col3">30</td>
+	                                    <td class="col4">18.671.250</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.358.750</td>
+	                                    <td class="col7">1.696.500.000</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">9</td>
+	                                    <td class="col2">10/08/2016</td>
+	                                    <td class="col3">31</td>
+	                                    <td class="col4">18.999.500</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.687.000</td>
+	                                    <td class="col7">1.689.187.500</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">10</td>
+	                                    <td class="col2">10/09/2016</td>
+	                                    <td class="col3">31</td>
+	                                    <td class="col4">18.949.125</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.636.625</td>
+	                                    <td class="col7">1.681.875.000</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">11</td>
+	                                    <td class="col2">10/10/2016</td>
+	                                    <td class="col3">30</td>
+	                                    <td class="col4">18.525.000</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.212.500</td>
+	                                    <td class="col7">1.674.562.500</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1">12</td>
+	                                    <td class="col2">10/11/2016</td>
+	                                    <td class="col3">31</td>
+	                                    <td class="col4">18.848.375</td>
+	                                    <td class="col5">7.312.500</td>
+	                                    <td class="col6">11.535.875</td>
+	                                    <td class="col7">1.667.250.000</td>
+	                                </tr>
+	                            
+	                                <tr>
+	                                    <td class="col1"></td>
+	                                    <td class="col2">Tổng số tiền</td>
+	                                    <td class="col3"></td>
+	                                    <td class="col4"></td>
+	                                    <td class="col5">1.755.000.000</td>
+	                                    <td class="col6">1.430.333.125</td>
+	                                    <td class="col7"></td>
+	                                </tr></tbody>
+	                            </table>
+	                                
+	                        </div>
 						</div>
 						<div class="clearfix"></div>
 					</div><!-- end tab3 -->
