@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Melosa - Contact</title>
+    <title>Melosa - Funding</title>
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,11 +12,14 @@
     <!-- site css -->
     <link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-    <link rel="stylesheet" href="css/styles.css">    
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">  
 	<script src="js/jquery.min.js"></script>
     <script src="js/jquery.flexslider.js" defer=""></script>
 	<!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/slide.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$('.flexslider').flexslider({
@@ -26,8 +29,40 @@
 			$('.fancybox').fancybox();
 		});
 	</script>
-
-<body class="contact-us">
+	<script>
+	  jQuery(function() {
+			$( "#slider" ).slider({
+			range: "min",
+			value: 170000000,
+			min: 10000000,
+			step: 10000000,
+			max:  500000000,
+			slide: function( event, ui ) {
+				$( "#amount_1a" ).val( "" + ui.value );
+			}
+			,change:function(){EMI_calc()}
+		});
+		$( "#amount_1a" ).val( "" + $( "#slider" ).slider( "value" ) );
+	});
+	  function EMI_calc(){
+		/*var emiPrincipal=jQuery("#amount_1a").val();
+		var emiRate=jQuery("#amount_intr").val()/12/100;
+		var emiTenure=jQuery("#amount_lt").val()*12;
+		var emi=emiPrincipal*emiRate*(Math.pow(1+emiRate,emiTenure)/(Math.pow(1+emiRate,emiTenure)-1));
+		jQuery("#emi_monthly span").text(number_format(Math.round(emi)) + " VNĐ");
+		jQuery("#total_intr span").text(number_format(Math.round(emi* emiTenure-emiPrincipal)) + " VNĐ");
+		jQuery("#total_amt span").text(number_format(Math.round(emi*emiTenure)) + " VNĐ");
+		jQuery("#loan_amt span").text(number_format(Math.round(emiPrincipal)) + " VNĐ");
+		var month_emi=Math.round(emi);
+		var emi_tenure=Math.round(emiTenure);
+		var intRate = emiRate * 12 * 100;
+		commitData(emiPrincipal,intRate,emiTenure);
+		displayBarChart (emiPrincipal,intRate,emiTenure);
+		fillrates(emiPrincipal,emiTenure);
+		displayPieChart(month_emi,emi_tenure,emiPrincipal);*/
+	}
+	</script>
+<body class="about">
 	<div id="container">
 		<div id="header">
 			<div class="container">
@@ -54,13 +89,13 @@
 					<li class="scrollto" id="menu-item-31">
 						<a href="#section-5">View 360</a>
 					</li>
-					<li class="scrollto" id="menu-item-32">
+					<li class="scrollto active" id="menu-item-32">
 						<a href="#section-6">Hỗ Trợ Tài Chính</a>
 					</li>
 					<li class="scrollto" id="menu-item-33">
 						<a href="#section-7">Tin Tức - Sự kiện</a>
 					</li>
-					<li class="scrollto active" id="menu-item-35">
+					<li class="scrollto" id="menu-item-35">
 						<a href="contact.html">Liên hệ</a>
 					</li>
 					<li class="langs" id="menu-item-35">
@@ -107,72 +142,86 @@
 							<span>0938 779 660</span>
 						</li>
 					</ul>
-				</div>
+				</div>				
 				<div class="titleBar">
-					<h1>Liên hệ</h1>
+					<h1>Hỗ trợ tài chính</h1>
+					<ul>
+						<li><span>Giới thiệu</span></li>
+						<li><span>Bảng tính tiến độ thanh toán</span></li>
+						<li class="active"><span>Bảng tính lãi vay ngân hàng</span></li>
+					</ul>  
 				</div>
 			</div>
-			<div class="post_content container">
-				<p class="description">
-					Mọi sự hợp tác đền có khởi đầu vô cùng đơn giản - từ một cuộc trò chuyện. <br>
-					Bạn có rất nhiều sự lựa chọn để trò chuyện cùng chúng tôi qua điện thoại, email, form online hay theo dõi trên mạng xã hội. <br>
-					Chúng tôi luôn sẵn sàng lắng nghe mọi lúc mọi nơi.
-				</p>
-				<div class="contactContent">
-					<ul class="phones">
-						<li>
-							<div class="title_call">Sàn GD SUNLAND SG</div>
-							<span>0938 779 660</span>
-						</li>
-						<li>
-							<div class="title_call">CENGROUP</div>
-							<span>0933 68 1551</span>
-						</li>
-						<li>
-							<div class="title_call">CTY CPTV TCF</div>
-							<span>0908 49 6446</span>
-						</li>
-						<li>
-							<div class="title_call">CTY CPBĐS LA BÀN</div>
-							<span>0916 193 223</span>
-						</li>
-						<li>
-							<div class="title_call">CTY TNHH HƯNG THỊNH PHÚ</div>
-							<span>0934 839 868</span>
-						</li>
-					</ul>
-					<div class="formContact">
-						<form action="#">
-							<legend>Các thông tin * là bắt buộc</legend>
-							<div class="input">
-								<input type="text" name="name" placeholder="Họ tên *">
-							</div>
-							<div class="input">
-								<input type="text" name="email" placeholder="Email *">
-							</div>
-							<div class="input">
-								<input type="text" name="phone" placeholder="Điện thoại *">
-							</div>
-							<div class="input">
-								<input type="text" name="title" placeholder="Tiêu đề *">
-							</div>
-							<div class="input">
-								<textarea name="" id="" cols="30" rows="5" placeholder="Nội dung *"></textarea>
-							</div>
-						</form>
+			<div class="post_content">
+				<div class="container">
+					<div class="calculate">
+						<div class="leftCol">
+							<p>
+								Công cụ này cho phép khách hàng tính toán được số tiền (cả tiền gốc và tiền lãi) mà họ sẽ phải thanh toán vào một ngày nhất định mà 2 bên đã thỏa thuận trong hợp đồng 					
+							</p>
+							<p> Sau khi xác định số tiền vay, tỉ lệ vay , hình thức trả nợ, thời hạn và lãi suất vay, bạn có thể tính toán ngay số tiền trả nợ vay hằng tháng một cách nhanh chóng.	</p>
+						</div>
+						<div class="rightCol">
+							<table>
+								<tbody>
+									<tr>
+										<td><span>Tong tri gia hop dong</span> </td>
+										<td><input type="test" maxlength="9" onchange="EMI_calc();" size="11" id="amount_1a" name="amount_1a" value="0"></td>
+									</tr>
+									<tr>
+										<td><div id="slider"></div></td>
+									</tr>
+								</tbody>
+							</table>
+													
+						</div>
 					</div>
-					<div class="formSubscribe">
-						<form action="#">
-							<legend>Đăng ký nhận thông tin chương trình bán hàng</legend>
-							<span>
-								<p>Nếu bạn muốn đăng ký nhận thông tin chương trình bán hàng</p>
-								<p>Vui lòng điền vào Form thông tin dưới đây và gửi cho chúng tôi</p>
-							</span>
-							<div class="input">
-								<input type="text" name="name" placeholder="Địa chỉ email">
-							</div>
-						</form>						
+					<div id="listRepayment">
+						<table bgcolor="#fafafa" cellspacing="0" cellpadding="0" bordercolor="#e2e2e2" border="1" class="tbl-list-repayment">
+							<tbody>
+								<tr>
+									<th width="20%" align="center" colspan="2">Kỳ trả nợ</th>
+									<th width="20%" align="center">Số gốc còn lại</th>
+									<th width="20%" align="center">Gốc</th>
+									<th width="20%" align="center">Lãi</th>
+									<th width="20%" align="center">Tổng gốc + Lãi</th>
+								</tr>
+								<tr>
+									<td width="15%" align="center">9/01/2016</td>
+									<td width="5%" align="center">0</td>
+									<td width="20%" align="center">100,000,000</td>
+									<td width="20%" align="center"></td>
+									<td width="20%" align="center"></td>
+									<td width="20%" align="center"></td>
+								</tr>
+								<tr>
+									<td width="15%" align="center">9/02/2016</td>
+									<td width="5%" align="center">1</td>
+									<td width="20%" align="center">50,000,000</td>
+									<td width="20%" align="center">50,000,000</td>
+									<td width="20%" align="center">666,667</td>
+									<td width="20%" align="center">50,666,667</td>
+								</tr>
+								<tr>
+									<td width="15%" align="center">9/03/2016</td>
+									<td width="5%" align="center">2</td>
+									<td width="20%" align="center">0</td>
+									<td width="20%" align="center">50,000,000</td>
+									<td width="20%" align="center">333,333</td>
+									<td width="20%" align="center">50,333,333</td>
+								</tr>
+								<tr>
+									<th width="15%" align="center">Tổng</th>
+									<th width="5%" align="center"></th>
+									<th width="20%" align="center"></th>
+									<th width="20%" align="center">100,000,000</th>
+									<th width="20%" align="center">1,000,000</th>
+									<th width="20%" align="center">101,000,000</th>
+								</tr>
+							</tbody>
+						</table>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
