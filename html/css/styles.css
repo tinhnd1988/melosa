@@ -613,7 +613,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 	text-transform: uppercase;
 	margin: 20px auto;
 }
-.news .post_content .content-details img{margin: 15px auto;width: 100%}
+.news .post_content .content-details img{margin: 15px auto;}
 .news .post_content .content-details p{margin-bottom: 15px}
 /*END NEWS*/
 
@@ -722,6 +722,9 @@ border-bottom: 1px solid #71c123; width: 100px;
 	}
 	.about .post_content .leftCol{margin-bottom: 20px;}	
 	/*END REPONSIVE FOR ABOUT*/	
+}
+@media (max-width:  600px){
+	.news .post_content .content-details img{width: 100%;}
 }
 @media (max-width: 480px) {
 	#main .post_center ul li {width: 99%;}
