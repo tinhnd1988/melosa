@@ -634,7 +634,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 .calculateForm .form-group .value input {text-align: right; border: none;}
 .calculateForm .form-group .ui-slider {margin-top: 10px; width: 100%; float: left;}
 
-#listRepayment {display: inline-block;}
+#listRepayment {display: inline-block; width: 100%;}
+#listRepayment .table-responsive table {width: 100%;}
 /*END FUNDING*/
 
 /*media*/
