@@ -268,8 +268,13 @@
 			</div>
 		</div>
 	</div>
+	<div id="hidden_link">
+		<a class="fancybox" href="images/unnamed.jpg"></a>
+	</div>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
+			jQuery("#hidden_link").find('a').click();
+			//jQuery("#hidden_link").fancybox().trigger('click');
 			jQuery('#hambuger').click(function(event) {
 		        var menu = jQuery(this).siblings('.nav');
 		        if( menu.hasClass('open') ){
@@ -288,5 +293,6 @@
 			}
 		})
 	</script>
+
 </body>
 </html>
