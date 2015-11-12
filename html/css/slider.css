@@ -3,7 +3,7 @@
 
 /*ALL-SLIDE*/
 .slide-pictures{width:100%; height:auto; position:relative; text-align:center; padding-bottom:30px; overflow:hidden}
-.slide-pictures h2{font-family:'Roboto'; font-size:30px; line-height:48px; position:relative;text-align:center;  font-weight:normal; padding:20px 0; width:100%; text-transform: uppercase;}
+.slide-pictures h2{font-family:'Roboto'; font-size:25px; line-height:48px; position:relative;text-align:center;  font-weight:normal; padding:20px 0; width:100%; text-transform: uppercase;}
 .slide-pictures h2.color{font-family:'Roboto'; font-size:40px; line-height:40px; position:relative;text-align:center;  font-weight:normal; padding:20px 0; width:100%; background:#e8edf1; margin:0 0 50px 0}
 
 .text_pic {padding-bottom: 10px;}
