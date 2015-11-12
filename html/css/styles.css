@@ -728,7 +728,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 	#header .nav li.active, #header .nav li:hover {border-bottom: 1px solid #87b03e;}
 	#footer .footerTop .left-footer {width: 100%; margin-bottom: 30px;}
 	#footer .footerTop .right-footer {width: 100%; margin-left: 0}
-	.bottom_footer p {padding-bottom: 10px}
+	.bottom_footer p {padding-bottom: 10px; padding-top: 40px}
 
 	#main {margin-top: 80px;}
 }
@@ -749,7 +749,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 @media (max-width: 710px) {
 	#main .slider .caption {left: 0; bottom: 45px;}
 	#main .slider .caption img {width: 100%}
-	#footer .footerTop {padding: 30px}
+	#footer .footerTop {padding: 30px 30px 0;}
 	.bottom_footer {padding: 10% 20px 0;}
 }
 @media (max-width: 640px) {
