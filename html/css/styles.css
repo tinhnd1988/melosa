@@ -396,7 +396,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 	-webkit-background-size: 100% auto;
 	background-size: 100% 100%;
 }
-.bottom_footer p{display: inline-block;}
+.bottom_footer p{display: inline-block; font-size: 13px;}
 .bottom_footer .footer_social {display: inline-block; float: right;}
 .bottom_footer .footer_social li {margin-right: 10px; list-style: none; float: left;}
 .bottom_footer .footer_social li:last-child {padding-top: 3px;}
@@ -673,7 +673,12 @@ border-bottom: 1px solid #71c123; width: 100px;
 #listRepayment {display: inline-block; width: 100%;}
 #listRepayment .table-responsive table {width: 100%;}
 /*END FUNDING*/
-
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {background: url(../images/icon_httc.png) no-repeat; 
+background-position: -8px -65px; height: 29px; width: 29px; top: -10px!important; border: none;
+}
+.ui-widget-header {background: url(../images/icon_httc.png) no-repeat; height: 24px!important; top: -8px!important; left: -10px!important;
+background-position: 0 -16px;}
+.ui-widget-content {background: url(../images/icon_httc.png) no-repeat; background-position: 0 -42px;}
 /*media*/
 @media (min-width: 1111px){
 	#footer .footerTop .right-footer ul li:nth-child(3n){margin-right: 0;}
