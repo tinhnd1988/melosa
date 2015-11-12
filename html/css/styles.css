@@ -323,7 +323,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 #footer .footerTop .title, #footer .footerTop, #footer{
 	background-color: #F8F8F8;
 }
-.project .item-pic .text-des {bottom: -65%; -webkit-transition: all 2s ease;
+.project .item-pic .text-des {bottom: -80%; -webkit-transition: all 2s ease;
    -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
      -o-transition: all 1s ease;
@@ -335,7 +335,7 @@ border-bottom: 1px solid #71c123; width: 100px;
      -o-transition: all 1s ease;
         transition: all 1s ease;}
 
-.project .wrap-slide .text-des {bottom: -65%; padding: 12px;height: 100%;}
+.project .wrap-slide .text-des {bottom: -80%; padding: 12px;height: 100%;}
 .project .wrap-slide .text-des h5 {color: #fff; text-align: left; font-size: 18px;}
 .project .wrap-slide .text-des span {text-transform: none; color: #fff;padding: 10px;}
 
