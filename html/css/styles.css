@@ -109,6 +109,7 @@ body{
 	position: relative;
 	z-index: 9990;
 }
+.logo img {width: 147px; height: 60px;}
 #header .alter-logo{
 	margin-top: 5px;
 }
@@ -322,6 +323,11 @@ border-bottom: 1px solid #71c123; width: 100px;
 #footer .footerTop .title, #footer .footerTop, #footer{
 	background-color: #F8F8F8;
 }
+.project .item-pic:hover .text-des {transition: all 1s ease 0s ; bottom: -40%;}
+.project .wrap-slide .text-des {bottom: -65%; padding: 12px;height: 100%;}
+.project .wrap-slide .text-des h5 {color: #fff; text-align: left; font-size: 18px;}
+.project .wrap-slide .text-des span {text-transform: none; color: #fff;padding: 10px;}
+
 .project #footer{
 	margin-top: 0;
 }

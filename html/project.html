@@ -128,54 +128,49 @@
 								<div class="pic-content">
 									<div class="item-pic">
 										<div class="text_pic">
-											<h5>Biệt thự loại 1</h5>
-											<span> 84 căn. Diện tích sử dụng là 6x12 chiếm 80% số lượng</span>
+											
 										</div>
 										<div class="over-pic">
 											<img class="lazyload" data-src="images/img_1.jpg"  alt="Biệt thự loại 1">
 										</div>									
 										<div class="text-des">										
-											<h3>Biệt thự loại 1</h3>
-											<p> </p>									
+											<h5>Biệt thự loại 1</h5>
+											<span> 84 căn. Diện tích sử dụng là 6x12 chiếm 80% số lượng</span>									
 										</div>
+										<a class="fancybox" href="images/img_1.jpg"></a>
 									</div>
 									<div class="item-pic">
-										<div class="text_pic">
-											<h5>Biệt thự loại 2</h5>
-											<span> 8 căn. Diện tích sử dụng là 5x12 (Biệt thự góc)</span>
+										<div class="text_pic">											
 										</div>
 										<div class="over-pic">
 											<img class="lazyload" data-src="images/img_2.jpg"  alt="Biệt thự loại 2">
 										</div>									
 										<div class="text-des">
-											<h3>Biệt thự loại 2</h3>
-											<p> </p>
+											<h5>Biệt thự loại 2</h5>
+											<span> 8 căn. Diện tích sử dụng là 5x12 (Biệt thự góc)</span>
 										</div>
 									</div>
 									<div class="item-pic">
 										<div class="text_pic">
-											<h5>Biệt thự loại 3</h5>
-											<span> 8 căn. Diện tích sử dụng là 5x12 (Biệt thự góc)</span>
+											
 										</div>
 										<div class="over-pic">
 											<img class="lazyload" data-src="images/img_3.jpg"  alt="Biệt thự loại 3">
 										</div>									
 										<div class="text-des">
-											<h3>Biệt thự loại 3</h3>
-											<p> </p>
+											<h5>Biệt thự loại 3</h5>
+											<span> 8 căn. Diện tích sử dụng là 5x12 (Biệt thự góc)</span>
 										</div>
 									</div>
 									<div class="item-pic">
-										<div class="text_pic">
-											<h5>Biệt thự loại 4</h5>
-											<span> 8 căn. Diện tích sử dụng là 5x12 (Biệt thự góc)</span>
+										<div class="text_pic">											
 										</div>
 										<div class="over-pic">
 											<img class="lazyload" data-src="images/img_4.jpg"  alt="Biệt thự loại 4">
 										</div>									
 										<div class="text-des">
-											<h3>Biệt thự loại 4</h3>
-											<p> </p>
+											<h5>Biệt thự loại 4</h5>
+											<span> 8 căn. Diện tích sử dụng là 5x12 (Biệt thự góc)</span>
 										</div>
 									</div>
 								</div>
@@ -374,6 +369,9 @@
 	</div>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
+			jQuery('.item-pic').click(function(){
+				jQuery(this).find('a').click();
+			});
 			jQuery('.ui_tabs').click(function(){
 		    	jQuery('.content_tab').hide();
 		    	jQuery('.ui_tabs').removeClass('active');
