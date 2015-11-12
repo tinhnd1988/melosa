@@ -131,6 +131,7 @@ body{
 	text-align: center;
 	text-transform: uppercase; 
 	float: left;
+	font-size: 14px;
 }
 #header .nav li{
 	display: inline-block;	
@@ -151,7 +152,7 @@ body{
     overflow: hidden;
 }
 #header .langs{	
-	max-width: 935px; margin: 0 auto;padding-top: 15px;
+	max-width: 890px; margin: 0 auto;padding-top: 15px;
 }
 #header .langs .lang-item{
 	padding: 0 5px; float: right;
@@ -327,11 +328,11 @@ border-bottom: 1px solid #71c123; width: 100px;
 #footer .footerTop {
     margin-bottom: 20px;
     display: inline-block;
-    padding: 30px 20px;
+    padding: 30px 80px; font-size: 13px;
 }
 #footer .footerTop .left-footer {float: left; width: 25%}
 #footer .footerTop .footerContent {position: relative; border-top: 2px solid #71c123; padding-top: 25px;}
-#footer .footerTop .title {position: absolute; top: -10px; text-transform: uppercase; padding-right: 20px; color: #71c123;}
+#footer .footerTop .title {position: absolute; top: -10px; text-transform: uppercase; padding-right: 20px; color: #71c123; font-size: 14px;}
 
 #footer .footerTop .left-footer ul {
     padding: 0px 0px 14px 14px;
@@ -395,10 +396,12 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .pageHeader .titleBar h1 {
 	background-color: #87B03E ; 
-	padding: 40px 50px 10px 25px; 
+	padding: 44px 50px 20px 25px;
 	color: #fff; 
 	float: left;
 	font-weight: normal;
+	text-transform: uppercase; font-size: 18px;
+	border-top-right-radius: 90px;
 }
 .pageHeader .titleBar ul {
 	display: inline-block;
@@ -691,11 +694,18 @@ border-bottom: 1px solid #71c123; width: 100px;
 	#header .nav .langs .lang-item{
 		float: none;
 	}							
+	#header .nav li.active, #header .nav li:hover {border-bottom: 1px solid #87b03e;}
 	#footer .footerTop .left-footer {width: 100%; margin-bottom: 30px;}
 	#footer .footerTop .right-footer {width: 100%; margin-left: 0}
+	.bottom_footer p {padding-bottom: 10px}
 }
 @media (max-width: 900px) {
 	#main .post_center ul li {width: 49.25%;}
+}
+@media (max-width: 805px) {
+	.pageHeader {height: 460px}
+	.pageHeader .titleBar ul {margin: 0 ; width: 100%;}
+	.pageHeader .titleBar h1 ,.pageHeader .titleBar ul li, .pageHeader .titleBar ul li span {width: 100%}
 }
 @media (max-width: 760px) {
 	/*BEGIN REPONSIVE FOR ABOUT*/
@@ -706,6 +716,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 @media (max-width: 710px) {
 	#main .slider .caption {left: 0; bottom: 45px;}
 	#main .slider .caption img {width: 100%}
+	#footer .footerTop {padding: 30px}
+	.bottom_footer {padding: 10% 20px 0;}
 }
 @media (max-width: 640px) {
 	/*#header {height: 72px;position: absolute;}*/
@@ -721,6 +733,11 @@ border-bottom: 1px solid #71c123; width: 100px;
 @media (max-width:  600px){
 	.news .post_content .content-details img{width: 100%;}
 }
+@media (max-width:  550px){
+	#header {height: 130px}
+	#hambuger {width: 40px; background-size: 100%;}
+	.bottom_footer {padding: 15% 20px 0;}
+}
 @media (max-width: 480px) {
 	#main .post_center ul li {width: 99%;}
 	#footer .footerTop .right-footer ul li {width: 100%; margin-right: 0;}
@@ -729,4 +746,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 		padding: 25px;
 	}
 	.utilities .post_content .wrap-slide{ width: 95%}
+}
+@media (max-width: 390px){
+	.bottom_footer {padding: 24% 20px 0;}
 }
