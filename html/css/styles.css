@@ -109,7 +109,7 @@ body{
 	position: relative;
 	z-index: 9990;
 }
-.logo img {width: 147px; height: 60px;}
+.logo img {width: 147px;}
 #header .alter-logo{
 	margin-top: 5px;
 }
@@ -323,7 +323,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 #footer .footerTop .title, #footer .footerTop, #footer{
 	background-color: #F8F8F8;
 }
-.project .item-pic .text-des {bottom: -80%; -webkit-transition: all 2s ease;
+/*.project .item-pic .text-des {bottom: -80%; -webkit-transition: all 2s ease;
    -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
      -o-transition: all 1s ease;
@@ -334,18 +334,32 @@ border-bottom: 1px solid #71c123; width: 100px;
     -ms-transition: all 1s ease;
      -o-transition: all 1s ease;
         transition: all 1s ease;}
+*/
 
-.project .wrap-slide .text-des {bottom: -80%; padding: 12px;height: 100%;}
-.project .wrap-slide .text-des h5 {color: #fff; text-align: left; font-size: 18px;}
-.project .wrap-slide .text-des span {text-transform: none; color: #fff;padding: 10px;}
+.project .content_tab .wrap-slide .text-des h5 {color: #fff; text-align: left; font-size: 15px;}
+.project .content_tab .wrap-slide .text-des span {text-transform: none; color: #fff;padding: 10px; font-size: 13px}
 
 .project #footer{
 	margin-top: 0;
 }
+.project .content_tab .wrap-slide h2{ color:#61676d; text-align: center;text-transform: uppercase;font-size: 18px;padding: 20px;}
+.project .content_tab .wrap-slide .pic_left:hover .text-des,.project .content_tab .wrap-slide .pic_right:hover .text-des {-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+        transition: all 1s ease; bottom: 0}
+.project .content_tab .wrap-slide .pic_left .text-des,.project .content_tab .wrap-slide .pic_right .text-des {-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+        transition: all 1s ease; bottom: -30%}
+.project .content_tab .wrap-slide .text-des {height: 190px}
+.project .content_tab .pic_left {float: left; display: inline-block; width: 48%; position: relative;overflow: hidden;height: 350px;}
+.project .content_tab .pic_right {float: right; display: inline-block;width: 48%; position: relative;overflow: hidden;height: 350px;}
 #footer .footerTop {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     display: inline-block;
-    padding: 30px 80px; font-size: 13px;
+    padding: 30px 80px 0; font-size: 13px;
 }
 #footer .footerTop .left-footer {float: left; width: 25%}
 #footer .footerTop .footerContent {position: relative; border-top: 2px solid #71c123; padding-top: 25px;}
@@ -368,7 +382,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 
 #footer .footerTop .right-footer {float: left; width: 73%; margin-left: 2%;}
 #footer .footerTop .right-footer ul {list-style: none;}
-#footer .footerTop .right-footer ul li {float: left; width: 32%; margin-right: 1%; margin-bottom: 30px; min-height: 140px}
+#footer .footerTop .right-footer ul li {float: left; width: 32%; margin-right: 1%; margin-bottom: 10px; min-height: 140px}
 #footer .footerTop .right-footer ul li h4 {margin-bottom: 10px; line-height: 18px;}
 #footer .footerTop .right-footer ul li p {line-height: 25px;}
 #footer .footerTop .right-footer ul li .website {color: #71c123;}
@@ -715,6 +729,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 	#footer .footerTop .left-footer {width: 100%; margin-bottom: 30px;}
 	#footer .footerTop .right-footer {width: 100%; margin-left: 0}
 	.bottom_footer p {padding-bottom: 10px}
+
+	#main {margin-top: 80px;}
 }
 @media (max-width: 900px) {
 	#main .post_center ul li {width: 49.25%;}
@@ -749,9 +765,14 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 @media (max-width:  600px){
 	.news .post_content .content-details img{width: 100%;}
+	#header {height: 110px}
+	.logo img {width: 120px}
+	#main {margin-top: 70px;}
+	.pageHeader .titleBar h1 {padding: 25px 50px 20px 25px;}
+	.location .post_content .stats .item .value {font-size: 30px}
 }
 @media (max-width:  550px){
-	#header {height: 130px}
+	
 	#hambuger {width: 40px; background-size: 100%;}
 	.bottom_footer {padding: 15% 20px 0;}
 }
