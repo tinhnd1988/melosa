@@ -369,8 +369,8 @@
 	</div>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
-			jQuery('.item-pic').click(function(){
-				jQuery(this).find('a').click();
+			jQuery('.over-pic').click(function(){
+				jQuery(this).parent().find('a').click();
 			});
 			jQuery('.ui_tabs').click(function(){
 		    	jQuery('.content_tab').hide();
