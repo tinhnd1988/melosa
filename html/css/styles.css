@@ -507,6 +507,14 @@ border-bottom: 1px solid #71c123; width: 100px;
 .contact-us .post_content .contactContent .formContact form .input, .contact-us .post_content .contactContent .formSubscribe form .input, .contact-us .post_content .contactContent .formSubscribe form p{
 	margin-top: 10px;
 }
+.contact-us .post_content .contactContent .formContact form .submit_gui {padding-top: 5px;}
+.contact-us .post_content .contactContent .formSubscribe form .submit_dk {padding-top: 5px; text-align: right;}
+.contact-us .post_content .contactContent .formContact form button,.contact-us .post_content .contactContent .formSubscribe form button {background-color: #f9b431;
+    border: medium none;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;}
 .contact-us .post_content .contactContent form input, .contact-us .post_content .contactContent form textarea{
 	width: 285px;
 	border-radius: 5px;
