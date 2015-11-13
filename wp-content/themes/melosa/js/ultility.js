@@ -23,5 +23,12 @@ jQuery(document).ready(function($) {
 		}else{
 			$('#header .nav').hide();
 		}
-	})
+	});
+	jQuery('.ui_tabs').click(function(){
+    	jQuery('.content_tab').hide();
+    	jQuery('.ui_tabs').removeClass('active');
+    	jQuery(this).addClass('active');
+    	var class_ui = jQuery(this).find('span').attr('class');
+    	jQuery('#'+class_ui).show();
+    });
 });
