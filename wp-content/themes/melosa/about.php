@@ -8,7 +8,7 @@ get_header();
 ?>
 <div class="pageHeader">
 				<div class="call_us">
-					<div class="icon_call"><img src="images/phone.png"></div>
+					<div class="icon_call"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/phone.png"></div>
 					<ul>
 						<li>
 							<div class="title_call">San GD SunLand SG</div>
@@ -46,16 +46,16 @@ get_header();
 					<div class="container">
 						<h4> TẬN HƯỞNG CUỘC SỐNG TINH HOA </h4>
 						<p>Những cung bậc bình yên, lắng đọng, nơi con người hòa mình trong ánh sáng, sông nước và thiên nhiên chính là những tinh hoa cuộc sống.</p>
-						<img src="images/gioi_thieu_1.png">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/gioi_thieu_1.png">
 					</div>
 				</div><!-- end tab1 -->
 				<div id="Tab2" class="content_tab">
 					<div class="container">
 						<div class="leftCol">
-							<img src="images/about-leftimg.jpg">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/about-leftimg.jpg">
 						</div>
 						<div class="rightCol">
-							<img src="images/khangdien-logo.png">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/khangdien-logo.png">
 							<p>
 								Với 15 năm kinh nghiệm trong lĩnh vực đầu tư và phát triển bất động sản, Khang Điền tự hào là đơn vị tiên phong cho những dự án nhà có tiền ích được đầu tư cao tại Q.9 như: Chuỗi Mega Village, Mega Ruby, Mega Residence, Hoja Villa và PARCSpring						
 							</p>
@@ -83,14 +83,14 @@ get_header();
 						</div>										
 					</div>
 					<div class="sponsor">
-						<img src="images/sponsor.jpg">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/sponsor.jpg">
 					</div>
 				</div><!-- end tab2 -->
 				<div id="Tab3" class="content_tab" style="display:none;">
 					<div class="container">
 						<h4> TẬN HƯỞNG CUỘC SỐNG TINH HOA </h4>
 						<p>Những cung bậc bình yên, lắng đọng, nơi con người hòa mình trong ánh sáng, sông nước và thiên nhiên chính là những tinh hoa cuộc sống.</p>
-						<img src="images/gioi_thieu_1.png">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/gioi_thieu_1.png">
 					</div>
 				</div><!-- end tab3 -->
 			</div>
