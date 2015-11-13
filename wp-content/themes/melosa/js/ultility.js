@@ -16,7 +16,22 @@ jQuery(document).ready(function($) {
             menu.addClass('open').slideDown();
         }
     });
-
+	$('.pic-content').each(function(index, element) {
+		$(element).BTQSlider({
+			items : 3,
+			itemsDesktop : [1199, 3],
+			itemsDesktopSmall : [979, 2],
+			itemsTabletSmall : [620, 1],
+			autoPlay : 5000,
+        	stopOnHover : true,
+			autoHeight : true,
+            slideSpeed: 600,
+            paginationSpeed: 800,
+		    navigation : true,
+		    lazyLoad : true,
+		    lazyEffect : "fade",
+        });
+    });
 	$(window).resize(function(){
 		if($(window).width() > 980){
 			$('#header .nav').show();
