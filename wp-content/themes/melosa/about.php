@@ -64,7 +64,9 @@ get_header();
 			<div class="post_content">
 				<?php foreach ($posts as $key => $item) :?>
 					<div id="tab<?php echo $key ?>" class="content_tab" style="display:none;">
+						<div class="container">
 							<?php echo $item->post_content; ?>
+						</div>
 					</div>
 				<?php endforeach;?>	
 			</div>
