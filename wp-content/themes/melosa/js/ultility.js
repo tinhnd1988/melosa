@@ -46,4 +46,5 @@ jQuery(document).ready(function($) {
     	var class_ui = jQuery(this).find('span').attr('class');
     	jQuery('#'+class_ui).show();
     });
+    jQuery('.ui_tabs.active').click();
 });
