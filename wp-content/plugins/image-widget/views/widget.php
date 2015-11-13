@@ -10,14 +10,14 @@ if ( !defined('ABSPATH') )
 
 echo $before_widget;
 
-if ( !empty( $title ) ) { echo $before_title . $title . $after_title; }
+//if ( !empty( $title ) ) { echo $before_title . $title . $after_title; }
 
 echo $this->get_image_html( $instance, true );
 
 if ( !empty( $description ) ) {
-	echo '<div class="'.$this->widget_options['classname'].'-description" >';
+	echo '<div class="'.$this->widget_options['classname'].'-description meta posa" ><div class="dtb"><a href="#" class="dtbc posr">';
 	echo wpautop( $description );
-	echo "</div>";
+	echo "</a></div></div>";
 }
 echo $after_widget;
 ?>
