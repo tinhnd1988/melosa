@@ -324,20 +324,20 @@ border-bottom: 1px solid #71c123; width: 100px;
 #footer .footerTop .title, #footer .footerTop, #footer{
 	background-color: #F8F8F8;
 }
-/*.project .item-pic .text-des {bottom: -80%; -webkit-transition: all 2s ease;
+.item-pic .text-des {bottom: -20%; height: 190px; -webkit-transition: all 2s ease;
    -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
      -o-transition: all 1s ease;
         transition: all 1s ease;
     }
-.project .item-pic:hover .text-des {bottom: -40%; -webkit-transition: all 2s ease;
+.item-pic:hover .text-des {bottom: 0; -webkit-transition: all 2s ease;
    -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
      -o-transition: all 1s ease;
         transition: all 1s ease;}
-*/
 
-.project .content_tab .wrap-slide .text-des h5 {color: #fff; text-align: left; font-size: 15px;}
+.item-pic .text-des p {text-transform: none; color: #fff; font-size: 13px;}
+.project .content_tab .wrap-slide .text-des h5,.item-pic .text-des h5 {color: #fff; text-align: left; font-size: 15px;}
 .project .content_tab .wrap-slide .text-des span {text-transform: none; color: #fff;padding: 10px; font-size: 13px}
 
 .project #footer{
@@ -397,7 +397,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 	-webkit-background-size: 100% auto;
 	background-size: 100% 100%;
 }
-.bottom_footer p{display: inline-block; font-size: 13px;}
+.bottom_footer p{display: inline-block; font-size: 12px;}
 .bottom_footer .footer_social {display: inline-block; float: right;}
 .bottom_footer .footer_social li {margin-right: 10px; list-style: none; float: left;}
 .bottom_footer .footer_social li:last-child {padding-top: 3px;}
@@ -440,7 +440,7 @@ border-bottom: 1px solid #71c123; width: 100px;
 .pageHeader .titleBar ul {
 	display: inline-block;
     margin-top: 43px;
-    /*margin-left: 15%;*/
+    margin-left: 80px;
     overflow: hidden; }
 .pageHeader .titleBar ul li {
 	display: inline-block;
