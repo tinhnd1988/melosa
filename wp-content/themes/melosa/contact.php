@@ -51,14 +51,15 @@ get_header();
 							<span>0934 839 868</span>
 						</li>
 					</ul>
-					<?php 
-				$id=33; 
-				$post = get_post($id); 
-				$content = apply_filters('the_content', $post->post_content); 
-				echo $content;  
-			?>
+					
 					<div class="formContact">
-						<form action="#">
+						<?php 
+							$id=33; 
+							$post = get_post($id); 
+							$content = apply_filters('the_content', $post->post_content); 
+							echo $content;  
+						?>
+						<?php /*<form action="#">
 							<legend>Các thông tin * là bắt buộc</legend>
 							<div class="input">
 								<input type="text" name="name" placeholder="Họ tên *">
@@ -75,7 +76,7 @@ get_header();
 							<div class="input">
 								<textarea name="" id="" cols="30" rows="5" placeholder="Nội dung *"></textarea>
 							</div>
-						</form>
+						</form> */ ?>
 					</div>
 					<div class="formSubscribe">
 						<form action="#">
@@ -87,9 +88,10 @@ get_header();
 							<div class="input">
 								<input type="text" name="name" placeholder="Địa chỉ email">
 							</div>
+							<div class="submit_dk"><button>Đăng ký</button></div>
 						</form>						
 					</div>
 				</div>
 			</div>
-					
+
 <?php get_footer(); ?>
