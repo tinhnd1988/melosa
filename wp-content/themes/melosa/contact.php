@@ -51,6 +51,12 @@ get_header();
 							<span>0934 839 868</span>
 						</li>
 					</ul>
+					<?php 
+				$id=33; 
+				$post = get_post($id); 
+				$content = apply_filters('the_content', $post->post_content); 
+				echo $content;  
+			?>
 					<div class="formContact">
 						<form action="#">
 							<legend>Các thông tin * là bắt buộc</legend>
