@@ -701,8 +701,8 @@ border-bottom: 1px solid #71c123; width: 100px;
 /*END VIEW360*/
 
 /*BEGIN FUNDING*/
-.funding .calculate {padding-top: 30px; width: 100%; overflow: hidden; text-align: center;}
-.funding .calculate .leftCol, .funding .calculate .rightCol {width: 50%; float: left;}
+.page-template-funding .calculate {padding-top: 30px; width: 100%; overflow: hidden; text-align: center;}
+.page-template-funding .calculate .leftCol, .page-template-funding .calculate .rightCol {width: 50%; float: left;}
 .calculate > p {display: inline-block; margin-top: 50px;}
 .calculateForm {margin: 30px auto; width: 500px;}
 .calculateForm .form-group {margin: 10px 0; display: inline-block; width: 100%;}
