@@ -24,13 +24,16 @@
 				controlNav: false,  
 			});
 			$('.fancybox').fancybox({
-				'width': '50%',
-                'height': '50%',
-                'autoScale': false,                
+				'maxWidth': '50%',
+                'maxHeight': '50%',
+                'autoSize' : false,
+                'autoDimensions': false,
+                'autoScale': false,  
+                'scrolling': 'no',              
                 'transitionIn': 'fade',
                 'transitionOut': 'fade',
                 'padding' : 0,            	
-                'type': 'iframe',
+                // 'type': 'iframe',
 			});
 		});
 	</script>
