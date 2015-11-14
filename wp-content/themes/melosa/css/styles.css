@@ -355,30 +355,30 @@ border-bottom: 1px solid #71c123; width: 100px;
         transition: all 1s ease;}
 
 .item-pic .text-des p {text-transform: none; color: #fff; font-size: 13px;}
-.project .content_tab .wrap-slide {padding-top: 30px;}
+.page-template-project .content_tab .wrap-slide {padding-top: 30px;}
 
-.project .content_tab .wrap-slide .text-des h5 {color: #fff; text-align: left; font-size: 15px;}
-.project .content_tab .wrap-slide .text-des span {text-transform: none; color: #fff;padding: 10px; font-size: 13px}
+.page-template-project .content_tab .wrap-slide .text-des h5 {color: #fff; text-align: left; font-size: 15px;}
+.page-template-project .content_tab .wrap-slide .text-des span {text-transform: none; color: #fff;padding: 10px; font-size: 13px}
 
-.project #footer{
+.page-template-project #footer{
 	margin-top: 0;
 }
-.project .content_tab .wrap-slide h2{ color:#61676d; text-align: center;text-transform: uppercase;font-size: 18px;padding: 20px;}
-.project .content_tab .wrap-slide .pic_left:hover .text-des,.project .content_tab .wrap-slide .pic_right:hover .text-des {-webkit-transition: all 1s ease;
+.page-template-project .content_tab .wrap-slide h2{ color:#61676d; text-align: center;text-transform: uppercase;font-size: 18px;padding: 20px;}
+.page-template-project .content_tab .wrap-slide .pic_left:hover .text-des,.page-template-project .content_tab .wrap-slide .pic_right:hover .text-des {-webkit-transition: all 1s ease;
    -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
      -o-transition: all 1s ease;
         transition: all 1s ease; bottom: 0}
-.project .content_tab .wrap-slide .pic_left .text-des,.project .content_tab .wrap-slide .pic_right .text-des {-webkit-transition: all 1s ease;
+.page-template-project .content_tab .wrap-slide .pic_left .text-des,.page-template-project .content_tab .wrap-slide .pic_right .text-des {-webkit-transition: all 1s ease;
    -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
      -o-transition: all 1s ease;
         transition: all 1s ease; bottom: -30%}
-.project .content_tab .wrap-slide .text-des {height: 190px}
-.project .content_tab .wrap-slide .over-pic {max-height: 100%; max-width: 100%;}
-.project .content_tab .wrap-slide .over-pic img {width: 100%; height: 100%;}
-.project .content_tab .pic_left {float: left; display: inline-block; width: 48%; position: relative;overflow: hidden;height: 500px;}
-.project .content_tab .pic_right {float: right; display: inline-block;width: 48%; position: relative;overflow: hidden;height: 500px;}
+.page-template-project .content_tab .wrap-slide .text-des {height: 190px}
+.page-template-project .content_tab .wrap-slide .over-pic {max-height: 100%; max-width: 100%;}
+.page-template-project .content_tab .wrap-slide .over-pic img {width: 100%; height: 100%;}
+.page-template-project .content_tab .pic_left {float: left; display: inline-block; width: 48%; position: relative;overflow: hidden;height: 500px;}
+.page-template-project .content_tab .pic_right {float: right; display: inline-block;width: 48%; position: relative;overflow: hidden;height: 500px;}
 #footer .footerTop {
     /*margin-bottom: 20px;*/
     display: inline-block;
@@ -792,7 +792,7 @@ background-position: 0 -16px;}
 @media (max-width: 760px) {
 	/*BEGIN REPONSIVE FOR ABOUT*/
 	.page-template-about .post_content .sponsor img{width: 100%}
-	.project .pageHeader .titleBar ul, .page-template-about .pageHeader .titleBar ul	{margin-right: 0}
+	.page-template-project .pageHeader .titleBar ul, .page-template-about .pageHeader .titleBar ul	{margin-right: 0}
 	/*END REPONSIVE FOR ABOUT*/
 }
 @media (max-width: 710px) {
@@ -800,7 +800,7 @@ background-position: 0 -16px;}
 	#main .slider .caption img {width: 100%}
 	#footer .footerTop {padding: 30px 30px 0;}
 	.bottom_footer {padding: 10% 20px 0;}
-	.project .content_tab .pic_left , .project .content_tab .pic_right {width: 100%; margin-bottom: 10px;}
+	.page-template-project .content_tab .pic_left , .page-template-project .content_tab .pic_right {width: 100%; margin-bottom: 10px;}
 }
 @media (max-width: 640px) {
 	/*#header {height: 72px;position: absolute;}*/

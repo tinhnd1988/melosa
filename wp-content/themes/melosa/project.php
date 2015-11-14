@@ -59,7 +59,11 @@ get_header();
 								<div class="wrap-slide">
 									<?php 
 										foreach ($posts as $key => $item) :
-											echo apply_filters('the_content',$item->post_content); 
+									?>
+										<h2><?php echo $item->post_title ?></h2>
+									<?php
+											//echo apply_filters('the_content',$item->post_content); 
+											var_dump($item);
 										endforeach;		
 									?>
 								</div>
