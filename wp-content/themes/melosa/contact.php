@@ -8,33 +8,19 @@ get_header();
 ?>
 <div class="pageHeader">
 				<div class="call_us">
-					<div class="icon_call"><img src="images/phone.png"></div>
-					<ul>
-						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
-						</li>
-						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
-						</li>
-						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
-						</li>
-						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
-						</li>
-						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
-						</li>
-					</ul>
+					<div class="icon_call"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/phone.png"></div>
+					<?php
+						$args = array(
+						  'name'        => 'call-us',
+						  'post_type'   => 'post',
+						  'post_status' => 'publish',
+						  'numberposts' => 1
+						);
+						$callus = get_posts($args);
+						echo $callus[0]->post_content;
+					?>
 				</div>
-				<div class="titleBar">
-					<h1>Liên hệ</h1>
-				</div>
+				
 			</div>
 			<div class="post_content container">
 				<p class="description">
