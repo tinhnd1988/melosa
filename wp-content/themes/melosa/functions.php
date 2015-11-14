@@ -367,3 +367,16 @@ function theme_slug_widgets_init() {
 	'after_title'   => '' 
     ) );
 }
+add_action( 'widgets_init', 'theme_newletter_widgets_init' );
+function theme_newletter_widgets_init() {
+    register_sidebar( array(
+	'name'          => __( 'Newletters' ),
+	'id'            => 'sidebar-newletter',
+	'description'   => 'Display after newletter',
+    'class'         => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s"><div class="row posr clearfix">',
+	'after_widget'  => '</div></li>',
+	'before_title'  => '',
+	'after_title'   => '' 
+    ) );
+}
