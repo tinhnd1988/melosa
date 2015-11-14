@@ -538,7 +538,9 @@ border-bottom: 1px solid #71c123; width: 100px;
 }
 .page-template-contact .post_content .contactContent .formContact form .submit_gui {padding-top: 5px;}
 .page-template-contact .post_content .contactContent .formSubscribe form .submit_dk {padding-top: 5px; text-align: right;}
-.page-template-contact .post_content .contactContent .formContact form .wpcf7-submit {background-color: #f9b431; margin-top: 5px; width: 80px;}
+.page-template-contact .post_content .contactContent .formContact form .wpcf7-submit {background-color: #f9b431; margin-top: 5px; width: 80px; box-shadow: none;}
+.page-template-contact .post_content #wysija-3 {list-style: none;}
+.page-template-contact .post_content .contactContent .formContact form .wysija-submit {background-color: #f9b431; margin-top: 5px; width: 120px; float: right; box-shadow: none;}
 .page-template-contact .post_content .contactContent .formContact form button,.page-template-contact .post_content .contactContent .formSubscribe form button {background-color: #f9b431;
     border: medium none;
     border-radius: 2px;
