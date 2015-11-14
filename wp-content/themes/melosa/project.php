@@ -6,6 +6,7 @@
 */
 get_header();
 ?>
+<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/slider.css" />
 <div class="pageHeader">
 				<div class="call_us">
 					<div class="icon_call"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/phone.png"></div>
@@ -45,32 +46,59 @@ get_header();
 				</div>
 			</div>
 			<div class="post_content">
-				<?php
-					foreach ($childCates as $key => $cate) :
-						$args = array(
-							'category_name' => $cate->slug,
-							'orderby'       => 'date',
-							'order'         => 'ASC',
-							'post_type'     => 'post',
-							);
-						$posts = get_posts( $args );
-				?>
-							<div id="tab<?php echo $key ?>" class="content_tab" style="display:none;">
-								<div class="wrap-slide">
-									<?php 
-										foreach ($posts as $key => $item) :
-									?>
-										<h2><?php echo $item->post_title ?></h2>
-									<?php
-											//echo apply_filters('the_content',$item->post_content); 
-											var_dump($item);
-										endforeach;		
-									?>
-								</div>
-							</div>					
-				<?php
-					endforeach;
-				?>
+				<div class="projectContent">
+					<?php
+						foreach ($childCates as $key => $cate) :
+							$args = array(
+								'category_name' => $cate->slug,
+								'orderby'       => 'date',
+								'order'         => 'ASC',
+								'post_type'     => 'post',
+								);
+							$posts = get_posts( $args );
+					?>
+								<div id="tab<?php echo $key ?>" class="content_tab" style="display:none;">
+									<div class="wrap-slide">
+										<?php 
+											foreach ($posts as $key => $item) :
+										        $img_featured = wp_get_attachment_image_src( get_post_thumbnail_id( $item->ID ), 'single-post-thumbnail' );
+
+										?>
+												<div class="<?php echo ($key % 2 == 0) ? 'pic_left' : 'pic_right'?>">
+													<div class="over-pic">
+														<a class="fancybox" rel="gallery1" href="<?php echo $img_featured[0]; ?>">
+															<img src="<?php echo $img_featured[0]; ?>">
+														</a>
+													</div>									
+													<div class="text-des">										
+														<h5><?php echo $item->post_title ?></h5>
+														<span> 84 căn. Diện tích sử dụng là 6x12 chiếm 80% số lượng</span>
+													</div>
+													<ul style="display:none"> 
+														<li>
+														<a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT4_V1.RGB_color.jpg" title="">
+															<img src="images/Hinh_du_an/BThugoc/BT4_V1.RGB_color.jpg" alt="" />
+														</a></li>
+														<li><a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT4_V2.RGB_color.jpg" title="">
+															<img src="images/Hinh_du_an/BThugoc/BT4_V2.RGB_color.jpg" alt="" />
+														</a></li>
+														<li><a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT3A.jpg" title="">
+															<img src="images/Hinh_du_an/BThugoc/BT3A.jpg" alt="" />
+													</a></li>
+													</ul>
+												</div>	
+										<?php
+												//echo apply_filters('the_content',$item->post_content); 
+												//var_dump($item);
+											endforeach;		
+										?>
+									</div>
+								</div>					
+					<?php
+						endforeach;
+					?>
+				</div>
+
 				<div class="projectContent">
 					<div id="Tab1" class="content_tab">
 						<div class="wrap-slide">
