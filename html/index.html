@@ -23,7 +23,15 @@
 				animation: "slide",
 				controlNav: false,  
 			});
-			$('.fancybox').fancybox();
+			$('.fancybox').fancybox({
+				'width': '50%',
+                'height': '50%',
+                'autoScale': false,                
+                'transitionIn': 'fade',
+                'transitionOut': 'fade',
+                'padding' : 0,            	
+                'type': 'iframe',
+			});
 		});
 	</script>
 
@@ -51,9 +59,9 @@
 					<li class="scrollto" id="menu-item-30">
 						<a href="utilities.html">Tiện ích</a>
 					</li>
-					<li class="scrollto" id="menu-item-31">
+					<!--<li class="scrollto" id="menu-item-31">
 						<a href="view360.html">View 360</a>
-					</li>
+					</li>-->
 					<li class="scrollto" id="menu-item-32">
 						<a href="funding.html">Hỗ Trợ Tài Chính</a>
 					</li>
@@ -103,30 +111,42 @@
 						</li>
 					</ul>
 				</div>
-				<div class="caption"><img alt="Melosa" src="images/tieuchuan5sao.png"></div>
+				
 				<a class="video_d_a fancybox fancybox.iframe" href="http://video-js.zencoder.com/oceans-clip.mp4"><span class="text">Xem video dự án</span> <span class="icon_video"></span></a>
 				<div class="call_us">
 					<div class="icon_call"><img src="images/phone.png"></div>
 					<ul>
 						<li>
-							<div class="title_call">San GD SunLand SG</div>
+							<div class="title_call">CEN Group</div>
+							<span>0903.85.99.11</span>
+						</li>
+						<li>
+							<div class="title_call">CTY CPBĐS La Bàn</div>
+							<span>0912 961 727</span>
+						</li>
+						<li>
+							<div class="title_call">Sàn GD SunLand SG</div>
 							<span>0938 779 660</span>
 						</li>
 						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
+							<div class="title_call">CTY CPTV TCF Việt Nam</div>
+							<span>0908 49 6446</span>
 						</li>
 						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
+							<div class="title_call">CTY TNHH Hưng Thịnh Phú</div>
+							<span>0934 839 868</span>
 						</li>
 						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
+							<div class="title_call">CTY CPBĐS TECHCOMREAL</div>
+							<span>0908 06 06 79</span>
 						</li>
 						<li>
-							<div class="title_call">San GD SunLand SG</div>
-							<span>0938 779 660</span>
+							<div class="title_call">CTY CPTV Đông Nam Á</div>
+							<span>0909 333 447</span>
+						</li>
+						<li>
+							<div class="title_call">CTY CPMG BĐS VÂN HÀ</div>
+							<span>0906 684 499</span>
 						</li>
 					</ul>
 				</div>
@@ -209,7 +229,7 @@
 						<li>
 							<h4>CEN Group</h4>
 							<p>Tòa nhà Samco, số 326 Võ Văn Kiệt P. Cô Giang, Quận 1, TP.HCM</p>
-							<p>0903 68 1551 - (08) 3925 6795</p>
+							<p>0903.85.99.11 - (08) 3925 6795</p>
 							<a href="http://www.cengroup.com.vn" class="website">www.cengroup.com.vn</a>
 						</li>
 						<li>
@@ -257,20 +277,25 @@
 				</div>
 			</div>
 			<div class="bottom_footer copyrights">
-				<p>&copy; 2015 Melosa Garden-Khang dien JSC. All Rights Reserved. | <a href="#"> Thỏa thuận sử dụng chính sách bảo mật</a></p>
+				
 				<div class="footer_social">
+					<p>&copy; 2015 Melosa Garden-Khang dien JSC. All Rights Reserved. <a href="#"> Thỏa thuận sử dụng</a> | <a href="#"> Chính sách bảo mật</a></p>
 					<ul>
-						<li><a class="youtube" href="#"></a></li>
-						<li><a class="skype" href="#"></a></li>
-						<li><a class="face" href="#"></a></li>
-						<li>Phát triển bởi <span class="khangdien"></span></li>
+						<li><a class="youtube" href="https://www.youtube.com/user/KhangDien"></a></li>
+						<li><a class="face" href="https://www.facebook.com/MelosaGardenKhangDien"></a></li>
+						<li>Phát triển bởi <a href="http://www.khangdien.com.vn/"><span class="khangdien"></span></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div id="hidden_link">
+		<a class="fancybox" href="images/unnamed.jpg"></a>
+	</div>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
+			jQuery("#hidden_link").find('a').click();
+			//jQuery("#hidden_link").fancybox().trigger('click');
 			jQuery('#hambuger').click(function(event) {
 		        var menu = jQuery(this).siblings('.nav');
 		        if( menu.hasClass('open') ){
@@ -289,5 +314,6 @@
 			}
 		})
 	</script>
+
 </body>
 </html>
