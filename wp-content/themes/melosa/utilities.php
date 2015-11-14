@@ -38,38 +38,192 @@ get_header();
 							<div class="item-pic">
 								<div class="over-pic">
 									<img class="lazyload" data-src="images/utilities.jpg"  alt="">
-								</div>									
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>							
 							</div>
 							<div class="item-pic">
 								<div class="over-pic">
 									<img class="lazyload" data-src="images/utilities.jpg"  alt="">
-								</div>									
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>								
 							</div>
 							<div class="item-pic">
 								<div class="over-pic">
 									<img class="lazyload" data-src="images/utilities.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
 								</div>									
 							</div>						
 						</div>
 					</div>
-					<div class="content-desc">
-						<h2>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h2>
-						<p>
-							Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
-						</p>
-						<p>
-							Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
-						</p>
-					</div>
+					
 				</div><!-- end tab1 -->
-				<div id="Tab2" class="content_tab container" style="display:none;">					
-					<img src="images/Tienich/hocanhquang.jpg" style="width:100%;">					
+				<div id="Tab2" class="content_tab" style="display:none;">					
+					<div class="wrap-slide">
+						<div class="pic-content">
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/hocanhquang.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>							
+							</div>
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/hocanhquang.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>								
+							</div>
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/hocanhquang.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>									
+							</div>						
+						</div>
+					</div>					
 				</div><!-- end tab2 -->
-				<div id="Tab3" class="content_tab container" style="display:none;">
-					<img src="images/Tienich/Ho_Tran.jpg" style="width:100%;">
+				<div id="Tab3" class="content_tab" style="display:none;">
+					<div class="wrap-slide">
+						<div class="pic-content">
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/Ho_Tran.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>							
+							</div>
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/Ho_Tran.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>								
+							</div>
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/Ho_Tran.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>									
+							</div>						
+						</div>
+					</div>
 				</div><!-- end tab3 -->
-				<div id="Tab4" class="content_tab container" style="display:none;">
-					<img src="images/Tienich/San_tennis.jpg" style="width:100%;">
+				<div id="Tab4" class="content_tab" style="display:none;">
+					<div class="wrap-slide">
+						<div class="pic-content">
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/San_tennis.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>							
+							</div>
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/San_tennis.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>								
+							</div>
+							<div class="item-pic">
+								<div class="over-pic">
+									<img class="lazyload" data-src="images/Tienich/San_tennis.jpg"  alt="">
+								</div>
+								<div class="text-des">										
+									<h5>PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h5>
+									<p>
+										Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.
+									</p>
+									<p>
+										Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư
+									</p>
+								</div>									
+							</div>						
+						</div>
+					</div>
 				</div><!-- end tab4 -->		
 			</div>
 <?php get_footer(); ?>
