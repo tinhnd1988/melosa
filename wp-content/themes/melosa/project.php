@@ -62,29 +62,35 @@ get_header();
 										<?php 
 											foreach ($posts as $key => $item) :
 										        $img_featured = wp_get_attachment_image_src( get_post_thumbnail_id( $item->ID ), 'single-post-thumbnail' );
-
+										    	$desc = get_extended( $item->post_content )['main'];
+ 												$gallery = get_post_gallery( $item->ID, false );
+ 												$galleryImg_ids = explode( ",", $gallery['ids'] );
+										    	//var_dump($gallery);
+									    	
 										?>
 												<div class="<?php echo ($key % 2 == 0) ? 'pic_left' : 'pic_right'?>">
 													<div class="over-pic">
-														<a class="fancybox" rel="gallery1" href="<?php echo $img_featured[0]; ?>">
+														<a class="fancybox" rel="gallery<?php echo $item->ID ?>" href="<?php echo $img_featured[0]; ?>">
 															<img src="<?php echo $img_featured[0]; ?>">
 														</a>
 													</div>									
 													<div class="text-des">										
 														<h5><?php echo $item->post_title ?></h5>
-														<span> 84 căn. Diện tích sử dụng là 6x12 chiếm 80% số lượng</span>
+														<span><?php echo $desc ?></span>
 													</div>
-													<ul style="display:none"> 
-														<li>
-														<a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT4_V1.RGB_color.jpg" title="">
-															<img src="images/Hinh_du_an/BThugoc/BT4_V1.RGB_color.jpg" alt="" />
-														</a></li>
-														<li><a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT4_V2.RGB_color.jpg" title="">
-															<img src="images/Hinh_du_an/BThugoc/BT4_V2.RGB_color.jpg" alt="" />
-														</a></li>
-														<li><a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT3A.jpg" title="">
-															<img src="images/Hinh_du_an/BThugoc/BT3A.jpg" alt="" />
-													</a></li>
+													<ul style="display:none">
+														<?php
+															foreach( $galleryImg_ids as $id ) :
+															   $link   = wp_get_attachment_url( $id );
+														?>
+																<li>
+																	<a class="fancybox" rel="gallery<?php echo $item->ID ?>" href="<?php echo $link ?>" title="">
+																		<img src="<?php echo $link ?>" alt="" />
+																	</a>
+																</li>														
+														<?php
+															endforeach;
+														?>
 													</ul>
 												</div>	
 										<?php
@@ -97,65 +103,6 @@ get_header();
 					<?php
 						endforeach;
 					?>
-				</div>
-
-				<div class="projectContent">
-					<div id="Tab1" class="content_tab">
-						<div class="wrap-slide">
-							<h2>Biệt thự vườn</h2>
-								<div class="pic_left">
-									<div class="over-pic">
-										<a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT3_V1__.RGB_color.jpg">
-											<img src="images/Hinh_du_an/BThugoc/BT3_V1__.RGB_color.jpg" alt="" />
-										</a>
-									</div>									
-									<div class="text-des">										
-										<h5>Biệt thự góc</h5>
-										<span> 84 căn. Diện tích sử dụng là 6x12 chiếm 80% số lượng</span>
-									</div>
-									<ul style="display:none"> 
-										<li>
-										<a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT4_V1.RGB_color.jpg" title="">
-											<img src="images/Hinh_du_an/BThugoc/BT4_V1.RGB_color.jpg" alt="" />
-										</a></li>
-										<li><a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT4_V2.RGB_color.jpg" title="">
-											<img src="images/Hinh_du_an/BThugoc/BT4_V2.RGB_color.jpg" alt="" />
-										</a></li>
-										<li><a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThugoc/BT3A.jpg" title="">
-											<img src="images/Hinh_du_an/BThugoc/BT3A.jpg" alt="" />
-									</a></li>
-									</ul>
-								</div>
-								<div class="pic_right">
-									<div class="over-pic">
-										<a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThuvuon/BT1.RGB_color.jpg">
-											<img src="images/Hinh_du_an/BThuvuon/BT1.RGB_color.jpg" alt="" />
-										</a>
-									</div>									
-									<div class="text-des">
-										<h5>Biệt thự vườn</h5>
-										<span> 8 căn. Diện tích sử dụng là 5x12 (Biệt thự góc)</span>
-									</div>
-									<ul style="display:none"> 
-										<li>
-										<a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThuvuon/BT1A.jpg">
-											<img src="images/Hinh_du_an/BThuvuon/BT1A.jpg" alt="" />
-										</a></li>
-										<li><a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThuvuon/BT1_V1.RGB_color.jpg">
-											<img src="images/Hinh_du_an/BThuvuon/BT1_V1.RGB_color.jpg" alt="" />
-										</a></li>
-										<li><a class="fancybox" rel="gallery1" href="images/Hinh_du_an/BThuvuon/BT1_V1.RGB_color.jpg">
-											<img src="images/Hinh_du_an/BThuvuon/BT1_V1.RGB_color.jpg" alt="" />
-										</a></li>
-									</ul>
-								</div>
-						</div>
-
-						
-					</div>
-
-					
-
 				</div>
 			</div>
 <?php get_footer(); ?>

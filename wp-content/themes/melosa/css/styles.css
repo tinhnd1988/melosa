@@ -375,7 +375,15 @@ border-bottom: 1px solid #71c123; width: 100px;
      -o-transition: all 1s ease;
         transition: all 1s ease; bottom: -30%}
 .page-template-project .content_tab .wrap-slide .text-des {height: 190px}
-.page-template-project .content_tab .wrap-slide .over-pic {max-height: 100%; max-width: 100%;}
+.page-template-project .content_tab .wrap-slide .over-pic {
+	max-height: 100%; 
+	max-width: 100%; 
+	width: 100%; 
+	height: 100%;
+	box-shadow: none;
+	border: none;
+}
+.page-template-project .content_tab .wrap-slide .text-des{left: 0}
 .page-template-project .content_tab .wrap-slide .over-pic img {width: 100%; height: 100%;}
 .page-template-project .content_tab .pic_left {float: left; display: inline-block; width: 48%; position: relative;overflow: hidden;height: 500px;}
 .page-template-project .content_tab .pic_right {float: right; display: inline-block;width: 48%; position: relative;overflow: hidden;height: 500px;}
