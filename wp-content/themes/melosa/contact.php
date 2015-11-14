@@ -85,11 +85,12 @@ get_header();
 								<p>Nếu bạn muốn đăng ký nhận thông tin chương trình bán hàng</p>
 								<p>Vui lòng điền vào Form thông tin dưới đây và gửi cho chúng tôi</p>
 							</span>
-							<div class="input">
+							<?php /*<div class="input">
 								<input type="text" name="name" placeholder="Địa chỉ email">
 							</div>
-							<div class="submit_dk"><button>Đăng ký</button></div>
-						</form>						
+							<div class="submit_dk"><button>Đăng ký</button></div>*/ ?>
+						</form>	
+						<?php dynamic_sidebar( 'sidebar-newletter' ); ?>					
 					</div>
 				</div>
 			</div>
