@@ -489,11 +489,11 @@ border-bottom: 1px solid #71c123; width: 100px;
 .post_content .container{max-width: 65%;}
 
 /*BEGIN CONTACT*/
-.contact-us .post_content .description{
+.page-template-contact .post_content .description{
 	margin: 20px 0 20px 0;
 	line-height: 20px;
 }
-.contact-us .post_content .contactContent ul.phones{
+.page-template-contact .post_content .contactContent ul.phones{
 	float: left; 
 	width: auto;
 	background-color: #F9B431;
@@ -502,42 +502,42 @@ border-bottom: 1px solid #71c123; width: 100px;
 	padding: 25px;
 	margin: 10px 2% 0 0;
 }
-.contact-us .post_content .contactContent ul.phones li{
+.page-template-contact .post_content .contactContent ul.phones li{
 	margin-bottom: 20px;
 	color: #FFF;
 }
-.contact-us .post_content .contactContent ul.phones li span{
+.page-template-contact .post_content .contactContent ul.phones li span{
 	font-weight: bold;
 }
 
-.contact-us .post_content .contactContent .formSubscribe{
+.page-template-contact .post_content .contactContent .formSubscribe{
 	display: inline-block;
 	float: left;
 	width: auto;
 	margin: 10px 2% 0 0;
 }
-.contact-us .post_content .contactContent .formContact{
+.page-template-contact .post_content .contactContent .formContact{
 	display: inline-block;
 	float: left;
 	width: auto;
 	margin: 10px 2% 0 0;
 }
-.contact-us .post_content .contactContent .formContact form legend, .contact-us .post_content .contactContent .formSubscribe form legend{
+.page-template-contact .post_content .contactContent .formContact form legend, .page-template-contact .post_content .contactContent .formSubscribe form legend{
 	font-weight: bold;
 }
-.contact-us .post_content .contactContent .formContact form .input, .contact-us .post_content .contactContent .formSubscribe form .input, .contact-us .post_content .contactContent .formSubscribe form p{
+.page-template-contact .post_content .contactContent .formContact form .input, .page-template-contact .post_content .contactContent .formSubscribe form .input, .page-template-contact .post_content .contactContent .formSubscribe form p{
 	margin-top: 10px;
 }
-.contact-us .post_content .contactContent .formContact form .submit_gui {padding-top: 5px;}
-.contact-us .post_content .contactContent .formSubscribe form .submit_dk {padding-top: 5px; text-align: right;}
-.contact-us .post_content .contactContent .formContact form button,.contact-us .post_content .contactContent .formSubscribe form button {background-color: #f9b431;
+.page-template-contact .post_content .contactContent .formContact form .submit_gui {padding-top: 5px;}
+.page-template-contact .post_content .contactContent .formSubscribe form .submit_dk {padding-top: 5px; text-align: right;}
+.page-template-contact .post_content .contactContent .formContact form button,.page-template-contact .post_content .contactContent .formSubscribe form button {background-color: #f9b431;
     border: medium none;
     border-radius: 2px;
     color: #fff;
     font-weight: bold;
     padding: 10px;
 }
-.contact-us .post_content .contactContent form input, .contact-us .post_content .contactContent form textarea{
+.page-template-contact .post_content .contactContent form input, .page-template-contact .post_content .contactContent form textarea{
 	width: 285px;
 	border-radius: 5px;
     box-shadow: inset 0 0px 4px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
@@ -548,7 +548,7 @@ border-bottom: 1px solid #71c123; width: 100px;
     padding: 8px;
     font-family: 'Arial';
 }
-.contact-us .post_content .contactContent .formSubscribe form input{
+.page-template-contact .post_content .contactContent .formSubscribe form input{
 	width: 100%;
 	border-radius: 5px;
     box-shadow: inset 0 0px 4px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
