@@ -78,9 +78,9 @@
 					</ul>
 				</div>
 			</div>
-			<div class="bottom_footer copyrights">
-				<p>&copy; 2015 Melosa Garden-Khang dien JSC. All Rights Reserved. <a href="#"> Thỏa thuận sử dụng</a> | <a href="#"> Chính sách bảo mật</a></p>
+			<div class="bottom_footer copyrights">				
 				<div class="footer_social">
+					<p>&copy; 2015 Melosa Garden-Khang dien JSC. All Rights Reserved. <a href="#"> Thỏa thuận sử dụng</a> | <a href="#"> Chính sách bảo mật</a></p>
 					<ul>
 						<li><a class="youtube" href="https://www.youtube.com/user/KhangDien"></a></li>
 						<li><a class="face" href="https://www.facebook.com/MelosaGardenKhangDien"></a></li>
