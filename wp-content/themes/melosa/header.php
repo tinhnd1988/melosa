@@ -23,6 +23,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/jquery.fancybox.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/styles.css" />
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.flexslider.js" defer=""></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/slide.js" defer=""></script>
+
 	<!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.fancybox.js"></script>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/ultility.js"></script>
