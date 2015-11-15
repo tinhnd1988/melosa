@@ -30,26 +30,16 @@ get_header();
 				</p>
 				<div class="contactContent">
 					<ul class="phones">
-						<li>
-							<div class="title_call">Sàn GD SUNLAND SG</div>
-							<span>0938 779 660</span>
-						</li>
-						<li>
-							<div class="title_call">CENGROUP</div>
-							<span>0933 68 1551</span>
-						</li>
-						<li>
-							<div class="title_call">CTY CPTV TCF</div>
-							<span>0908 49 6446</span>
-						</li>
-						<li>
-							<div class="title_call">CTY CPBĐS LA BÀN</div>
-							<span>0916 193 223</span>
-						</li>
-						<li>
-							<div class="title_call">CTY TNHH HƯNG THỊNH PHÚ</div>
-							<span>0934 839 868</span>
-						</li>
+					<?php
+						$args = array(
+						  'name'        => 'call-us',
+						  'post_type'   => 'post',
+						  'post_status' => 'publish',
+						  'numberposts' => 1
+						);
+						$callus = get_posts($args);
+						echo $callus[0]->post_content;
+					?>
 					</ul>
 					
 					<div class="formContact">
