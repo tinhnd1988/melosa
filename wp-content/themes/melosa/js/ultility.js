@@ -3,7 +3,10 @@ jQuery(document).ready(function($) {
 		animation: "slide",
 		controlNav: false,  
 	});
-	$('.fancybox').fancybox();
+	$('.fancybox').fancybox({
+				'padding' : 0,
+            	'border-width': 0,
+			});
 
 	$("#hidden_link").find('a').click();
 	//jQuery("#hidden_link").fancybox().trigger('click');
