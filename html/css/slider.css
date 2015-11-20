@@ -13,7 +13,7 @@
 .page-download .item-pic.pdf{ margin:10px 40px; max-width:500px;}
 .over-pic{ position:relative;width:100%; height:auto;display:block; max-width:600px;max-height:500px;border:2px solid #fff; box-shadow: 10px 10px 0 rgba(0,0,0,0.1); overflow:hidden}
 .item-pic.pdf .over-pic{max-height:inherit;max-width:500px; border:none; overflow:visible; cursor:pointer}
-.over-pic img{width:100%; height:auto; max-width:100%; position:relative; display:block; margin:0 auto; z-index:-1}
+.over-pic img{width:100%; min-height:500px; max-width:100%; position:relative; display:block; margin:0 auto; z-index:-1}
 
 .one{ background-color:#fff;}
 .one h2{ color:#61676d}
