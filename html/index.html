@@ -35,6 +35,25 @@
                 'padding' : 0,            	
                 // 'type': 'iframe',
 			});
+			$("a.more").click(function() {
+			    $.fancybox({
+			            'padding'       : 0,
+			            'autoScale'     : false,
+			            'transitionIn'  : 'none',
+			            'transitionOut' : 'none',
+			            'title'         : this.title,
+			            'width'     : 680,
+			            'height'        : 495,
+			            'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+			            'type'          : 'swf',
+			            'swf'           : {
+			                 'wmode'        : 'transparent',
+			                'allowfullscreen'   : 'true'
+			            }
+			        });
+
+			    return false;
+			});
 		});
 	</script>
 
@@ -115,7 +134,7 @@
 					</ul>
 				</div>
 				
-				<a class="video_d_a fancybox fancybox.iframe" href="http://video-js.zencoder.com/oceans-clip.mp4"><span class="text">Xem video dự án</span> <span class="icon_video"></span></a>
+				<a class="video_d_a more" href="https://www.youtube.com/watch?v=y0-ntHMsSnc"><span class="text">Xem video dự án</span> <span class="icon_video"></span></a>
 				<div class="call_us">
 					<div class="icon_call"><img src="images/phone.png"></div>
 					<ul>
