@@ -136,7 +136,7 @@ body{
 #header .nav li{
 	display: inline-block;	
 	padding: 0 15px 5px;
-	color: #6d6d6d;
+	color: #6d6d6d; position: relative;
 }
 #header .nav li.active,#header .nav li:hover { border-bottom: 2px solid #87B03E;}
 #header .nav li a:hover{
@@ -147,6 +147,9 @@ body{
 	font-weight: 600;
 }
 #header .nav .langs{display: none}
+#header .nav .sub_menu {position: absolute;top: 30px; left: 0; z-index: 100;}
+#header .nav .sub_menu li {width: 100%; }
+#header .nav .sub_menu li a {width: 100%; display: inline-block;}
 #header .container {
     max-width: 1060px;
     overflow: hidden;
@@ -819,7 +822,7 @@ background-position: 0 -16px;}
 	#footer .footerTop .left-footer {width: 100%; margin-bottom: 30px;}
 	#footer .footerTop .right-footer {width: 100%; margin-left: 0}
 	/*.bottom_footer p {padding-bottom: 10px; padding-top: 40px}*/
-
+	#header .nav .sub_menu {position: relative;left: auto;top: auto;}
 	#main {margin-top: 80px;}
 }
 @media (max-width: 900px) {
