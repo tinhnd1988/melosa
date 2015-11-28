@@ -87,9 +87,9 @@ var sh_fullscreen = {
         this.articleid = f;
         var e = '<div class="galleria-thumb-item"><div id="galleria-thumb-jcarousellite">',
             g = this.cssurl;
-        $("#article_content img");
+        $("#gallery img");
         e += '<ul class="slides">';
-        $("#article_content img").each(function(b) {
+        $("#gallery img").each(function(b) {
             e += '<li class="galleria-image galleria-image-' + b + '" onClick="sh_fullscreen.activeImg(this)"><img rel="' + b + '" src="' + $(this).attr("src") + '"></li>';
             $(this).attr("id", "vne_slide_image_" + b);
             a[b] = $(this).clone();
