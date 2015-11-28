@@ -1,7 +1,8 @@
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Melosa - About</title>
+    <title>Melosa - Utilities</title>
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,19 +13,20 @@
     <!-- site css -->
     <link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-    <link rel="stylesheet" href="css/styles.css">    
+    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="css/slider.css">   
 	<script src="js/jquery.min.js"></script>
-    <script src="js/jquery.flexslider.js" defer></script>
+    <script src="js/jquery.flexslider.js" defer=""></script>
 	<!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<script type="text/javascript" src="js/slide.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				controlNav: false,  
-			});
 			$('.fancybox').fancybox();
+			$('.masonry').masonry({
+	            itemSelector: '.item',
+	            isFitWidth: true
+	        });
 		});
 	</script>
 	<script>
@@ -38,7 +40,7 @@
 
 	</script>
 
-<body class="about">
+<body class="utilities">
 	<div id="container">
 		<div id="header">
 			<div class="container">
@@ -50,7 +52,7 @@
 				<div id="hambuger"></div>
 
 				<ul class="nav lsn" style="">
-					<li class="scrollto active" id="menu-item-27">
+					<li class="scrollto" id="menu-item-27">
 						<a href="about.html">Giới thiệu</a>
 					</li>
 					<li class="scrollto" id="menu-item-28">
@@ -64,7 +66,7 @@
 							<li><a href="mbtt.html">Mặt bằng tổng thể</a></li>
 						</ul>
 					</li>
-					<li class="scrollto" id="menu-item-30">
+					<li class="scrollto active" id="menu-item-30">
 						<a href="utilities.html">Tiện ích</a>
 					</li>
 					<li class="scrollto" id="menu-item-31">
@@ -76,10 +78,10 @@
 					<li class="scrollto" id="menu-item-33">
 						<a href="news.html">Tin Tức - Sự kiện</a>
 					</li>
+					
 					<li class="scrollto" id="menu-item-35">
 						<a href="http://staging.melosagarden.com.vn/vi/lien-he/">Liên hệ</a>
 					</li>
-
 					<li class="langs" id="menu-item-35">
 						<span class="lang-item lang-item-en"><a href="http://melosa.vn/en/" hreflang="en"></a></span>
 						<span class="lang-item lang-item-vi"><a href="http://melosa.vn/en/" hreflang="en"></a></span>
@@ -89,6 +91,7 @@
 				</ul>
 			</div>
 			<ul class="langs lsn">
+				
 				<li class="lang-item lang-item-en">
 					<a href="http://melosa.vn/en/" hreflang="en"></a>
 				</li>
@@ -103,18 +106,17 @@
 					<div class="icon_call"><img src="images/phone.png"></div>
 					<ul>
 						<li>
-							<div class="title_call">Sàn GD SunLand SG</div>
-							<span>0938 779 660</span>
-						</li>
-						<li>
-							<div class="title_call">STDA</div>
+							<div class="title_call">CEN Group</div>
 							<span>0903.85.99.11</span>
 						</li>
 						<li>
 							<div class="title_call">CTY CPBĐS La Bàn</div>
 							<span>0912 961 727</span>
 						</li>
-						
+						<li>
+							<div class="title_call">Sàn GD SunLand SG</div>
+							<span>0938 779 660</span>
+						</li>
 						<li>
 							<div class="title_call">CTY CPTV TCF Việt Nam</div>
 							<span>0908 49 6446</span>
@@ -140,69 +142,37 @@
 				<div class="titleBar">
 					<div class="container">
 						<ul>
-							<li class="ui_tabs active"><span class="Tab1">Melosa Garden</span></li>
-							<li class="ui_tabs"><span class="Tab2">Chủ đầu tư</span></li>
-							<li class="ui_tabs"><span class="Tab3">Đội ngũ</span></li>
+							<li class="ui_tabs active"><span class="Tab1">Gym</span></li>
+							<li class="ui_tabs"><span class="Tab2">Hồ điều tiết</span></li>
+							<li class="ui_tabs"><span class="Tab3">Hồ bơi & hồ tràn</span></li>
+							<li class="ui_tabs"><span class="Tab4">Công viên cây xanh</span></li>
+							<li class="ui_tabs"><span class="Tab5">Mini Mart</span></li>
+							<li class="ui_tabs"><span class="Tab6">Sân Tennis</span></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="post_content">
-				<div id="Tab1" class="content_tab" >
-					<div class="container">
-						<img src="images/About.jpg" style="width:100%">
-					</div>
-				</div><!-- end tab1 -->
-				<div id="Tab2" class="content_tab" style="display:none;">
-					<div class="container">
-						<div class="leftCol">
-							<img src="images/about-leftimg.jpg">
+				<h1 class="title">PHÒNG GYM VÀ SÂN TENNIS CHUẨN QUỐC TẾ VỚI TRANG THIẾT BỊ HIỆN ĐẠI</h1>
+				<div class="masonry" id="divGallery">
+					<div class="item text">
+						<div class="work-masonry-thumb">
+							<p>Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.</p>
+							<p>Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư</p>
 						</div>
-						<div class="rightCol">
-							<img src="images/khangdien-logo.png">
-							<p>
-								Với 15 năm kinh nghiệm trong lĩnh vực đầu tư và phát triển bất động sản, Khang Điền tự hào là đơn vị tiên phong cho những dự án nhà có tiền ích được đầu tư cao tại Q.9 như: Chuỗi Mega Village, Mega Ruby, Mega Residence, Hoja Villa và PARCSpring						
-							</p>
-						</div>
-						<div class="clearfix"></div>
 					</div>
-					<div class="stats">
-						<div class="item">
-							<span class="value">15</span>
-							<span class="unit">năm</span>
-							<p class="desc">Kinh nghiệm</p>
-						</div>
-						<div class="item">
-							<span class="value">100</span>
-							<span class="unit">ha</span>
-							<p class="desc">Quỹ đất sạch</p>
-						</div>
-						<div class="item">
-							<span class="value">17</span>
-							<span class="unit">dự án</span>
-							<p class="desc">Tập trung tại Q.2 và Q.9</p>
-						</div>
-						<div class="bottom-text">
-							<span>Khang Điền vinh dự được hợp tác cùng những đơn vị hàng đầu Việt Nam và Quốc tế</span>
-						</div>										
+					<div class="item fullH">
+						<img alt="" src="images/Tienich/gym-02.jpg" class="work-masonry-thumb">
 					</div>
-					<div class="sponsor">
-						<img src="images/sponsor.jpg">
+					<div class="item">
+						<img alt="" src="images/Tienich/gym-01.jpg" class="work-masonry-thumb">
 					</div>
-				</div><!-- end tab2 -->
-				<div id="Tab3" class="content_tab" style="display:none;">
-					<div class="container">
-                    <br/><br/>
-                    	<div class="stats">
-							<div class="bottom-text">
-								<span>Khang Điền vinh dự được hợp tác cùng những đơn vị hàng đầu Việt Nam và Quốc tế</span>
-							</div>	
-                       		<div class="sponsor">
-								<img src="images/sponsor2.jpg">
-							</div>
-                        </div>
+					<div class="item fullW">
+						<img alt="" src="images/Tienich/gym-03.jpg" class="work-masonry-thumb">
 					</div>
-				</div><!-- end tab3 -->
+				</div>
+				<a class="prevUlti" href="#">Prev</a>
+				<a class="nextUlti" href="#">Next</a>
 			</div>
 		</div>
 		<div id="footer">
@@ -222,13 +192,7 @@
 					<h3 class="title">Phân phối chính thức</h3>
 					<ul> 
 						<li>
-							<h4>Sàn giao dịch Sunland SG</h4>
-							<p>85A, Phan Kế Bính, P. Đakao, Quận 1, TP.HCM</p>
-							<p>0938 779 660 - (08) 3910 2522</p>
-							<a href="http://www.sunland.vn" class="website">www.sunland.vn</a>
-						</li>
-						<li>
-							<h4>STDA</h4>
+							<h4>CEN Group</h4>
 							<p>Tòa nhà Samco, số 326 Võ Văn Kiệt P. Cô Giang, Quận 1, TP.HCM</p>
 							<p>0903.85.99.11 - (08) 3925 6795</p>
 							<a href="http://www.cengroup.com.vn" class="website">www.cengroup.com.vn</a>
@@ -245,7 +209,12 @@
 							<p>0908 49 6446 - (08) 6258 9650 </p>
 							<a href="http://www.tcf.vn" class="website">www.tcf.vn</a>
 						</li>
-						
+						<li>
+							<h4>Sàn giao dịch Sunland SG</h4>
+							<p>85A, Phan Kế Bính, P. Đakao, Quận 1, TP.HCM</p>
+							<p>0938 779 660 - (08) 3910 2522</p>
+							<a href="http://www.sunland.vn" class="website">www.sunland.vn</a>
+						</li>
 						<li>
 							<h4>Công ty TNHH Đầu tư và tư vấn BĐS Hưng Thịnh Phú</h4>
 							<p>182 Nguyễn Hoàng, Khu phố 5, phường An Phú, Quận 2 </p>
@@ -288,6 +257,13 @@
 	</div>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
+			jQuery('.ui_tabs').click(function(){
+		    	jQuery('.content_tab').hide();
+		    	jQuery('.ui_tabs').removeClass('active');
+		    	jQuery(this).addClass('active');
+		    	var class_ui = jQuery(this).find('span').attr('class');
+		    	jQuery('#'+class_ui).show();
+		    })
 			jQuery('#hambuger').click(function(event) {
 		        var menu = jQuery(this).siblings('.nav');
 		        if( menu.hasClass('open') ){
@@ -297,13 +273,30 @@
 		            menu.addClass('open').slideDown();
 		        }
 		    });
-		    jQuery('.ui_tabs').click(function(){
-		    	jQuery('.content_tab').hide();
-		    	jQuery('.ui_tabs').removeClass('active');
-		    	jQuery(this).addClass('active');
-		    	var class_ui = jQuery(this).find('span').attr('class');
-		    	jQuery('#'+class_ui).show();
-		    })
+			$('.pic-content').each(function(index, element) {
+				if($(window).width() <= 1100){
+					TimePlay = false;
+				}else{
+				
+					if(index == 0 || index == 2 || index == 4 || index == 6 || index == 8){
+						TimePlay = 3000;
+					}else{
+						TimePlay = 2000;
+					}
+				}
+				$(element).BTQSlider({
+					items : 1,
+					singleItem: true,
+					autoPlay : TimePlay,
+	            	stopOnHover : true,
+					autoHeight : true,
+	                slideSpeed: 600,
+	                paginationSpeed: 800,
+				    navigation : true,
+				    lazyLoad : true,
+				    lazyEffect : "fade",
+	            });
+	        });
 		});
 		jQuery(window).resize(function(){
 			if(jQuery(window).width() > 980){
@@ -313,7 +306,6 @@
 			}
 		})
 	</script>
-
 	<script type="text/javascript">
 	/* <![CDATA[ */
 	var google_conversion_id = 936934907;
@@ -328,12 +320,12 @@
 	<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/936934907/?value=0&amp;guid=ON&amp;script=0"/>
 	</div>
 	</noscript>
-	<!--Remarketing Xich dao doi-->
+	<!--Remarketing Xich Dao Doi-->
 <script type="text/javascript">
-/ <![CDATA[ /
+/* <![CDATA[ */
 var google_conversion_id = 939600841;
 var google_custom_params = window.google_tag_params; var google_remarketing_only = true;
-/ ]]> /
+/* ]]> */
 </script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>

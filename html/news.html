@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css">  
     <link rel="stylesheet" href="css/slider.css">   
 	<script src="js/jquery.min.js"></script>
-    <script src="js/jquery.flexslider.js" defer=""></script>
+    <script src="js/jquery.flexslider.js" defer></script>
 	<!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/slide.js"></script>
@@ -38,6 +38,7 @@
 		  ga('send', 'pageview');
 
 	</script>
+    </head>
 <body class="news">
     <div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -68,7 +69,12 @@
 						<a href="location.html">Vị trí</a>
 					</li>
 					<li class="scrollto" id="menu-item-29">
-						<a href="project.html">Dự án</a>
+						<a href="#">Dự án</a>
+						<ul class="sub_menu">
+							<li><a href="bietthu.html">Biệt thự</a></li>
+							<li><a href="lienke.html">Liên kế vườn</a></li>
+							<li><a href="mbtt.html">Mặt bằng tổng thể</a></li>
+						</ul>
 					</li>
 					<li class="scrollto" id="menu-item-30">
 						<a href="utilities.html">Tiện ích</a>
@@ -83,7 +89,7 @@
 						<a href="news.html">Tin Tức - Sự kiện</a>
 					</li>
 					<li class="scrollto" id="menu-item-35">
-						<a href="contact.html">Liên hệ</a>
+						<a href="http://staging.melosagarden.com.vn/vi/lien-he/">Liên hệ</a>
 					</li>
 					<li class="langs" id="menu-item-35">
 						<span class="lang-item lang-item-en"><a href="http://melosa.vn/en/" hreflang="en"></a></span>
@@ -109,17 +115,18 @@
 					<div class="icon_call"><img src="images/phone.png"></div>
 					<ul>
 						<li>
-							<div class="title_call">CEN Group</div>
+							<div class="title_call">Sàn GD SunLand SG</div>
+							<span>0938 779 660</span>
+						</li>
+						<li>
+							<div class="title_call">STDA</div>
 							<span>0903.85.99.11</span>
 						</li>
 						<li>
 							<div class="title_call">CTY CPBĐS La Bàn</div>
 							<span>0912 961 727</span>
 						</li>
-						<li>
-							<div class="title_call">Sàn GD SunLand SG</div>
-							<span>0938 779 660</span>
-						</li>
+						
 						<li>
 							<div class="title_call">CTY CPTV TCF Việt Nam</div>
 							<span>0908 49 6446</span>
@@ -145,25 +152,25 @@
 				<div class="titleBar">
 					<div class="container">
 						<ul>						
-							<li class="ui_tabs active"><span class="Tab1">Tin tức thị trường</span></li>
-							<li class="ui_tabs"><span class="Tab2">Sự kiện - khuyến mãi</span></li>
-							<li class="ui_tabs"><span class="Tab3">Phim giới thiệu</span></li>
+							<li class="ui_tabs"><span class="Tab1">Tin tức thị trường</span></li>
+							<li class="ui_tabs active"><span class="Tab2">Sự kiện - khuyến mãi</span></li>
+<!-- Hide cai nay da		<li class="ui_tabs"><span class="Tab3">Phim giới thiệu</span></li>     -->
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="post_content">
-				<div id="Tab1" class="content_tab">
+				<div id="Tab1" class="content_tab"  style="display:none;">
 					<div class="wrap-slide">
 						<div class="pic-content">
 							<div class="item-news">
 								<div class="thumbnail">
-									<img class="lazyload" data-src="images/news_01.png"  alt="">
+									<img class="lazyload" data-src="images/news_03.jpg"  alt="">
 								</div>
 								<div class="content">
-									<h4>Có thể bán 20% dự án nhà ở không qua sàn</h4>
+									<h4>CÓ THỂ BÁN 20% DỰ ÁN NHÀ Ở KHÔNG QUA SÀN</h4>
 									<p>
-										Bộ Xây dựng vừa đề xuất Chính phủ cho phép chủ đầu tư được bán tối đa 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.
+										Đây là nội dung trong tờ trình Chính phủ của Bộ Xây dựng về việc sửa đổi Nghị định số 90 và hướng dẫn  ..
 									</p>
 								</div>
 								<a href="#slider_tab1"></a>
@@ -171,12 +178,12 @@
 							</div>
 							<div class="item-news">
 								<div class="thumbnail">
-									<img class="lazyload" data-src="images/news_01.png"  alt="">
+									<img class="lazyload" data-src="images/news_04.jpg"  alt="">
 								</div>
 								<div class="content">
-									<h4>Bất động sản khu đông Tp.HCM hấp dẫn</h4>
+									<h4>BẤT ĐỘNG SẢN KHU ĐÔNG TP.HCM HẤP DẪN</h4>
 									<p>
-										Bộ Xây dựng vừa đề xuất Chính phủ cho phép chủ đầu tư được bán tối đa 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.
+										Theo Luật Kinh doanh bất động sản, chủ đầu tư phải bán bất động sản thông qua sàn giao dịch ..
 									</p>
 								</div>
 								<a href="#slider_tab2"></a>
@@ -184,77 +191,41 @@
 							</div>
 							<div class="item-news">
 								<div class="thumbnail">
-									<img class="lazyload" data-src="images/news_01.png"  alt="">
+									<img class="lazyload" data-src="images/news_01.jpg"  alt="">
 								</div>
 								<div class="content">
-									<h4>Tp. Hồ Chí Minh đi Vũng Tàu còn 2 tiếng</h4>
+									<h4>TP. HỒ CHÍ MINH ĐI VŨNG TÀU CÒN 2 TIẾNG</h4>
 									<p>
-										Bộ Xây dựng vừa đề xuất Chính phủ cho phép chủ đầu tư được bán tối đa 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.
+										Bộ Xây dựng cho rằng quyết định này cũng sẽ khiến thị trường bất động sản minh bạch hơn ..
 									</p>
 								</div>
 								<a href="#slider_tab3"></a>
 								<div class="clearfix"></div>									
-							</div>	
-							<div class="item-news">
-								<div class="thumbnail">
-									<img class="lazyload" data-src="images/news_01.jpg"  alt="">
-								</div>
-								<div class="content">
-									<h4>Thiết kế sân vườn hợp phong thủy mang an lành cho gia chủ</h4>
-									<p>
-										Vượng khí của ngôi nhà có được không đơn thuần là cách sắp xếp nội thất bên trong hợp
-									</p>
-								</div>
-								<a href="#slider_tab4"></a>
-								<div class="clearfix"></div>									
-							</div>
-							<div class="item-news">
-								<div class="thumbnail">
-									<img class="lazyload" data-src="images/news_02.jpg"  alt="">
-								</div>
-								<div class="content">
-									<h4>Dự án imperia garden: hấp dẫn nhờ gnaf tàu điện trên cao</h4>
-									<p>
-										Các tuyến tàu điện trên cao và tàu điện ngầm sẽ làm thay đổi diện mạo của thị trường bất
-									</p>
-								</div>
-								<a href="#slider_tab5"></a>
-								<div class="clearfix"></div>									
-							</div>
-							<div class="item-news">
-								<div class="thumbnail">
-									<img class="lazyload" data-src="images/news_03.jpg"  alt="">
-								</div>
-								<div class="content">
-									<h4>Ý tưởng thiết kế tầng hầm đẹp hút hồn</h4>
-									<p>
-										Nếu bạn đang có ý định tu sửa tầng hầm nhà mình, chắc chắn bạn sẽ quan tâm đến
-									</p>
-								</div>
-								<a href="#slider_tab6"></a>
-								<div class="clearfix"></div>									
-							</div>																							
+							</div>				
+																										
 						</div>
 					</div>
 					<div class="content-details">
 						<div id="slider_tab1" class="content_slider">
-							<h1>Có thể bán 20% dự án nhà ở không qua sàn</h1>
-							<p><b>Bộ Xây dựng vừa đề xuất Chính phủ cho phép chủ đầu tư được bán tối đa 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.</b></p>
-							<p>
-								Đây là nội dung trong tờ trình Chính phủ của Bộ Xây dựng về việc sửa đổi Nghị định số 90 và hướng dẫn thi hành Luật Nhà ở. Theo đó, Bộ đề nghị cho phép chủ đầu tư dự án bất động sản bán không quá 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.
-							</p>
-							<p>
-								Theo Luật Kinh doanh bất động sản, chủ đầu tư phải bán bất động sản thông qua sàn giao dịch. Tuy nhiên, Bộ Xây dựng cho rằng, thực tế nhiều doanh nghiệp đã lách luật, bán nhà không qua sàn bằng cách huy động góp vốn có phân chia nhà ở. Đặc biệt có trường hợp, chủ đầu tư đã huy động vốn và phân chia hết số lượng nhà ở của dự án dẫn đến không còn nhà để bán qua sàn giao dịch bất động sản.
-							</p>
-							<p>
-								<center><img src="images/news_01.png"></center>
-							</p>
-							<p>
-								Để hạn chế tình trạng lách luật nêu trên, Bộ Xây dựng đề xuất, nên cho phép các chủ đầu tư được huy động vốn có phân chia sản phẩm là nhà ở hoặc bán không quá 20% số lượng nhà ở trong mỗi dự án không qua sàn bất động sản. Theo Bộ Xây dựng, quy định này sẽ giúp các chủ đầu tư có thể huy động được vốn góp của các đối tác kinh doanh. Đồng thời tạo điều kiện để các doanh nghiệp có thể hỗ trợ cho các cán bộ, công nhân viên đang làm việc cho các doanh nghiệp này có chỗ ở ổn định.
-							</p>
-							<p>
-								Bộ Xây dựng cho rằng quyết định này cũng sẽ khiến thị trường bất động sản minh bạch hơn, bởi chủ đầu tư chỉ được trực tiếp bán tối đa không quá 20% số lượng nhà ở trong mỗi dự án, lượng nhà ở còn lại phải bán qua sàn. Việc cho phép bán tối đa 20% số lượng nhà ở thực chất là để hạn chế các trường hợp góp vốn có phân chia 100% sản phẩm nhà ở không qua sàn.
-							</p>
+							<h1 style="text-align: center;">C&oacute; thể b&aacute;n 20% dự &aacute;n nh&agrave; ở kh&ocirc;ng qua s&agrave;n</h1>
+<div class="desc">
+<div><strong>Bộ X&acirc;y dựng vừa đề xuất Ch&iacute;nh phủ cho ph&eacute;p chủ đầu tư được b&aacute;n tối đa 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n giao dịch bất động sản.</strong></div>
+<div class="newsFade">
+<ul>
+<li><a href="http://www.lucasta.com.vn/tin-tuc/tin-thi-truong/co-the-ban-20-du-an-nha-o-khong-qua-san">Bộ X&acirc;y dựng vừa đề xuất Ch&iacute;nh phủ cho ph&eacute;p</a></li>
+<li><a href="http://www.lucasta.com.vn/tin-tuc/tin-thi-truong/co-the-ban-20-du-an-nha-o-khong-qua-san">Bộ X&acirc;y dựng vừa đề xuất Ch&iacute;nh phủ cho ph&eacute;p</a></li>
+<li><a href="http://www.lucasta.com.vn/tin-tuc/tin-thi-truong/co-the-ban-20-du-an-nha-o-khong-qua-san">Bộ X&acirc;y dựng vừa đề xuất Ch&iacute;nh phủ cho ph&eacute;p</a></li>
+</ul>
+</div>
+<div>Đ&acirc;y l&agrave; nội dung trong tờ tr&igrave;nh Ch&iacute;nh phủ của Bộ X&acirc;y dựng về việc sửa đổi Nghị định số 90 v&agrave; hướng dẫn thi h&agrave;nh Luật Nh&agrave; ở. Theo đ&oacute;, Bộ đề nghị cho ph&eacute;p chủ đầu tư dự &aacute;n bất động sản b&aacute;n kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n giao dịch bất động sản.</div>
+<div><br />
+<p>Theo Luật Kinh doanh bất động sản, chủ đầu tư phải b&aacute;n bất động sản th&ocirc;ng qua s&agrave;n giao dịch. Tuy nhi&ecirc;n, Bộ X&acirc;y dựng cho rằng, thực tế nhiều doanh nghiệp đ&atilde; l&aacute;ch luật, b&aacute;n nh&agrave; kh&ocirc;ng qua s&agrave;n bằng c&aacute;ch huy động g&oacute;p vốn c&oacute; ph&acirc;n chia nh&agrave; ở. Đặc biệt c&oacute; trường hợp, chủ đầu tư đ&atilde; huy động vốn v&agrave; ph&acirc;n chia hết số lượng nh&agrave; ở của dự &aacute;n dẫn đến kh&ocirc;ng c&ograve;n nh&agrave; để b&aacute;n qua s&agrave;n giao dịch bất động sản.</p>
+<p><img src="http://www.lucasta.com.vn/Data/Sites/1/media/tintuc/detail.png" alt="" />&nbsp;</p>
+<p>Để hạn chế t&igrave;nh trạng l&aacute;ch luật n&ecirc;u tr&ecirc;n, Bộ X&acirc;y dựng đề xuất, n&ecirc;n cho ph&eacute;p c&aacute;c chủ đầu tư được huy động vốn c&oacute; ph&acirc;n chia sản phẩm l&agrave; nh&agrave; ở hoặc b&aacute;n kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n bất động sản. Theo Bộ X&acirc;y dựng, quy định n&agrave;y sẽ gi&uacute;p c&aacute;c chủ đầu tư c&oacute; thể huy động được vốn g&oacute;p của c&aacute;c đối t&aacute;c kinh doanh. Đồng thời tạo điều kiện để c&aacute;c doanh nghiệp c&oacute; thể hỗ trợ cho c&aacute;c c&aacute;n bộ, c&ocirc;ng nh&acirc;n vi&ecirc;n đang l&agrave;m việc cho c&aacute;c doanh nghiệp n&agrave;y c&oacute; chỗ ở ổn định.</p>
+<br />
+<div>Bộ X&acirc;y dựng cho rằng quyết định n&agrave;y cũng sẽ khiến thị trường bất động sản minh bạch hơn, bởi chủ đầu tư chỉ được trực tiếp b&aacute;n tối đa kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n, lượng nh&agrave; ở c&ograve;n lại phải b&aacute;n qua s&agrave;n. Việc cho ph&eacute;p b&aacute;n tối đa 20% số lượng nh&agrave; ở thực chất l&agrave; để hạn chế c&aacute;c trường hợp g&oacute;p vốn c&oacute; ph&acirc;n chia 100% sản phẩm nh&agrave; ở kh&ocirc;ng qua s&agrave;n.</div>
+</div>
+</div>
 							<div class="social-news clearfix">
 					             <!-- Your send button code -->
 							    <div class="fb-send" 
@@ -276,23 +247,18 @@
 					        </div>
 						</div>
 						<div id="slider_tab2" class="content_slider" style="display:none;">
-							<h1>Bất động sản khu đông Tp.HCM hấp dẫn</h1>
-							<p><b>Bộ Xây dựng vừa đề xuất Chính phủ cho phép chủ đầu tư được bán tối đa 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.</b></p>
-							<p>
-								Đây là nội dung trong tờ trình Chính phủ của Bộ Xây dựng về việc sửa đổi Nghị định số 90 và hướng dẫn thi hành Luật Nhà ở. Theo đó, Bộ đề nghị cho phép chủ đầu tư dự án bất động sản bán không quá 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.
-							</p>
-							<p>
-								Theo Luật Kinh doanh bất động sản, chủ đầu tư phải bán bất động sản thông qua sàn giao dịch. Tuy nhiên, Bộ Xây dựng cho rằng, thực tế nhiều doanh nghiệp đã lách luật, bán nhà không qua sàn bằng cách huy động góp vốn có phân chia nhà ở. Đặc biệt có trường hợp, chủ đầu tư đã huy động vốn và phân chia hết số lượng nhà ở của dự án dẫn đến không còn nhà để bán qua sàn giao dịch bất động sản.
-							</p>
-							<p>
-								<center><img src="images/news_01.png"></center>
-							</p>
-							<p>
-								Để hạn chế tình trạng lách luật nêu trên, Bộ Xây dựng đề xuất, nên cho phép các chủ đầu tư được huy động vốn có phân chia sản phẩm là nhà ở hoặc bán không quá 20% số lượng nhà ở trong mỗi dự án không qua sàn bất động sản. Theo Bộ Xây dựng, quy định này sẽ giúp các chủ đầu tư có thể huy động được vốn góp của các đối tác kinh doanh. Đồng thời tạo điều kiện để các doanh nghiệp có thể hỗ trợ cho các cán bộ, công nhân viên đang làm việc cho các doanh nghiệp này có chỗ ở ổn định.
-							</p>
-							<p>
-								Bộ Xây dựng cho rằng quyết định này cũng sẽ khiến thị trường bất động sản minh bạch hơn, bởi chủ đầu tư chỉ được trực tiếp bán tối đa không quá 20% số lượng nhà ở trong mỗi dự án, lượng nhà ở còn lại phải bán qua sàn. Việc cho phép bán tối đa 20% số lượng nhà ở thực chất là để hạn chế các trường hợp góp vốn có phân chia 100% sản phẩm nhà ở không qua sàn.
-							</p>
+							<h1 style="text-align: center;">Bất động sản khu đ&ocirc;ng Tp.HCM hấp dẫn</h1>
+<div class="desc">
+<div>Bộ X&acirc;y dựng vừa đề xuất Ch&iacute;nh phủ cho ph&eacute;p chủ đầu tư được b&aacute;n tối đa 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n giao dịch bất động sản.</div>
+<div>&nbsp;</div>
+<div>Đ&acirc;y l&agrave; nội dung trong tờ tr&igrave;nh Ch&iacute;nh phủ của Bộ X&acirc;y dựng về việc sửa đổi Nghị định số 90 v&agrave; hướng dẫn thi h&agrave;nh Luật Nh&agrave; ở. Theo đ&oacute;, Bộ đề nghị cho ph&eacute;p chủ đầu tư dự &aacute;n bất động sản b&aacute;n kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n giao dịch bất động sản.</div>
+<div>&nbsp;</div>
+<p>Theo Luật Kinh doanh bất động sản, chủ đầu tư phải b&aacute;n bất động sản th&ocirc;ng qua s&agrave;n giao dịch. Tuy nhi&ecirc;n, Bộ X&acirc;y dựng cho rằng, thực tế nhiều doanh nghiệp đ&atilde; l&aacute;ch luật, b&aacute;n nh&agrave; kh&ocirc;ng qua s&agrave;n bằng c&aacute;ch huy động g&oacute;p vốn c&oacute; ph&acirc;n chia nh&agrave; ở. Đặc biệt c&oacute; trường hợp, chủ đầu tư đ&atilde; huy động vốn v&agrave; ph&acirc;n chia hết số lượng nh&agrave; ở của dự &aacute;n dẫn đến kh&ocirc;ng c&ograve;n nh&agrave; để b&aacute;n qua s&agrave;n giao dịch bất động sản.</p>
+<p><img src="http://www.lucasta.com.vn/Data/Sites/1/media/tintuc/detail.png" alt="" />&nbsp;</p>
+<p>Để hạn chế t&igrave;nh trạng l&aacute;ch luật n&ecirc;u tr&ecirc;n, Bộ X&acirc;y dựng đề xuất, n&ecirc;n cho ph&eacute;p c&aacute;c chủ đầu tư được huy động vốn c&oacute; ph&acirc;n chia sản phẩm l&agrave; nh&agrave; ở hoặc b&aacute;n kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n bất động sản. Theo Bộ X&acirc;y dựng, quy định n&agrave;y sẽ gi&uacute;p c&aacute;c chủ đầu tư c&oacute; thể huy động được vốn g&oacute;p của c&aacute;c đối t&aacute;c kinh doanh. Đồng thời tạo điều kiện để c&aacute;c doanh nghiệp c&oacute; thể hỗ trợ cho c&aacute;c c&aacute;n bộ, c&ocirc;ng nh&acirc;n vi&ecirc;n đang l&agrave;m việc cho c&aacute;c doanh nghiệp n&agrave;y c&oacute; chỗ ở ổn định.</p>
+<br />
+<div>Bộ X&acirc;y dựng cho rằng quyết định n&agrave;y cũng sẽ khiến thị trường bất động sản minh bạch hơn, bởi chủ đầu tư chỉ được trực tiếp b&aacute;n tối đa kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n, lượng nh&agrave; ở c&ograve;n lại phải b&aacute;n qua s&agrave;n. Việc cho ph&eacute;p b&aacute;n tối đa 20% số lượng nh&agrave; ở thực chất l&agrave; để hạn chế c&aacute;c trường hợp g&oacute;p vốn c&oacute; ph&acirc;n chia 100% sản phẩm nh&agrave; ở kh&ocirc;ng qua s&agrave;n.</div>
+</div>
 							<div class="social-news clearfix">
 					             <!-- Your send button code -->
 							    <div class="fb-send" 
@@ -312,25 +278,164 @@
 					          <div class="google"><g:plusone></g:plusone></div>
 					          <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a></div>
 					        </div>
-						</div>
+
+						</div><!-- end slider_tab2 -->
 						<div id="slider_tab3" class="content_slider" style="display:none;">
-							<h1>Tp. Hồ Chí Minh đi Vũng Tàu còn 2 tiếng</h1>
-							<p><b>Bộ Xây dựng vừa đề xuất Chính phủ cho phép chủ đầu tư được bán tối đa 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.</b></p>
-							<p>
-								Đây là nội dung trong tờ trình Chính phủ của Bộ Xây dựng về việc sửa đổi Nghị định số 90 và hướng dẫn thi hành Luật Nhà ở. Theo đó, Bộ đề nghị cho phép chủ đầu tư dự án bất động sản bán không quá 20% số lượng nhà ở trong mỗi dự án không qua sàn giao dịch bất động sản.
-							</p>
-							<p>
-								Theo Luật Kinh doanh bất động sản, chủ đầu tư phải bán bất động sản thông qua sàn giao dịch. Tuy nhiên, Bộ Xây dựng cho rằng, thực tế nhiều doanh nghiệp đã lách luật, bán nhà không qua sàn bằng cách huy động góp vốn có phân chia nhà ở. Đặc biệt có trường hợp, chủ đầu tư đã huy động vốn và phân chia hết số lượng nhà ở của dự án dẫn đến không còn nhà để bán qua sàn giao dịch bất động sản.
-							</p>
-							<p>
-								<center><img src="images/news_01.png"></center>
-							</p>
-							<p>
-								Để hạn chế tình trạng lách luật nêu trên, Bộ Xây dựng đề xuất, nên cho phép các chủ đầu tư được huy động vốn có phân chia sản phẩm là nhà ở hoặc bán không quá 20% số lượng nhà ở trong mỗi dự án không qua sàn bất động sản. Theo Bộ Xây dựng, quy định này sẽ giúp các chủ đầu tư có thể huy động được vốn góp của các đối tác kinh doanh. Đồng thời tạo điều kiện để các doanh nghiệp có thể hỗ trợ cho các cán bộ, công nhân viên đang làm việc cho các doanh nghiệp này có chỗ ở ổn định.
-							</p>
-							<p>
-								Bộ Xây dựng cho rằng quyết định này cũng sẽ khiến thị trường bất động sản minh bạch hơn, bởi chủ đầu tư chỉ được trực tiếp bán tối đa không quá 20% số lượng nhà ở trong mỗi dự án, lượng nhà ở còn lại phải bán qua sàn. Việc cho phép bán tối đa 20% số lượng nhà ở thực chất là để hạn chế các trường hợp góp vốn có phân chia 100% sản phẩm nhà ở không qua sàn.
-							</p>
+							<h1 style="text-align: center;">Tp. Hồ Ch&iacute; Minh đi Vũng T&agrave;u c&ograve;n 2 tiếng</h1>
+<div class="desc">
+<div>Bộ X&acirc;y dựng vừa đề xuất Ch&iacute;nh phủ cho ph&eacute;p chủ đầu tư được b&aacute;n tối đa 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n giao dịch bất động sản.</div>
+<div>&nbsp;</div>
+<div>Đ&acirc;y l&agrave; nội dung trong tờ tr&igrave;nh Ch&iacute;nh phủ của Bộ X&acirc;y dựng về việc sửa đổi Nghị định số 90 v&agrave; hướng dẫn thi h&agrave;nh Luật Nh&agrave; ở. Theo đ&oacute;, Bộ đề nghị cho ph&eacute;p chủ đầu tư dự &aacute;n bất động sản b&aacute;n kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n giao dịch bất động sản.</div>
+<div>&nbsp;</div>
+<p>Theo Luật Kinh doanh bất động sản, chủ đầu tư phải b&aacute;n bất động sản th&ocirc;ng qua s&agrave;n giao dịch. Tuy nhi&ecirc;n, Bộ X&acirc;y dựng cho rằng, thực tế nhiều doanh nghiệp đ&atilde; l&aacute;ch luật, b&aacute;n nh&agrave; kh&ocirc;ng qua s&agrave;n bằng c&aacute;ch huy động g&oacute;p vốn c&oacute; ph&acirc;n chia nh&agrave; ở. Đặc biệt c&oacute; trường hợp, chủ đầu tư đ&atilde; huy động vốn v&agrave; ph&acirc;n chia hết số lượng nh&agrave; ở của dự &aacute;n dẫn đến kh&ocirc;ng c&ograve;n nh&agrave; để b&aacute;n qua s&agrave;n giao dịch bất động sản.</p>
+<p><img src="http://www.lucasta.com.vn/Data/Sites/1/media/tintuc/detail.png" alt="" />&nbsp;</p>
+<p>Để hạn chế t&igrave;nh trạng l&aacute;ch luật n&ecirc;u tr&ecirc;n, Bộ X&acirc;y dựng đề xuất, n&ecirc;n cho ph&eacute;p c&aacute;c chủ đầu tư được huy động vốn c&oacute; ph&acirc;n chia sản phẩm l&agrave; nh&agrave; ở hoặc b&aacute;n kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n kh&ocirc;ng qua s&agrave;n bất động sản. Theo Bộ X&acirc;y dựng, quy định n&agrave;y sẽ gi&uacute;p c&aacute;c chủ đầu tư c&oacute; thể huy động được vốn g&oacute;p của c&aacute;c đối t&aacute;c kinh doanh. Đồng thời tạo điều kiện để c&aacute;c doanh nghiệp c&oacute; thể hỗ trợ cho c&aacute;c c&aacute;n bộ, c&ocirc;ng nh&acirc;n vi&ecirc;n đang l&agrave;m việc cho c&aacute;c doanh nghiệp n&agrave;y c&oacute; chỗ ở ổn định.</p>
+<br />
+<div>Bộ X&acirc;y dựng cho rằng quyết định n&agrave;y cũng sẽ khiến thị trường bất động sản minh bạch hơn, bởi chủ đầu tư chỉ được trực tiếp b&aacute;n tối đa kh&ocirc;ng qu&aacute; 20% số lượng nh&agrave; ở trong mỗi dự &aacute;n, lượng nh&agrave; ở c&ograve;n lại phải b&aacute;n qua s&agrave;n. Việc cho ph&eacute;p b&aacute;n tối đa 20% số lượng nh&agrave; ở thực chất l&agrave; để hạn chế c&aacute;c trường hợp g&oacute;p vốn c&oacute; ph&acirc;n chia 100% sản phẩm nh&agrave; ở kh&ocirc;ng qua s&agrave;n.</div>
+</div>
+							<div class="social-news clearfix">
+					             <!-- Your send button code -->
+							    <div class="fb-send" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count">
+							    </div>
+					          	<div class="fb-like" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count" 
+							        data-action="like" 
+							        data-show-faces="true">
+							    </div>
+					          	<div class="fb-share-button" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count">
+							    </div>
+					          <div class="google"><g:plusone></g:plusone></div>
+					          <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a></div>
+					        </div>
+					
+						</div><!-- end slider_tab3 -->
+						
+						
+					</div>						
+				</div><!-- end tab1 -->
+                
+				<div id="Tab2" class="content_tab">					
+					<div class="wrap-slide">
+						<div class="pic-content">
+							<div class="item-news">
+								<div class="thumbnail">
+									<img class="lazyload" data-src="images/news_01.jpg"  alt="">
+								</div>
+								<div class="content">
+									<h4>KHANG ĐIỀN KÍ KẾT HỢP TÁC CHIẾN LƯỢC VỚI NGÂN HÀNG VIETINBANK & GIỚI THIỆU DỰ ÁN MELOSA GARDEN</h4>
+									<p>
+										Ngày 10/11/2015 vừa qua, tại Khách sạn Sheraton đã diễn ra Lễ kí kết hợp tác chiến lược giữa ..
+									</p>
+								</div>
+								<a href="#news_tab1"></a>
+								<div class="clearfix"></div>									
+							</div>
+							<div class="item-news">
+								<div class="thumbnail">
+									<img class="lazyload" data-src="images/news_02.jpg"  alt="">
+								</div>
+								<div class="content">
+									<h4>CHỈ TỪ 2,7 TỶ ĐỒNG SỞ HỮU NGAY NHÀ TẠI MELOSA GARDEN</h4>
+									<p>
+										Chỉ từ 2,7 tỷ đồng khách hàng đã có thể sở hữu ngay nhà liên kế vườn ( bao gồm nhà, đất, sổ hồng) ..
+									</p>
+								</div>
+								<a href="#news_tab2"></a>
+								<div class="clearfix"></div>									
+							</div>
+							<div class="item-news">
+								<div class="thumbnail">
+									<img class="lazyload" data-src="images/news_03.jpg"  alt="">
+								</div>
+								<div class="content">
+									<h4>KHANG ĐIỀN TỔ CHỨC TẬP HUẤN KINH DOANH DỰ ÁN MELOSA GARDEN</h4>
+									<p>
+										Sáng ngày 28/10/2015, Công ty CP Đầu tư và Kinh doanh Nhà Khang Điền đã tổ chức ..
+									</p>
+								</div>
+								<a href="#news_tab3"></a>
+								<div class="clearfix"></div>									
+							</div>	
+							<div class="item-news">
+								<div class="thumbnail">
+									<img class="lazyload" data-src="images/news_04.jpg"  alt="">
+								</div>
+								<div class="content">
+									<h4>KHANG ĐIỀN CÔNG BỐ MỞ BÁN DỰ ÁN MELOSA GARDEN</h4>
+									<p>
+										Ngày 10/11/2015, tại Khách sạn Sheraton Saigon (số 88 Đồng Khởi, quận 1, TP Hồ Chí Minh), Công ty CP..
+									</p>
+								</div>
+								<a href="#news_tab4"></a>
+								<div class="clearfix"></div>									
+							</div>
+																										
+						</div>
+					</div>
+					<div class="content-details">
+						<div id="news_tab1" class="content_slider">
+							<h1 style="text-align: center;"><strong>KHANG ĐIỀN K&Iacute; KẾT HỢP T&Aacute;C CHIẾN LƯỢC VỚI NG&Acirc;N H&Agrave;NG VIETINBANK &amp; GIỚI THIỆU DỰ &Aacute;N MELOSA GARDEN</strong></h1>
+<p><strong>&nbsp;</strong></p>
+<p style="padding-left: 30px;"><strong>Ng&agrave;y 10/11/2015 vừa qua, tại Kh&aacute;ch sạn Sheraton đ&atilde; diễn ra Lễ k&iacute; kết hợp t&aacute;c chiến lược giữa C&ocirc;ng ty CP Đầu tư v&agrave; Kinh doanh Nh&agrave; Khang Điền v&agrave; Ng&acirc;n h&agrave;ng TMCP C&ocirc;ng thương Việt Nam - Vietinbank với sự tham dự của L&atilde;nh đạo hai b&ecirc;n, đại diện của c&aacute;c Quỹ Đầu tư: Vina Capital, Dragon Capital, Elite Fund, Vietnam Holding, SAM, VFM.. c&aacute;c đối t&aacute;c ph&aacute;t triển dự &aacute;n như đơn vị quản l&yacute; dự &aacute;n CBRE, gi&aacute;m s&aacute;t chất lượng SCQC, c&aacute;c c&ocirc;ng ty x&acirc;y dựng, c&aacute;c đơn vị ph&acirc;n phối ch&iacute;nh của dự &aacute;n v&agrave; c&aacute;c đơn vị truyền th&ocirc;ng b&aacute;o đ&agrave;i&nbsp; tại TPHCM.</strong></p>
+<p>&nbsp;</p>
+<p>Ng&acirc;n h&agrave;ng TPCP C&ocirc;ng thương Việt Nam &ndash; Vietinbank hiện tại l&agrave; ng&acirc;n h&agrave;ng c&oacute; nguồn vốn lớn nhất trong hệ thống Ng&acirc;n h&agrave;ng Việt Nam với c&aacute;c dịch vụ t&agrave;i ch&iacute;nh ng&acirc;n h&agrave;ng hiện đại đạt chuẩn quốc tế gồm 151 chi nh&aacute;nh v&agrave; 1000 ph&ograve;ng giao dịch trải d&agrave;i khắp Việt Nam. L&agrave; ng&acirc;n h&agrave;ng đầu ti&ecirc;n mở chi nh&aacute;nh tại Ch&acirc;u &Acirc;u, Vietinbank đ&atilde; đ&aacute;nh dấu cho sự ph&aacute;t triển vượt bậc của nền t&agrave;i ch&iacute;nh Việt Nam tr&ecirc;n thị trường khu vực v&agrave; thế giới.&nbsp;Vietinbank lu&ocirc;n đồng h&agrave;nh c&ugrave;ng c&aacute;c doanh nghiệp, hỗ trợ c&aacute;c phương &aacute;n t&agrave;i ch&iacute;nh để doanh nghiệp hoạt động v&agrave; ph&aacute;t triển ổn định.</p>
+<p>&nbsp;</p>
+
+<center><img src="images/tintuc/tin1/tin1_1.jpg"></center>
+
+
+<center><p><em>&Ocirc;ng Trần Minh B&igrave;nh - Ph&oacute; Tổng Gi&aacute;m đốc ng&acirc;n h&agrave;ng TMCP C&ocirc;ng Thương Việt Nam v&agrave; &Ocirc;ng Nguyễn Đ&igrave;nh Bảo - Ph&oacute; Tổng Gi&aacute;m đốc c&ocirc;ng ty CP Đầu tư v&agrave; Kinh doanh nh&agrave; Khang Điền đ&atilde; c&ugrave;ng đặt b&uacute;t v&agrave;o bản k&yacute; kết hợp t&aacute;c chiến lược giữa Khang Điền v&agrave; Vietinbank dưới sự chứng kiến nghi lễ của &Ocirc;ng L&yacute; Điền Sơn &ndash; Chủ tịch HĐQT, Tổng Gi&aacute;m đốc C&ocirc;ng ty Khang Điền, &ocirc;ng Andy Hồ - Gi&aacute;m Đốc điều h&agrave;nh VinaCapital v&agrave; &ocirc;ng Bill Stoops &ndash; Gi&aacute;m đốc đầu tư Dragon Capital.</em></p></center>
+<p>&nbsp;</p>
+<p>Khang Điền l&agrave; nh&agrave; ph&aacute;t triển Bất động sản lớn tại TP Hồ Ch&iacute; Minh với tiềm lực t&agrave;i ch&iacute;nh vững mạnh được sự ủng hộ từ những quỹ đầu tư lớn quốc tế như VinaCapital, Dragon Capital, Elite Fund, Quỹ Sam, Vietnam Holding, VFM&hellip;. Khang Điền đ&atilde; triển khai th&agrave;nh c&aacute;c dự &aacute;n bất động sản lớn điển h&igrave;nh như Hoja Villa, Lucasta, Melosa Garden; Đặc biệt l&agrave; d&ograve;ng sản phẩm Mega -&nbsp; <strong><em>&ldquo;Nh&agrave; compound, tiện nghi cao cấp, ph&aacute;p l&yacute; ho&agrave;n chỉnh&rdquo;</em></strong>.</p>
+<p>&nbsp;</p>
+<p>Từ năm 2013, trong v&ograve;ng gần 2 năm, Khang Điền đ&atilde; b&aacute;n hơn 1000 căn nh&agrave; thuộc chuỗi dự &aacute;n Mega Residence, Mega Ruby, Mega Sapphire v&agrave; Mega Village. Hiện đ&atilde; c&oacute; 60% hộ d&acirc;n dọn về sinh sống, h&igrave;nh th&agrave;nh cộng đồng cư d&acirc;n văn minh, sầm uất. Mỗi dự &aacute;n của Khang Điền đều c&oacute; t&iacute;nh ph&aacute;p l&yacute; minh bạch, được thị trường nồng nhiệt đ&oacute;n nhận. B&ecirc;n cạnh việc tạo ra những sản phẩm đa dạng ph&ugrave; hợp với nhu cầu của thị trường, lập n&ecirc;n những khu d&acirc;n cư văn minh hiện đại, Khang Điền lu&ocirc;n đề cao việc gắn kết bền chặt với c&aacute;c tổ chức t&agrave;i ch&iacute;nh, ổn định vững mạnh nguồn vốn để tiếp tục mở rộng v&agrave; đầu tư cho những dự &aacute;n tiếp theo.</p>
+<p>&nbsp;</p>
+<p>Ch&iacute;nh v&igrave; những cơ sở tr&ecirc;n n&ecirc;n Khang Điền v&agrave; Vietinbank đ&atilde; đi đến quyết định k&yacute; kết hợp t&aacute;c chiến lược sau thời gian l&agrave;m việc cũng như nghi&ecirc;n cứu đ&aacute;nh gi&aacute; về m&ocirc; h&igrave;nh hoạt động cũng như tiềm lực của cả hai b&ecirc;n.Theo đ&oacute;, Vietinbank sẽ :</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + Hỗ trợ c&aacute;c giải ph&aacute;p t&agrave;i ch&iacute;nh, t&agrave;i trợ cho c&aacute;c dự &aacute;n, t&agrave;i trợ bảo l&atilde;nh cho c&aacute;c nh&agrave; thầu của thi c&ocirc;ng những dự &aacute;n Khang Điền ph&aacute;t triển,</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + Tư vấn hỗ trợ về dịch vụ b&aacute;n lẻ từ đầu tư cho đến ph&acirc;n phối, quản l&yacute; d&ograve;ng tiền của từng dự &aacute;n,</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + Kết nối chặt chẽ với c&aacute;c đại l&yacute; để cung cấp dịch vụ t&agrave;i ch&iacute;nh ưu đ&atilde;i cho kh&aacute;ch h&agrave;ng của Khang Điền.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + Tư vấn c&aacute;c phương &aacute;n t&agrave;i ch&iacute;nh cho Khang Điền theo từng giai đoạn cho đến kế hoạch ph&aacute;t triển d&agrave;i hạn trong tương lai.</p>
+<p>&nbsp;</p>
+
+<center><img src="images/tintuc/tin1/tin1_2.jpg"></center>
+<center><p><em>&Ocirc;ng Nguyễn Văn Thắng &ndash; Chủ tịch HĐQT ng&acirc;n h&agrave;ng TMCP C&ocirc;ng thương Việt Nam đ&atilde; c&oacute; đ&ocirc;i lời ph&aacute;t biểu về việc hợp t&aacute;c chiến lược với Khang Điền</em></p></center>
+<p><em>&nbsp;</em></p>
+<p>Vietinbank v&agrave; Khang Điền tin tưởng sự hợp t&aacute;c chiến lược bền vững n&agrave;y sẽ n&acirc;ng tầm uy t&iacute;n của Vietinbank &ndash; ng&acirc;n h&agrave;ng lớn nhất Việt Nam v&agrave; Khang Điền &ndash; c&ocirc;ng ty đầu tư ph&aacute;t triển bất động sản uy t&iacute;n chuy&ecirc;n nghiệp h&agrave;ng đầu, tạo ra c&aacute;c sản phẩm chất lượng đ&aacute;p ứng nhu cầu đa dạng của thị trường, n&acirc;ng cao t&iacute;nh cạnh tranh v&agrave; ph&aacute;t triển của lĩnh vực bất động sản tại Việt Nam.</p>
+<p>&nbsp;</p>
+<p>B&ecirc;n cạnh c&aacute;c ng&acirc;n h&agrave;ng h&agrave;ng đầu Việt Nam th&igrave; c&aacute;c Quỹ đầu tư uy t&iacute;n tr&ecirc;n thế giới cũng đ&atilde; c&oacute; sự đ&oacute;ng g&oacute;p rất lớn v&agrave;o th&agrave;nh c&ocirc;ng của Khang Điền trong việc ổn định nguồn vốn, định hướng v&agrave; triển khai th&agrave;nh c&ocirc;ng c&aacute;c dự &aacute;n bất động sản . Một trong những quỹ đầu tư lớn đ&atilde; đồng h&agrave;nh c&ugrave;ng Khang Điền trong suốt qu&aacute; tr&igrave;nh hoạt động từ năm 2007 l&agrave; C&ocirc;ng ty Quản l&yacute; Quỹ đầu tư VinaCapital v&agrave; mới đ&acirc;y nhất l&agrave; C&ocirc;ng ty quản l&yacute; Quỹ đầu tư DragonCapital, d&ugrave; mới đầu tư v&agrave;o Khang Điền từ năm 2014 nhưng cũng đ&atilde; đ&oacute;ng g&oacute;p rất lớn v&agrave;o qu&aacute; tr&igrave;nh tăng vốn v&agrave; định hướng c&ugrave;ng Khang Điền tiếp tục ph&aacute;t triển c&aacute;c dự &aacute;n bất động sản tiếp theo.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<center><img src="images/tintuc/tin1/tin1_3.jpg"></center>
+<center><p><em>&nbsp;&Ocirc;ng Andy Hồ &ndash; Gi&aacute;m đốc điều h&agrave;nh C&ocirc;ng ty quản l&yacute; Quỹ đầu tư Vinacapital </em></p></center>
+
+<center><img src="images/tintuc/tin1/tin1_4.jpg"></center>
+<center><p><em>&Ocirc;ng Vũ Hữu Điền &ndash; Gi&aacute;m đốc quản l&yacute; danh mục đầu tư C&ocirc;ng ty quản l&yacute; Quỹ đầu tư Dragon Capital </em></p></center>
+<p><em>&nbsp;</em></p>
+<p>&nbsp;</p>
+<center><img src="images/tintuc/tin1/tin1_5.jpg"></center>
+<center><p><em>Tại buổi lễ, đại diện cho đơn vị quản l&yacute; dự &aacute;n của Khang Điền - &Ocirc;ng Marc Towsend &ndash;&nbsp; Tổng Gi&aacute;m đốc c&ocirc;ng ty TNHH CBRE Việt Nam ch&uacute;c mừng sự hợp t&aacute;c của Vietinbank v&agrave; Khang Điền</em></p></center>
+<p>&nbsp;</p>
+<p>Th&ocirc;ng qua sự kiện k&iacute; kết hợp t&aacute;c chiến lược với Ng&acirc;n h&agrave;ng Vietinbank, Khang Điền cũng giới thiệu dự &aacute;n Melosa Garden &ndash; với tổng cộng 442 căn biệt thự s&acirc;n vườn c&oacute; diện t&iacute;ch hợp l&yacute; v&agrave; nh&agrave; phố liền kề ph&acirc;n kh&uacute;c cao cấp. To&agrave;n bộ dự &aacute;n d&agrave;nh khoảng 70% diện t&iacute;ch cho c&aacute;c khu c&ocirc;ng vi&ecirc;n, c&acirc;y xanh, c&aacute;c dịch vụ, tiện &iacute;ch c&ocirc;ng cộng c&oacute; đẳng cấp, nổi bật. Melosa Garden mang đến một kh&ocirc;ng gian sống ho&agrave;n hảo với sự đầu tư vượt trội về tiện &iacute;ch, sự đột ph&aacute; trong thiết kế v&agrave; tiện nghi, phục vụ tối đa nhu cầu của cư d&acirc;n, mang lại một kh&ocirc;ng gian sống thư gi&atilde;n y&ecirc;n b&igrave;nh v&agrave; ngập tr&agrave;n hạnh ph&uacute;c.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<center><img src="images/tintuc/tin1/tin1_6.jpg"></center>
+<center><p><em>Nếu bạn đ&atilde; từng chi&ecirc;m ngưỡng m&agrave;n tr&igrave;nh diễn nhạc nước ấn tượng tại Singapore. Bạn sẽ t&igrave;m lại được cảm gi&aacute;c ấy, ngay tại Melosa Garden &ndash; Khu vườn ngọt ng&agrave;o, ngập tr&agrave;n hạnh ph&uacute;c.</em></p></center>
+<p>&nbsp;</p>
+<p>Chương tr&igrave;nh <strong>&ldquo;Lễ k&yacute; kết hợp t&aacute;c chiến lược giữa Khang Điền v&agrave; Vietinbank&rdquo;</strong>&nbsp; đ&atilde; diễn ra th&agrave;nh c&ocirc;ng tốt đẹp v&agrave; l&agrave; tiền đề cho sự ph&aacute;t triển ng&agrave;y c&agrave;ng vững mạnh của cả hai b&ecirc;n.</p>
+<p style="text-align: center;"><a href="http://www.khangdien.com.vn">www.khangdien.com.vn</a> - <a href="http://www.melosagarden.com.vn">www.melosagarden.com.vn</a></p>
+<p><strong>&nbsp;</strong></p>
+<p style="text-align: center;"><strong>MELOSA GARDEN &ndash; MỘT SẢN PHẨM MỚI NHẤT CỦA KHANG ĐIỀN</strong></p>
+<p style="text-align: center;"><strong>TỪ 2,7 TỶ/CĂN </strong><strong>&oacute;</strong><strong> 15.8 TRIỆU/M<sup>2 </sup>&nbsp;(NH&Agrave;, ĐẤT, SỔ HỒNG)</strong></p>
+<p style="text-align: center;"><strong>MỞ B&Aacute;N CH&Iacute;NH THỨC&nbsp; 28/ 11/2015</strong></p>
+<p style="text-align: center;"><strong>ĐĂNG K&Yacute; NGAY, NHẬN LIỀN TAY</strong></p>
+<p style="text-align: center;"><strong>&ldquo;HOA&nbsp; V&Agrave;NG MELOSA&rdquo; v&agrave; nhiếu qu&agrave; tặng hấp dẫn kh&aacute;c</strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
 							<div class="social-news clearfix">
 					             <!-- Your send button code -->
 							    <div class="fb-send" 
@@ -351,22 +456,35 @@
 					          <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a></div>
 					        </div>
 						</div>
-						<div id="slider_tab4" class="content_slider" style="display:none;">
-							<h1>Dự án imperia garden: hấp dẫn nhờ gnaf tàu điện trên cao</h1>
-							<p><b>Vượng khí của ngôi nhà có được khoog đơn thuần là cách sắp xếp nội thất bên trong hợp phong thủy mà cảnh quan ngoại thất bên ngoài cũng giữ một vai trò vô cùng quan trọng, là nơi giúp điều hòa, cân bằng khí âm dương cho không gian sống nhà bạn.</b></p>
-							<p>
-								<center><img src="images/news_postimg.jpg"></center>
-							</p>
-							<p>
-								Ngày nay việc bố trí sân vườn ra sao cho hợp phong thủy đang được rất nhiều người quan tâm. Bởi theo duy tâm thì chính điều này sẽ giúp gia đình gặp nhiều bình an, làm ăn thuận lợi. Vậy khi thiết kế sân vườn gia chủ nên chú ý một số vấn đề sau để sở hữu một không gian vừa đẹp về thẩm mỹ lại hợp về phong thủy
-							</p>
-							<h4>Hướng sân vườn tốt nhất là hướng Nam</h4>
-							<p>
-								Hướng vườn được xác định là hướng chính mà chủ nhân thường xuyên đi vào vườn. Mỗi hướng vườn lại thu hút năng lượng khác nhau. Đối với sân vườn mà nói hướng tốt nhất theo phong thủy phương Đông là hướng Nam. Hướng Nam được xem là hướng cát khí mang lại nhiều năng lượng dương sẽ mang đến may mắn cho gia chủ. Trường hợp, vườn trước nhà bạn khoog thể đặt theo hướng Nam vì ảnh hưởng đến mỹ quan thì nên đặt tượng hoặc hình chim phượng hoàng để thu hút năng lượng dương này
-							</p>
-							<p>
-								Nếu không thể bố trí vườn theo hướng Nam thì hướng Đông cũng là một lựa chọn lý tưởng, đây cũng là hướng thu hút khí lành. Với hướng mặt trời mọc này gia chủ nên chọn trồng những loại cây mọc theo khóm như tre trúc, để thu hút nặng lượng tốt, giúp gắn kết, nâng đỡ các mối quan hệ trong gia đình
-							</p>
+						<div id="news_tab2" class="content_slider" style="display:none;">
+							<h1 style="text-align: center;"><strong>Chỉ từ 2,7 tỷ đồng sở hữu ngay nh&agrave; tại Melosa Garden</strong></h1>
+<h3><strong><em>Chỉ từ 2,7 tỷ đồng kh&aacute;ch h&agrave;ng đ&atilde; c&oacute; thể sở hữu ngay nh&agrave; li&ecirc;n kế vườn ( bao gồm nh&agrave;, đất, sổ hồng) tại Melosa Garden &ndash; Khu biệt thự, nh&agrave; li&ecirc;n kế vườn nổi bật của CĐT Khang Điền được ng&acirc;n h&agrave;ng Vietinbank bảo l&atilde;nh v&agrave; CBRE l&agrave; đơn vị quản l&yacute;.</em></strong></h3>
+<p><h2 style="text-align: center;"><strong>Melosa Garden &ndash; Nơi hạnh ph&uacute;c ngọt ng&agrave;o</strong></h2></p>
+<p>Khang Điền l&agrave; CĐT uy t&iacute;n v&agrave; t&acirc;m huyết lu&ocirc;n chăm ch&uacute;t tỉ mỉ cho c&aacute;c dự &aacute;n m&agrave; m&igrave;nh ph&aacute;t triển. Đối với Melosa Garden, Khang Điền muốn đ&acirc;y sẽ l&agrave; tổ ấm ngọt ng&agrave;o hạnh ph&uacute;c của kh&aacute;ch h&agrave;ng &ndash; nơi lo toan, muộn phiền của cuộc sống sẽ được thay thế bằng tiếng cười v&agrave; những ph&uacute;t gi&acirc;y hạnh ph&uacute;c. T&acirc;m huyến n&agrave;y được Khang Điền thể hiện qua việc cẩn thận v&agrave; tỉ mỉ đến từng chi tiết trong thiết kế nh&agrave;, hệ thống tiện &iacute;ch, ph&aacute;p l&yacute; dự &aacute;n&hellip;đến việc lựa chọn c&aacute;c đơn vị hợp t&aacute;c ph&aacute;t triển.</p>
+
+<center><img src="images/tintuc/tin2_1.jpg"></center>
+
+<center><p><em>Melosa Garden &ndash; Nơi hạnh ph&uacute;c ngọt ng&agrave;o</em></p></center>
+<p>Về vị tr&iacute;, Melosa Garden tọa lạc tr&ecirc;n mặt tiền đường V&agrave;nh Đai Trong ngay g&oacute;c giao nhau với Cao tốc Long Th&agrave;nh &ndash; Dầu Gi&acirc;y n&ecirc;n chỉ mất 10 ph&uacute;t để di chuyển đến quận 1, 15 ph&uacute;t đến Ph&uacute; Mỹ Hưng quận 7 v&agrave; 5-10 ph&uacute;t để đến c&aacute;c tiện &iacute;ch như: chợ Thạch Mỹ, bệnh vi&ecirc;n quận 2, Metro quận 2, trường học&hellip; Dự &aacute;n tọa lạc liền kề khu d&acirc;n cư Mega &ndash; cộng đồng d&acirc;n cư văn minh v&agrave; hiện đại.</p>
+<p>Về thiết kế, Melosa Garden được kế thừa ưu điểm an to&agrave;n, anh ninh tuyệt đối v&agrave; ch&uacute; trọng mảng xanh c&ugrave;ng hệ thống tiện &iacute;ch của chuỗi nh&agrave; Mega. Dự &aacute;n được x&acirc;y dựng trong khu compound kh&eacute;p k&iacute;n với c&aacute;c chốt bảo vệ hoạt động 24/7. V&agrave; tại Melosa Garden gần 70% diện t&iacute;ch được d&ugrave;ng để ph&aacute;t triển tiện &iacute;ch v&agrave; c&ocirc;ng vi&ecirc;n c&acirc;y xanh. Ngay tại nội khu dự &aacute;n, cư d&acirc;n đ&atilde; c&oacute; thể sử dụng h&agrave;ng loạt tiện &iacute;ch như: Ph&ograve;ng gym, ph&ograve;ng kh&aacute;m, hồ bơi, c&agrave; ph&ecirc; s&aacute;ch, khu BBQ&hellip; Đặc biệt, khu hồ bơi v&agrave; hồ cảnh quan c&oacute; thiết kế đẹp mắt được v&iacute; như &ldquo;tr&aacute;i tim&rdquo; của Melosa Garden.</p>
+
+<center><img src="images/tintuc/tin2_2.jpg"></center>
+
+<center><p><em>Hồ bơi v&agrave; hồ cảnh quan được chăm ch&uacute;t tỉ mỉ được v&iacute; như &ldquo;tr&aacute;i tim&rdquo; Melosa Garden</em></p></center>
+<p>C&aacute;c căn biệt thự v&agrave; nh&agrave; li&ecirc;n kế vườn tại Melosa Garden c&ograve;n nổi bật với thiết kế hiện đại, tinh tế tạo n&ecirc;n một kh&ocirc;ng gian sống văn minh, đẳng cấp. Nh&agrave; phố tại Melosa Garden c&oacute; diện t&iacute;ch từ 172,5 - 239 m2 v&agrave; biệt thự c&oacute; diện t&iacute;ch từ 196 - 219 m2. Gi&aacute; b&aacute;n tại Melosa Garden chỉ từ 15,8 triệu/m2 (bao gồm đất, nh&agrave;, sổ hồng) &ndash; một mức gi&aacute; kh&aacute; mềm so với những ưu điểm vượt bậc Melosa Garden c&oacute; được.</p>
+<p>Đối với c&aacute;c đơn vị hợp t&aacute;c, Khang Điền cũng khắt khe lựa chọn v&agrave; &ldquo;bắt tay&rdquo; với c&aacute;c đơn vị uy t&iacute;n, chuy&ecirc;n nghiệp để gi&uacute;p cư d&acirc;n ho&agrave;n to&agrave;n y&ecirc;n t&acirc;m khi lựa chọn Melosa Garden. Đơn vị quản l&yacute; của dự &aacute;n l&agrave; CBRE &ndash; đơn vị quản l&yacute; BĐS h&agrave;ng đầu thế giới. B&ecirc;n cạnh đ&oacute;, ng&agrave;y 10.11 trong lễ c&ocirc;ng bố dự &aacute;n, Khang Điền cũng đ&atilde; k&yacute; kết hợp t&aacute;c với ng&acirc;n h&agrave;ng Vietinbank. Theo đ&oacute;, Vietinbank sẽ l&agrave; đơn vị bảo l&atilde;nh b&agrave;n giao nh&agrave; v&agrave; hỗ trợ vay vốn khi kh&aacute;ch h&agrave;ng c&oacute; nhu cầu. STDA Miền Nam &ndash; đơn vị ph&acirc;n phối th&agrave;nh c&ocirc;ng chuỗi nh&agrave; Mega cũng được Khang Điền tiếp tục tin tưởng lựa chọn l&agrave;m đơn vị ph&acirc;n phối ch&iacute;nh thức của dự &aacute;n.</p>
+<p><strong>Ph&aacute;p l&yacute; minh bạch c&ugrave;ng ch&iacute;nh s&aacute;ch thanh to&aacute;n linh hoạt</strong></p>
+<p>To&agrave;n bộ dự &aacute;n Melosa đ&atilde; c&oacute; sổ đỏ, từng căn biệt thự, nh&agrave; li&ecirc;n kế vườn cũng nhanh ch&oacute;ng c&oacute; sổ hồng khi khi được x&acirc;y dựng v&agrave; ho&agrave;n thiện trong thời gian tới đ&acirc;y. Đ&acirc;y l&agrave; điều m&agrave; kh&ocirc;ng phải CĐT n&agrave;o cũng c&oacute; thể l&agrave;m được.</p>
+<center><img src="images/tintuc/tin3_2.jpg"></center>
+<center><p><em>D&ograve;ng s&ocirc;ng hiền h&ograve;a bao bọc Melosa Garden đem lại sự b&igrave;nh y&ecirc;n v&agrave; vượng kh&iacute; cho cư d&acirc;n</em></p></center>
+<p>B&ecirc;n cạnh đ&oacute;, Khang Điền cũng đưa ra ch&iacute;nh s&aacute;ch thanh to&aacute;n linh hoạt để kh&aacute;ch h&agrave;ng c&oacute; thể dễ d&agrave;ng trở th&agrave;nh cư d&acirc;n của Melosa Garden. Kh&aacute;ch h&agrave;ng chỉ cần thanh to&aacute;n 30% nhận nh&agrave; ngay, 70% c&ograve;n lại kh&aacute;ch h&agrave;ng c&oacute; thể vay ng&acirc;n h&agrave;ng với ưu đ&atilde;i 0% l&atilde;i suất trong 12 th&aacute;ng đầu ti&ecirc;n, &acirc;n hạn trả nợ gốc trong 1 năm đầu. Hoặc kh&aacute;ch h&agrave;ng c&oacute; thể thanh to&aacute;n 40% nhận nh&agrave;, số c&ograve;n lại sẽ được trả g&oacute;p 3 năm 0% l&atilde;i suất. Đối với những khoản tiền thanh to&aacute;n trước hạn của kh&aacute;ch h&agrave;ng, Khang Điền c&ograve;n ưu đ&atilde;i chiết khấu đến 18%. Đặc biệt, 100 kh&aacute;ch h&agrave;ng đầu ti&ecirc;n đặt mua sẽ được tặng ngay hoa v&agrave;ng Melosa trị gi&aacute; 3 chỉ v&agrave;ng.</p>
+<p>Ngo&agrave;i ra, c&aacute;c kh&aacute;ch h&agrave;ng tham dự lễ mở b&aacute;n ch&iacute;nh thức của dự &aacute;n Melosa Garden sắp tới sẽ c&oacute; cơ hội r&uacute;t thăm may mắn sở hữu c&aacute;c giải thưởng gi&aacute; trị như: 01 xe Honda SH 150i, 05 iPhone 6, 10 Tivi Led 42 inch, 15 phiếu mua h&agrave;ng điện m&aacute;y trị gi&aacute; 6 triệu đồng/phiếu.</p>
+<p><strong><em>Chi tiết vui l&ograve;ng li&ecirc;n hệ:</em></strong></p>
+<p><strong>Hệ thống Si&ecirc;u thị dự &aacute;n Bất động sản STDA Miền Nam</strong></p>
+<p><strong>Địa chỉ:</strong> 326 V&otilde; Văn Kiệt, phường C&ocirc; Giang, quận 1, Th&agrave;nh phố Hồ Ch&iacute; Minh</p>
+<p><strong>Hotline: </strong>0903 85 99 11 / <a href="http://sieuthiduan.vn/du-an/du-an-melosa-garden-khang-dien/">http://sieuthiduan.vn/du-an/du-an-melosa-garden-khang-dien/</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 							<div class="social-news clearfix">
 					             <!-- Your send button code -->
 							    <div class="fb-send" 
@@ -386,86 +504,98 @@
 					          <div class="google"><g:plusone></g:plusone></div>
 					          <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a></div>
 					        </div>
+
+						</div><!-- end slider_tab2 -->
+						<div id="news_tab3" class="content_slider" style="display:none;">
+							<h1 style="text-align: center;"><strong>KHANG ĐIỀN TỔ CHỨC TẬP HUẤN KINH DOANH </strong></h1>
+<h1 style="text-align: center;"><strong>DỰ &Aacute;N MELOSA GARDEN</strong></h1>
+<p>S&aacute;ng ng&agrave;y 28/10/2015, C&ocirc;ng ty CP Đầu tư v&agrave; Kinh doanh Nh&agrave; Khang Điền đ&atilde; tổ chức &ldquo;Chương tr&igrave;nh tập huấn kinh doanh Dự &aacute;n Melosa Garden&rdquo; tại Royal Saigon Hotel (133 Nguyễn Huệ, Quận 1) cho hơn 370 nh&acirc;n vi&ecirc;n kinh doanh của 8 s&agrave;n giao dịch bất động sản, nhằm cung cấp những th&ocirc;ng tin chi tiết về dự &aacute;n, ch&iacute;nh s&aacute;ch b&aacute;n h&agrave;ng cũng như những g&oacute;i ưu đ&atilde;i t&agrave;i ch&iacute;nh d&agrave;nh ri&ecirc;ng cho Kh&aacute;ch h&agrave;ng khi mua nh&agrave; tại Melosa Garden &ndash; Dự &aacute;n tiếp theo của Khang Điền sẽ được ch&agrave;o b&aacute;n ch&iacute;nh thức v&agrave;o th&aacute;ng 11 tới đ&acirc;y.</p>
+<p>Với &yacute; nghĩa "khu vườn ngọt ng&agrave;o, ngập tr&agrave;n hạnh ph&uacute;c&rdquo;, Melosa Garden nhắm đến đối tượng kh&aacute;ch h&agrave;ng từ 35-50 tuổi, thu nhập kh&aacute; v&agrave; ổn định, hoặc người nước ngo&agrave;i l&agrave;m việc tại c&aacute;c khu c&ocirc;ng nghiệp l&acirc;n cận, Việt kiều mua nh&agrave; để c&oacute; nơi an cư khi về nước, cư d&acirc;n l&acirc;n cận muốn n&acirc;ng tầm m&ocirc;i trường sống, y&ecirc;u th&iacute;ch kh&ocirc;ng gian sống tiện nghi v&agrave; gần gũi với thi&ecirc;n nhi&ecirc;n.</p>
+<p>Mở đầu chương tr&igrave;nh, đại diện Chủ đầu tư &ndash; &Ocirc;ng Nguyễn Đức Trong - PTGĐ C&ocirc;ng ty&nbsp; Khang Điền đ&atilde; ch&acirc;n th&agrave;nh cảm ơn 2 đơn vị đồng h&agrave;nh c&ugrave;ng c&ocirc;ng ty hơn 1 năm qua l&agrave; STDA v&agrave; SunlandSG, những người đ&atilde; g&oacute;p phần mang đến sự th&agrave;nh c&ocirc;ng cho chuỗi Mega &ndash; d&ograve;ng sản phẩm &ldquo;Nh&agrave; li&ecirc;n kế vườn, compound bảo vệ 24/7, tiện nghi cao cấp v&agrave; gi&aacute; b&aacute;n hợp l&yacute; &ndash; đ&atilde; tạo tiếng vang tr&ecirc;n thị trường hơn 1 năm qua v&agrave; tạo dấu ấn kh&aacute;c biệt cho thương hiệu Khang Điền với doanh số cực kỳ ấn tượng: hơn 600 căn đ&atilde; b&aacute;n ra trong 1 năm, 60% cư d&acirc;n dọn về sinh sống v&agrave; dần h&igrave;nh th&agrave;nh cộng đồng d&acirc;n cư sầm uất, văn minh v&agrave; th&acirc;n thiện.</p>
+
+<center><img src="images/tintuc/tin3_1.jpg"></center>
+
+<center><p><em>&Ocirc;ng Nguyễn Đức Trong - PTGĐ Cty Khang Điền chia sẻ về dự &aacute;n Melosa Garden</em></p></center>
+<p>&nbsp;</p>
+<p>Với th&aacute;i độ khi&ecirc;m tốn v&agrave; cầu tiến khi n&oacute;i về những th&agrave;nh c&ocirc;ng của Khang Điền đ&atilde; đạt được, &Ocirc;ng Trọng chia sẻ &ldquo;<em>Tiếp nối th&agrave;nh c&ocirc;ng của những dự &aacute;n trước đ&acirc;y v&agrave; n&acirc;ng tầm hơn với những dự &aacute;n sau n&agrave;y, t&ocirc;i mong rằng ch&uacute;ng ta ng&agrave;y c&agrave;ng cố gắng hơn nữa, để mang đến cho kh&aacute;ch h&agrave;ng sản phẩm ho&agrave;n hảo hơn, dịch vụ tiện &iacute;ch cao cấp hơn, để kh&aacute;ch h&agrave;ng ng&agrave;y c&agrave;ng h&agrave;i l&ograve;ng với ch&uacute;ng ta hơn. V&igrave; sự h&agrave;i l&ograve;ng của kh&aacute;ch h&agrave;ng ch&iacute;nh l&agrave; mục ti&ecirc;u, l&agrave; đ&iacute;ch đến, l&agrave; hạnh ph&uacute;c của tất cả ch&uacute;ng ta&hellip;&rdquo;</em></p>
+<p>Theo đ&oacute;, &Ocirc;ng Trọng cho biết, Melosa Garden mang đến một kh&ocirc;ng gian sống ho&agrave;n hảo với sự đầu tư vượt trội về tiện &iacute;ch, sự đột ph&aacute; trong thiết kế v&agrave; tiện nghi , phục vụ tối đa nhu cầu của cư d&acirc;n, mang lại một kh&ocirc;ng gian sống thư gi&atilde;n y&ecirc;n b&igrave;nh v&agrave; ngập tr&agrave;n hạnh ph&uacute;c. C&aacute;c căn biệt thự v&agrave; nh&agrave; liền kề tại Melosa Garden được thiết kế theo phong c&aacute;c đơn giản, tinh tế kết hợp với nội thất sang trọng, hiện đại tạo n&ecirc;n đẳng cấp sống văn minh, lịch l&atilde;m.</p>
+<center><img src="images/tintuc/tin3_2.jpg"></center>
+<p>Melosa Garden nằm trong quần thể cụm Khu d&acirc;n cư Mega của Khang Điền, ngay mặt tiền đường V&agrave;ng Đai Trong, gần g&oacute;c giao Cao tốc TPHCM -&nbsp; Long Th&agrave;nh &ndash; Dầu Gi&acirc;y, tiếp gi&aacute;p trung t&acirc;m h&agrave;nh ch&iacute;nh Quận 2, chỉ 10 ph&uacute;t đến trung t&acirc;m Quận 1, 15 ph&uacute;t đến khu đ&ocirc; thị mới Ph&uacute; Mỹ Hưng. Chỉ v&agrave;i ph&uacute;t bước ra từ ng&ocirc;i nh&agrave; của m&igrave;nh tại Melosa Garden, bạn c&oacute; thể tiếp cận trường học, khu mua sắm, si&ecirc;u thị , bệnh viện, chợ&hellip;</p>
+<p>Sở hữu tiện &iacute;ch nội khu đẳng cấp được lấy cảm hứng từ h&igrave;nh ảnh th&aacute;c nước nh&acirc;n tạo trong c&aacute;c khu d&acirc;n cư cao cấp Singapore, khu hồ bơi v&agrave; hồ tr&agrave;n trở th&agrave;nh t&acirc;m điểm nổi bật ngay tại trung t&acirc;m, tựa như &ldquo;tr&aacute;i tim&rdquo; của to&agrave;n bộ dự &aacute;n, h&agrave;i h&ograve;a trong tổng thể&nbsp; hơn 2 ha diện t&iacute;ch cảnh quan v&agrave;&nbsp; tiện &iacute;ch c&ocirc;ng cộng: ph&ograve;ng Gym,s&acirc;n tennis chuẩn quốc tế với trang thiết bị hiện đại.</p>
+<center><p><em>Melosa Garden sở hữu chuỗi tiện &iacute;ch đẳng cấp hơn 2ha</em></p></center>
+<center><img src="images/tintuc/tin3_3.jpg"></center>
+<p>Melosa Garden được quản l&yacute; bởi CBRE - đơn vị tư vấn quản l&yacute; bất động sản chuy&ecirc;n nghiệp quốc tế, chất lượng c&ocirc;ng tr&igrave;nh được&nbsp; &ldquo;bảo chứng&rdquo; bởi thương hiệu quản l&yacute; v&agrave; tư vấn chất lượng h&agrave;ng đầu Việt Nam l&agrave; QSQC. B&ecirc;n cạnh đ&oacute;, yếu tố ph&aacute;p l&yacute; minh bạch, x&acirc;y sẳn nh&agrave; v&agrave; đưa v&agrave;o sử dụng c&aacute;c tiện &iacute;ch trước khi b&aacute;n sẽ gi&uacute;p cho Melosa Garden tiếp tục nhận được sự ủng hộ của đ&ocirc;ng đảo kh&aacute;ch h&agrave;ng.</p>
+<p>Ngo&agrave;i ra, trong buổi tập huấn, Khang Điền cũng mời ng&acirc;n h&agrave;ng Vietinbank đến để tư vấn c&aacute;c g&oacute;i ưu đ&atilde;i t&agrave;i ch&iacute;nh hấp dẫn, để hỗ trợ cho kh&aacute;ch h&agrave;ng dễ d&agrave;ng sở hữu ng&ocirc;i nh&agrave; mơ ước của m&igrave;nh tại Melosa Garden. Đến tham dự buổi lễ c&oacute; B&agrave; Nguyễn Thị Hải Yến &ndash; GĐ Chi nh&aacute;nh 1 Vietinbank c&ugrave;ng to&agrave;n thể ban l&atilde;nh đạo chi nh&aacute;nh. &Ocirc;ng Nguyễn Th&agrave;nh Xu&acirc;n &ndash; PGĐ Chi nh&aacute;nh 1 đ&atilde; ph&aacute;t biểu &ldquo;với sự hợp t&aacute;c giữa 2 b&ecirc;n, &nbsp;ch&uacute;ng t&ocirc;i hi vọng sẽ tạo điều kiện thuận lợi về t&agrave;i ch&iacute;nh cho kh&aacute;ch h&agrave;ng dễ d&agrave;ng sở hữu ng&ocirc;i nh&agrave; m&agrave; họ hằng mơ ước, trong 1 kh&ocirc;ng gian sống tuyệt vời, được ph&aacute;t triển bởi 1 đơn vi uy t&iacute;n v&agrave; t&acirc;m huyết như Khang Điền&rdquo;.</p>
+<p>Tiếp theo, b&agrave; Ng&ocirc; Thị Mai Chi &ndash; GĐ T&agrave;i ch&iacute;nh của Khang Điền chia sẻ về những ch&iacute;nh s&aacute;ch b&aacute;n h&agrave;ng v&agrave; c&aacute;c g&oacute;i ưu đ&atilde;i thanh to&aacute;n linh hoạt cho kh&aacute;ch h&agrave;ng. Cuối chương tr&igrave;nh, đại diện BTGĐ c&ocirc;ng ty Khang Điền trực tiếp giải đ&aacute;p từng c&acirc;u hỏi thắc mắc của c&aacute;c bạn kinh doanh.</p>
+<p>Sự nỗ lực v&agrave; nhiệt th&agrave;nh của chủ đầu tư v&agrave; ng&acirc;n h&agrave;ng t&agrave;i trợ ch&iacute;nh cho dự &aacute;n đ&atilde; gi&uacute;p cho c&aacute;c &ldquo;chiến binh kinh doanh&rdquo; am hiểu từng chi tiết của dự &aacute;n, để c&agrave;ng tự h&agrave;o về sản phẩm v&agrave; tự tin khi tư vấn cho kh&aacute;ch h&agrave;ng &nbsp;như lời&nbsp; &ocirc;ng Trọng đ&atilde; chia sẻ: &ldquo;<em>Ch&uacute;ng ta c&oacute; 1 sản phẩm xuất sắc th&igrave; c&aacute;c bạn h&atilde;y l&agrave; những chiến binh b&aacute;n h&agrave;ng xuất sắc. H&atilde;y mang đến những g&igrave; tốt nhất cho kh&aacute;ch h&agrave;ng. Họ hạnh ph&uacute;c th&igrave; ch&uacute;ng ta cũng hạnh ph&uacute;c&hellip;..Ch&uacute;ng ta h&atilde;y c&ugrave;ng cố gắng v&igrave; HẠNH PH&Uacute;C KH&Ocirc;NG PHẢI L&Agrave; Đ&Iacute;CH ĐẾN, HẠNH PH&Uacute;C L&Agrave; MỘT H&Agrave;NH TR&Igrave;NH, m&agrave; tr&ecirc;n h&agrave;nh tr&igrave;nh đ&oacute;, ch&uacute;ng ta c&ugrave;ng nỗ lực kh&ocirc;ng ngừng, để mỗi gi&acirc;y ph&uacute;t trong cuộc đời l&agrave; mỗi gi&acirc;y ph&uacute;t hạnh ph&uacute;c với những hương vị của th&agrave;nh c&ocirc;ng, với những th&agrave;nh quả ngọt ng&agrave;o&hellip;.&rdquo;</em></p>
+<p>&nbsp;Lời kết th&uacute;c chương tr&igrave;nh bằng th&ocirc;ng điệp của MELOSA - KHU VƯỜN NGỌT NG&Agrave;O, NGẬP TR&Agrave;N HẠNH PH&Uacute;C!V&agrave;&hellip;ai trong ch&uacute;ng ta, cũng c&oacute; thể tận hưởng hạnh ph&uacute;c n&agrave;y, tại Melosa, c&ugrave;ng với Khang Điền &ndash; Chủ đầu tư đam m&ecirc; v&agrave; t&acirc;m huyết, lu&ocirc;n phấn đấu kh&ocirc;ng ngừng tr&ecirc;n h&agrave;nh tr&igrave;nh chinh phục thử th&aacute;ch để mang đến th&agrave;nh c&ocirc;ng v&agrave; hạnh ph&uacute;c trọn vẹn cho tất cả những ai tin tưởng v&agrave; y&ecirc;u mến m&igrave;nh&hellip;..</p>
+<p><a href="http://www.khangdien.com.vn">www.khangdien.com.vn</a></p>
+							<div class="social-news clearfix">
+					             <!-- Your send button code -->
+							    <div class="fb-send" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count">
+							    </div>
+					          	<div class="fb-like" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count" 
+							        data-action="like" 
+							        data-show-faces="true">
+							    </div>
+					          	<div class="fb-share-button" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count">
+							    </div>
+					          <div class="google"><g:plusone></g:plusone></div>
+					          <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a></div>
+					        </div>
+					
+						</div><!-- end slider_tab3 -->
+						<div id="news_tab4" class="content_slider" style="display:none;">
+							<h1 style="text-align: center;"><strong>KHANG ĐIỀN C&Ocirc;NG BỐ MỞ B&Aacute;N DỰ &Aacute;N MELOSA GARDEN </strong></h1>
+<p>&nbsp;</p>
+<p><strong><em>Ng&agrave;y 1</em></strong><strong><em>0/11/2015</em></strong><strong><em>, tại Kh&aacute;ch sạn Sheraton Saigon (số 88 Đồng Khởi, quận 1, TP Hồ Ch&iacute; Minh), C&ocirc;ng ty CP Đầu tư v&agrave; Kinh doanh nh&agrave; Khang Điền c&ocirc;ng bố mở b&aacute;n dự &aacute;n mới : Khu nh&agrave; ở Melosa Garden. Đ&acirc;y l&agrave; dự &aacute;n tiếp theo của Khang Điền ph&aacute;t triển tại quận 9 &ndash; TP HCM, được ng&acirc;n h&agrave;ng TMCP C&ocirc;ng thương Việt Nam (Vietinbank)&nbsp; bảo l&atilde;nh b&agrave;n giao nh&agrave; v&agrave; được quản l&yacute; bởi CBRE.</em></strong></p>
+<p>Bắt đầu triển khai d&ograve;ng sản phẩm Mega -&nbsp; <strong><em>&ldquo;Nh&agrave; compound, tiện nghi cao cấp, ph&aacute;p l&yacute; ho&agrave;n chỉnh&rdquo;</em></strong> &nbsp;từ năm 2014, trong v&ograve;ng chỉ hơn 1 năm, Khang Điền đ&atilde; b&aacute;n hơn 600 căn nh&agrave; thuộc chuỗi dự &aacute;n Mega Residence, Mega Ruby, Mega Sapphire v&agrave; Mega Village. Hiện đ&atilde; c&oacute; 60% hộ d&acirc;n dọn về sinh sống, h&igrave;nh th&agrave;nh cộng đồng cư d&acirc;n văn minh, sầm uất. Tiếp nối th&agrave;nh c&ocirc;ng, Khang Điền đ&atilde; tự tin ph&aacute;t triển d&ograve;ng sản phẩm biệt thự s&acirc;n vườn c&oacute; diện t&iacute;ch hợp l&yacute; v&agrave; nh&agrave; phố liền kề ph&acirc;n kh&uacute;c cao cấp Melosa Garden.&nbsp;</p>
+<center><img src="images/tintuc/tin4_1.jpg"></center>
+<p>Melosa Garden c&oacute; tổng diện t&iacute;ch 17,3ha với 442 căn biệt thự v&agrave; nh&agrave; liền kề c&oacute; vị tr&iacute; giao th&ocirc;ng thuận lợi, nằm trong quần thể Khu d&acirc;n cư Mega của Khang Điền, gần trục giao Cao tốc TPHCM -&nbsp; Long Th&agrave;nh &ndash; Dầu Gi&acirc;y, tiếp gi&aacute;p trung t&acirc;m h&agrave;nh ch&iacute;nh Quận 2, chỉ 10 ph&uacute;t đến trung t&acirc;m Quận 1, 15 ph&uacute;t đến khu đ&ocirc; thị mới Ph&uacute; Mỹ Hưng. Chỉ v&agrave;i ph&uacute;t bước ra từ ng&ocirc;i nh&agrave; của m&igrave;nh tại Melosa Garden, bạn c&oacute; thể tiếp cận trường học, khu mua sắm, si&ecirc;u thị , bệnh viện, chợ&hellip;</p>
+<p>Melosa Garden mang đến một kh&ocirc;ng gian sống ho&agrave;n hảo với sự đầu tư vượt trội về tiện &iacute;ch, sự đột ph&aacute; trong thiết kế v&agrave; tiện nghi , phục vụ tối đa nhu cầu của cư d&acirc;n, mang lại một kh&ocirc;ng gian sống thư gi&atilde;n y&ecirc;n b&igrave;nh v&agrave; ngập tr&agrave;n hạnh ph&uacute;c. C&aacute;c căn biệt thự v&agrave; nh&agrave; liền kề tại Melosa Garden được thiết kế theo phong c&aacute;ch đơn giản nhưng tinh tế, kết hợp với nội thất sang trọng, hiện đại tạo n&ecirc;n đẳng cấp sống văn minh, lịch l&atilde;m.</p>
+<p>&nbsp;</p>
+<center><img src="images/tintuc/tin4_2.jpg"></center>
+<p>To&agrave;n bộ dự &aacute;n d&agrave;nh khoảng 70% diện t&iacute;ch cho c&aacute;c khu c&ocirc;ng vi&ecirc;n, c&acirc;y xanh, c&aacute;c dịch vụ, tiện &iacute;ch c&ocirc;ng cộng c&oacute; đẳng cấp, nổi bật. Với 4ha tiện &iacute;ch cảnh quan nội khu đẳng cấp được lấy cảm hứng từ h&igrave;nh ảnh th&aacute;c nước nh&acirc;n tạo trong c&aacute;c khu d&acirc;n cư cao cấp Singapore, khu hồ bơi v&agrave; hồ cảnh quan trở th&agrave;nh t&acirc;m điểm nổi bật ngay tại trung t&acirc;m, tựa như &ldquo;tr&aacute;i tim&rdquo; của to&agrave;n bộ dự &aacute;n. B&ecirc;n cạnh đ&oacute; l&agrave; khu tiện &iacute;ch c&ocirc;ng cộng với trang thiết bị hiện đại đ&aacute;p ứng nhu cầu của cư d&acirc;n như si&ecirc;u thị mini, ph&ograve;ng Gym, s&acirc;n tennis đạt chuẩn quốc tế, đ&atilde; ho&agrave;n thiện v&agrave; sẵn s&agrave;ng đưa v&agrave;o sử dụng.</p>
+<center><img src="images/tintuc/tin4_3.jpg"></center>
+<p>Melosa Garden được quản l&yacute; bởi CBRE - đơn vị tư vấn quản l&yacute; bất động sản chuy&ecirc;n nghiệp quốc tế, chất lượng c&ocirc;ng tr&igrave;nh được&nbsp; &ldquo;bảo chứng&rdquo; bởi thương hiệu quản l&yacute; v&agrave; tư vấn chất lượng h&agrave;ng đầu Việt Nam SCQC. B&ecirc;n cạnh đ&oacute;, Khang Điền lu&ocirc;n đặt yếu tố ph&aacute;p l&yacute; minh bạch l&ecirc;n h&agrave;ng đầu, x&acirc;y sẵn nh&agrave; v&agrave; đưa v&agrave;o sử dụng c&aacute;c tiện &iacute;ch trước khi b&aacute;n l&agrave;m cho dự &aacute;n Melosa Garden tiếp tục nhận được sự ủng hộ của đ&ocirc;ng đảo kh&aacute;ch h&agrave;ng, được thị trường c&ocirc;ng nhận về uy t&iacute;n của chủ đầu tư Khang Điền.</p>
+<p>Vietinbank t&agrave;i trợ cho dự &aacute;n Melosa Garden kh&ocirc;ng chỉ từ giai đoạn x&acirc;y dựng cho đến khi ho&agrave;n thiện m&agrave; c&ograve;n hỗ trợ kh&aacute;ch h&agrave;ng mua nh&agrave; vay vốn linh hoạt, bảo l&atilde;nh b&agrave;n giao nh&agrave; cho người mua chỉ sau 9 th&aacute;ng đến 1 năm. Sự hợp t&aacute;c chiến lược n&agrave;y đ&atilde; đem đến sự cam kết, đảm bảo cao nhất của dự &aacute;n d&agrave;nh cho kh&aacute;ch h&agrave;ng, n&acirc;ng cao t&iacute;n nhiệm của c&aacute;c dự &aacute;n m&agrave; Khang Điền triển khai thực hiện.</p>
+<p>Melosa Garden l&agrave; dự &aacute;n đ&aacute;p ứng được nhu cầu của kh&aacute;ch h&agrave;ng đang muốn t&igrave;m kiếm những kh&ocirc;ng gian sống tiện nghi đẳng cấp trong m&ocirc;i trường xanh,hứa hẹn sẽ đem lại sức h&uacute;t lớn đối với kh&aacute;ch h&agrave;ng tại TP. Hồ Ch&iacute; Minh.</p>
+							<div class="social-news clearfix">
+					             <!-- Your send button code -->
+							    <div class="fb-send" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count">
+							    </div>
+					          	<div class="fb-like" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count" 
+							        data-action="like" 
+							        data-show-faces="true">
+							    </div>
+					          	<div class="fb-share-button" 
+							        data-href="http://melosagarden.com.vn/news.html" 
+							        data-layout="button_count">
+							    </div>
+					          <div class="google"><g:plusone></g:plusone></div>
+					          <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a></div>
+					        </div>
+					      
 						</div><!-- end slider_tab4 -->
-						<div id="slider_tab5" class="content_slider" style="display:none;">
-							<h1>Ý tưởng thiết kế tầng hầm đẹp hút hồn</h1>
-							<p><b>Vượng khí của ngôi nhà có được khoog đơn thuần là cách sắp xếp nội thất bên trong hợp phong thủy mà cảnh quan ngoại thất bên ngoài cũng giữ một vai trò vô cùng quan trọng, là nơi giúp điều hòa, cân bằng khí âm dương cho không gian sống nhà bạn.</b></p>
-							<p>
-								<center><img src="images/news_postimg.jpg"></center>
-							</p>
-							<p>
-								Ngày nay việc bố trí sân vườn ra sao cho hợp phong thủy đang được rất nhiều người quan tâm. Bởi theo duy tâm thì chính điều này sẽ giúp gia đình gặp nhiều bình an, làm ăn thuận lợi. Vậy khi thiết kế sân vườn gia chủ nên chú ý một số vấn đề sau để sở hữu một không gian vừa đẹp về thẩm mỹ lại hợp về phong thủy
-							</p>
-							<h4>Hướng sân vườn tốt nhất là hướng Nam</h4>
-							<p>
-								Hướng vườn được xác định là hướng chính mà chủ nhân thường xuyên đi vào vườn. Mỗi hướng vườn lại thu hút năng lượng khác nhau. Đối với sân vườn mà nói hướng tốt nhất theo phong thủy phương Đông là hướng Nam. Hướng Nam được xem là hướng cát khí mang lại nhiều năng lượng dương sẽ mang đến may mắn cho gia chủ. Trường hợp, vườn trước nhà bạn khoog thể đặt theo hướng Nam vì ảnh hưởng đến mỹ quan thì nên đặt tượng hoặc hình chim phượng hoàng để thu hút năng lượng dương này
-							</p>
-							<p>
-								Nếu không thể bố trí vườn theo hướng Nam thì hướng Đông cũng là một lựa chọn lý tưởng, đây cũng là hướng thu hút khí lành. Với hướng mặt trời mọc này gia chủ nên chọn trồng những loại cây mọc theo khóm như tre trúc, để thu hút nặng lượng tốt, giúp gắn kết, nâng đỡ các mối quan hệ trong gia đình
-							</p>
-							<div class="social-news clearfix">
-					             <!-- Your send button code -->
-							    <div class="fb-send" 
-							        data-href="http://melosagarden.com.vn/news.html" 
-							        data-layout="button_count">
-							    </div>
-					          	<div class="fb-like" 
-							        data-href="http://melosagarden.com.vn/news.html" 
-							        data-layout="button_count" 
-							        data-action="like" 
-							        data-show-faces="true">
-							    </div>
-					          	<div class="fb-share-button" 
-							        data-href="http://melosagarden.com.vn/news.html" 
-							        data-layout="button_count">
-							    </div>
-					          <div class="google"><g:plusone></g:plusone></div>
-					          <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a></div>
-					        </div>
-						</div><!-- end slider_tab5 -->
-						<div id="slider_tab6" class="content_slider" style="display:none;">
-							<h1>Ý tưởng thiết kế tầng hầm đẹp hút hồn</h1>
-							<p><b>Vượng khí của ngôi nhà có được khoog đơn thuần là cách sắp xếp nội thất bên trong hợp phong thủy mà cảnh quan ngoại thất bên ngoài cũng giữ một vai trò vô cùng quan trọng, là nơi giúp điều hòa, cân bằng khí âm dương cho không gian sống nhà bạn.</b></p>
-							<p>
-								<center><img src="images/news_postimg.jpg"></center>
-							</p>
-							<p>
-								Ngày nay việc bố trí sân vườn ra sao cho hợp phong thủy đang được rất nhiều người quan tâm. Bởi theo duy tâm thì chính điều này sẽ giúp gia đình gặp nhiều bình an, làm ăn thuận lợi. Vậy khi thiết kế sân vườn gia chủ nên chú ý một số vấn đề sau để sở hữu một không gian vừa đẹp về thẩm mỹ lại hợp về phong thủy
-							</p>
-							<h4>Hướng sân vườn tốt nhất là hướng Nam</h4>
-							<p>
-								Hướng vườn được xác định là hướng chính mà chủ nhân thường xuyên đi vào vườn. Mỗi hướng vườn lại thu hút năng lượng khác nhau. Đối với sân vườn mà nói hướng tốt nhất theo phong thủy phương Đông là hướng Nam. Hướng Nam được xem là hướng cát khí mang lại nhiều năng lượng dương sẽ mang đến may mắn cho gia chủ. Trường hợp, vườn trước nhà bạn khoog thể đặt theo hướng Nam vì ảnh hưởng đến mỹ quan thì nên đặt tượng hoặc hình chim phượng hoàng để thu hút năng lượng dương này
-							</p>
-							<p>
-								Nếu không thể bố trí vườn theo hướng Nam thì hướng Đông cũng là một lựa chọn lý tưởng, đây cũng là hướng thu hút khí lành. Với hướng mặt trời mọc này gia chủ nên chọn trồng những loại cây mọc theo khóm như tre trúc, để thu hút nặng lượng tốt, giúp gắn kết, nâng đỡ các mối quan hệ trong gia đình
-							</p>
-							<div class="social-news clearfix">
-					             <!-- Your send button code -->
-							    <div class="fb-send" 
-							        data-href="http://melosagarden.com.vn/news.html" 
-							        data-layout="button_count">
-							    </div>
-					          	<div class="fb-like" 
-							        data-href="http://melosagarden.com.vn/news.html" 
-							        data-layout="button_count" 
-							        data-action="like" 
-							        data-show-faces="true">
-							    </div>
-					          	<div class="fb-share-button" 
-							        data-href="http://melosagarden.com.vn/news.html" 
-							        data-layout="button_count">
-							    </div>
-					          <div class="google"><g:plusone></g:plusone></div>
-					          <a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a>
-					        </div>
-						</div><!-- end slider_tab6 -->
-					</div>
-				</div>
-				<div id="Tab2" class="content_tab container" style="display:none;">					
-					<img src="images/Tienich/hocanhquang.jpg" style="width:100%;">					
+						
+					</div>				
 				</div><!-- end tab2 -->
+                
+<!-- Hide cai nay da
 				<div id="Tab3" class="content_tab container" style="display:none;">
-					<img src="images/Tienich/Ho_Tran.jpg" style="width:100%;">
+                	<h1 style="text-align: center;"><strong>GIỚI THIỆU VỀ DỰ ÁN MELOSA </strong></h1>
+                    <br/>
+					<center><iframe width="560" height="315" src="https://www.youtube.com/embed/X1JHU5xwQv4" frameborder="0" allowfullscreen></iframe></center>
 				</div><!-- end tab3 -->
 			</div>
 		</div>
@@ -486,7 +616,13 @@
 					<h3 class="title">Phân phối chính thức</h3>
 					<ul> 
 						<li>
-							<h4>CEN Group</h4>
+							<h4>Sàn giao dịch Sunland SG</h4>
+							<p>85A, Phan Kế Bính, P. Đakao, Quận 1, TP.HCM</p>
+							<p>0938 779 660 - (08) 3910 2522</p>
+							<a href="http://www.sunland.vn" class="website">www.sunland.vn</a>
+						</li>
+						<li>
+							<h4>STDA</h4>
 							<p>Tòa nhà Samco, số 326 Võ Văn Kiệt P. Cô Giang, Quận 1, TP.HCM</p>
 							<p>0903.85.99.11 - (08) 3925 6795</p>
 							<a href="http://www.cengroup.com.vn" class="website">www.cengroup.com.vn</a>
@@ -503,12 +639,7 @@
 							<p>0908 49 6446 - (08) 6258 9650 </p>
 							<a href="http://www.tcf.vn" class="website">www.tcf.vn</a>
 						</li>
-						<li>
-							<h4>Sàn giao dịch Sunland SG</h4>
-							<p>85A, Phan Kế Bính, P. Đakao, Quận 1, TP.HCM</p>
-							<p>0938 779 660 - (08) 3910 2522</p>
-							<a href="http://www.sunland.vn" class="website">www.sunland.vn</a>
-						</li>
+						
 						<li>
 							<h4>Công ty TNHH Đầu tư và tư vấn BĐS Hưng Thịnh Phú</h4>
 							<p>182 Nguyễn Hoàng, Khu phố 5, phường An Phú, Quận 2 </p>
@@ -614,10 +745,10 @@
 	</noscript>
 	<!--Remarketing Xich Dao Doi-->
 <script type="text/javascript">
-/ <![CDATA[ /
+
 var google_conversion_id = 939600841;
 var google_custom_params = window.google_tag_params; var google_remarketing_only = true;
-/ ]]> /
+
 </script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
