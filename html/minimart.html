@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Melosa - Project</title>
+    <title>Melosa - Utilities</title>
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,53 +13,20 @@
     <!-- site css -->
     <link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-	<link rel="stylesheet" href="css/slider.css"> 
-	<link rel="stylesheet" href="css/slide_show_gal.css"> 
-    <link rel="stylesheet" href="css/styles.css">    
+    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="css/slider.css">   
 	<script src="js/jquery.min.js"></script>
     <script src="js/jquery.flexslider.js" defer=""></script>
-    <script src="js/jquery.touchSwipe.min.js" defer=""></script>
 	<!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<script type="text/javascript" src="js/slide.js"></script>
-	<script type="text/javascript" src="js/ImgFullscreen.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				controlNav: false,  
-			});
-			$(".fancybox").fancybox({
-				'padding' : 0,
-            	'border-width': 0,
-				openEffect	: 'none',
-				closeEffect	: 'none',
-			});
-			if(typeof(sh_fullscreen) != 'undefined') {
-                sh_fullscreen.params = {
-                    title: '',
-                    lead: '',
-                    time:  '17:24 | 23/11/2015',
-                    masterial: '',
-                    arrdata:'<div class="item_social" data-component="true" data-component-type="like" data-component-objectid="3316698" data-component-siteid="1003231" data-objecttype="1"></div>',
-                    started: 0                
-                };
-                sh_fullscreen.run();
-            }
-            $('.nav-tabs li a').click(function(event) {
-            	id = $(this).attr('href');
-            	$('.tab-content .tab-pane').removeClass('active');
-            	$('.nav-tabs li').removeClass('active');
-            	$(this).parent().addClass('active');
-            	$(id).addClass('active');
-            	if(id=='#gallery'){
-					$(id).flexslider({
-						animation: "slide",
-						controlNav: false,  
-					});
-            	}
-            	return false;
-            });
+			$('.fancybox').fancybox();
+			$('.masonry').masonry({
+	            itemSelector: '.item',
+	            isFitWidth: true
+	        });
 		});
 	</script>
 	<script>
@@ -73,7 +40,7 @@
 
 	</script>
 
-<body class="project">
+<body class="utilities">
 	<div id="container">
 		<div id="header">
 			<div class="container">
@@ -91,7 +58,7 @@
 					<li class="scrollto" id="menu-item-28">
 						<a href="location.html">Vị trí</a>
 					</li>
-					<li class="scrollto active" id="menu-item-29">
+					<li class="scrollto" id="menu-item-29">
 						<a href="#">Dự án</a>
 						<ul class="sub_menu">
 							<li><a href="bietthu.html">Biệt thự</a></li>
@@ -99,7 +66,7 @@
 							<li><a href="mbtt.html">Mặt bằng tổng thể</a></li>
 						</ul>
 					</li>
-					<li class="scrollto" id="menu-item-30">
+					<li class="scrollto active" id="menu-item-30">
 						<a href="utilities.html">Tiện ích</a>
 					</li>
 					<li class="scrollto" id="menu-item-31">
@@ -111,6 +78,7 @@
 					<li class="scrollto" id="menu-item-33">
 						<a href="news.html">Tin Tức - Sự kiện</a>
 					</li>
+					
 					<li class="scrollto" id="menu-item-35">
 						<a href="http://staging.melosagarden.com.vn/vi/lien-he/">Liên hệ</a>
 					</li>
@@ -174,153 +142,37 @@
 				<div class="titleBar">
 					<div class="container">
 						<ul>
-							<li class="active"><a href="project1.html"><span class="Tab1">Biệt thự</span></a></li>
-							<li class=""><a href="lienke1.html"><span class="Tab2">Liên kế vườn</span></a></li>
-							<li class=""><a href="mbtt1.html"><span class="Tab3">Mặt bằng tổng thể</span></a></li>
+							<li class=""><a href="ultilities1.html"><span class="Tab1">Gym</span></a></li>
+							<li class=""><a href="hodieutiet.html"><span class="Tab2">Hồ điều tiết</span></a></li>
+							<li class=""><a href="hoboi.html"><span class="Tab3">Hồ bơi & hồ tràn</span></a></li>
+							<li class=""><a href="congvien.html"><span class="Tab4">Công viên cây xanh</span></a></li>
+							<li class="active"><a href="minimart.html"><span class="Tab5">Mini Mart</span></a></li>
+							<li class=""><a href="santenis.html"><span class="Tab6">Sân Tennis</span></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="post_content">
-				<div class="projectContent container">
-					<div class="projectLeft">
-						<ul class="params wide">
-							<li>
-								<span>Diện tích khuôn viên đất</span>
-								<span>144m² - 173.3m²</span>
-							</li>
-							<li>
-								<span>Tổng diện tích sàn xây dựng</span>
-								<span>207.2m² - 215.7m²</span>
-							</li>
-						</ul>
-						<ul class="params">
-							<li>
-								<span>Phòng Khách</span>
-								<span>01</span>
-							</li>
-							<li>
-								<span>Phòng Thờ</span>
-								<span>01</span>
-							</li>
-							<li>
-								<span>Phòng Ngủ</span>
-								<span>03</span>
-							</li>
-							<li>
-								<span>Sân thượng</span>
-								<span>01</span>
-							</li>
-							<li>
-								<span>Bếp - Phòng Ăn</span>
-								<span>01</span>
-							</li>
-							<li>
-								<span>Phòng sinh hoạt chung</span>
-								<span>01</span>
-							</li>
-							<li>
-								<span>Nhà vệ sinh</span>
-								<span>04</span>
-							</li>
-							<li>
-								<span>Phòng giặt &amp; Sân phơi</span>
-								<span>01</span>
-							</li>
-						</ul>
-					</div>
-					<div class="projectRight">
-						<div class="tabs-wrapper">
-			                <ul class="nav nav-tabs">
-			                      <li class="active"><a data-toggle="tab" href="#flat" aria-expanded="true">Mặt bằng tầng</a></li>
-			                      <li class=""><a data-toggle="tab" href="#gallery" aria-expanded="false">Xem hình ảnh</a></li>
-			                      <li class=""><a data-toggle="tab" href="#brochure" aria-expanded="false">Brochure</a></li>
-			                </ul>
-
-							<div class="tab-content">
-								<ul id="flat" class="tab-pane active">
-									<li>
-										<a class="fancybox" href="/images/Hinh_du_an/BThugoc/BT3A.jpg"><img src="images/Hinh_du_an/BThugoc/BT3A.jpg"></a>
-									</li>
-								</ul>
-
-								<div id="gallery" class="tab-pane">
-									<ul class="slides">
-										<li class="item_slide_show">
-											<div class="block_thumb_slide_show">
-												<img data-component-caption="caption" class="left" src="images/Hinh_du_an/BietThu/big-bt1.jpg" alt="Biệt thự 1" data-reference-id="23183377" id="vne_slide_image_0">
-												<a class="btn_icon_show_slide_show" href="#">&nbsp;</a>
-											</div>
-											<div class="desc_cation">
-												<p class="Normal"><strong>Biệt thự</strong></p>
-												<p class="Normal">Biệt thự 1</p>
-											</div>
-											<div class="clear">&nbsp;</div>
-										</li>
-										<li class="item_slide_show">
-											<div class="block_thumb_slide_show">
-												<img data-component-caption="caption" class="left" src="images/Hinh_du_an/BietThu/big-bt2.jpg" alt="Biệt thự 2" data-reference-id="23183377" id="vne_slide_image_0">
-												<a class="btn_icon_show_slide_show" href="#">&nbsp;</a>
-											</div>
-											<div class="desc_cation">
-												<p class="Normal"><strong>Biệt thự</strong></p>
-												<p class="Normal">Biệt thự 2</p>
-											</div>
-											<div class="clear">&nbsp;</div>
-										</li>
-										<li class="item_slide_show">
-											<div class="block_thumb_slide_show">
-												<img data-component-caption="caption" class="left" src="images/Hinh_du_an/BietThu/big-bt3.jpg" alt="Biệt thự 3" data-reference-id="23183377" id="vne_slide_image_0">
-												<a class="btn_icon_show_slide_show" href="#">&nbsp;</a>
-											</div>
-											<div class="desc_cation">
-												<p class="Normal"><strong>Biệt thự</strong></p>
-												<p class="Normal">Biệt thự 3</p>
-											</div>
-											<div class="clear">&nbsp;</div>
-										</li>
-										<li class="item_slide_show">
-											<div class="block_thumb_slide_show">
-												<img data-component-caption="caption" class="left" src="images/Hinh_du_an/BietThu/big-lk4.jpg" alt="Biệt thự 4" data-reference-id="23183377" id="vne_slide_image_0">
-												<a class="btn_icon_show_slide_show" href="#">&nbsp;</a>
-											</div>
-											<div class="desc_cation">
-												<p class="Normal"><strong>Biệt thự</strong></p>
-												<p class="Normal">Biệt thự 4</p>
-											</div>
-											<div class="clear">&nbsp;</div>
-										</li>
-										<li class="item_slide_show">
-											<div class="block_thumb_slide_show">
-												<img data-component-caption="caption" class="left" src="images/Hinh_du_an/BietThu/big-lk5.jpg" alt="Biệt thự 5" data-reference-id="23183377" id="vne_slide_image_0">
-												<a class="btn_icon_show_slide_show" href="#">&nbsp;</a>
-											</div>
-											<div class="desc_cation">
-												<p class="Normal"><strong>Biệt thự</strong></p>
-												<p class="Normal">Biệt thự 5</p>
-											</div>
-											<div class="clear">&nbsp;</div>
-										</li>
-										<li class="item_slide_show">
-											<div class="block_thumb_slide_show">
-												<img data-component-caption="caption" class="left" src="images/Hinh_du_an/BietThu/big-lk6.jpg" alt="Biệt thự 6" data-reference-id="23183377" id="vne_slide_image_0">
-												<a class="btn_icon_show_slide_show" href="#">&nbsp;</a>
-											</div>
-											<div class="desc_cation">
-												<p class="Normal"><strong>Biệt thự</strong></p>
-												<p class="Normal">Biệt thự 6</p>
-											</div>
-											<div class="clear">&nbsp;</div>
-										</li>
-									</ul>
-								</div>
-								<div id="brochure" class="tab-pane">
-									<iframe width="100%" height="1040" frameborder="0" src="https://docs.google.com/forms/d/1Z4o1n49F2P7mByv2EiuUIhkTAoWvwodX3LHEC7B7gO8/viewform?embedded=true" scrolling="no" marginwidth="0" marginheight="0">Loading...</iframe>
-								</div>
-							</div>
+				<h1 class="title">Mini Mart</h1>
+				<div class="masonry" id="divGallery">
+					<div class="item text">
+						<div class="work-masonry-thumb">
+							<p>Máy móc và dụng cụ hiện đại được trang bị đầy đủ sẽ hỗ trợ đắc lực cho quá trình tập luyện của bạn.</p>
+							<p>Hơn nữa đây còn là cơ hội tốt để gia đình bạn giao lưu cùng những người hàng xóm của mình góp phần hòa nhịp tốt hơn vào cuộc sống tại khu dân cư</p>
 						</div>
 					</div>
+					<div class="item fullH">
+						<img alt="" src="images/Tienich/gym-02.jpg" class="work-masonry-thumb">
+					</div>
+					<div class="item">
+						<img alt="" src="images/Tienich/gym-01.jpg" class="work-masonry-thumb">
+					</div>
+					<div class="item fullW">
+						<img alt="" src="images/Tienich/gym-03.jpg" class="work-masonry-thumb">
+					</div>
 				</div>
+				<a class="prevUlti" href="congvien.html">Prev</a>
+				<a class="nextUlti" href="santenis.html">Next</a>
 			</div>
 		</div>
 		<div id="footer">
@@ -405,9 +257,6 @@
 	</div>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
-			/*jQuery('.over-pic').click(function(){
-				jQuery(this).parent().find('a').click();
-			});*/
 			jQuery('.ui_tabs').click(function(){
 		    	jQuery('.content_tab').hide();
 		    	jQuery('.ui_tabs').removeClass('active');
@@ -423,7 +272,31 @@
 		        else{
 		            menu.addClass('open').slideDown();
 		        }
-		    });		
+		    });
+			$('.pic-content').each(function(index, element) {
+				if($(window).width() <= 1100){
+					TimePlay = false;
+				}else{
+				
+					if(index == 0 || index == 2 || index == 4 || index == 6 || index == 8){
+						TimePlay = 3000;
+					}else{
+						TimePlay = 2000;
+					}
+				}
+				$(element).BTQSlider({
+					items : 1,
+					singleItem: true,
+					autoPlay : TimePlay,
+	            	stopOnHover : true,
+					autoHeight : true,
+	                slideSpeed: 600,
+	                paginationSpeed: 800,
+				    navigation : true,
+				    lazyLoad : true,
+				    lazyEffect : "fade",
+	            });
+	        });
 		});
 		jQuery(window).resize(function(){
 			if(jQuery(window).width() > 980){
