@@ -448,64 +448,70 @@ border-bottom: 1px solid #71c123; width: 100px;
 .project .projectContent .projectLeft .params.wide li span:nth-child(2n-1){text-transform: uppercase;}
 
 .project .projectContent .projectRight {float: left; width: 58%; margin-left: 2%; margin-top: 30px;}
-.project .nav {
+.project .projectContent .nav {
     list-style: none;
     margin-bottom: 0;
     padding-left: 0;
 }
-.project .nav > li {
+.project .projectContent .nav > li {
     display: block;
     position: relative;
 }
-.project .nav > li > a {
+.project .projectContent .nav > li > a {
     display: block;
     padding: 10px 15px;
     position: relative;
 }
-.project .nav > li > a:focus, .project .nav > li > a:hover {
+.project .projectContent .nav > li > a:focus, .project .projectContent .nav > li > a:hover {
     background-color: #eee;
     text-decoration: none;
 }
-.project .nav > li.disabled > a {
+.project .projectContent .nav > li.disabled > a {
     color: #777;
 }
-.project .nav > li.disabled > a:focus, .project .nav > li.disabled > a:hover {
+.project .projectContent .nav > li.disabled > a:focus, .project .projectContent .nav > li.disabled > a:hover {
     background-color: transparent;
     color: #777;
     cursor: not-allowed;
     text-decoration: none;
 }
-.project .nav .open > a, .project .nav .open > a:focus, .project .nav .open > a:hover {
+.project .projectContent .nav .open > a, .project .projectContent .nav .open > a:focus, .project .projectContent .nav .open > a:hover {
     background-color: #eee;
     border-color: #337ab7;
 }
-.project .nav .nav-divider {
+.project .projectContent .nav .nav-divider {
     background-color: #e5e5e5;
     height: 1px;
     margin: 9px 0;
     overflow: hidden;
 }
-.project .nav > li > a > img {
+.project .projectContent .nav > li > a > img {
     max-width: none;
 }
-.project .nav-tabs {
+.project .projectContent .nav-tabs {
     border-bottom: 1px solid #ddd;
     display: flex;
 }
-.project .nav-tabs > li {
+.project .projectContent .nav-tabs > li {
     float: left;
-    margin-bottom: -1px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #fff;
 }
-.project .nav-tabs > li > a {
+.project .projectContent .nav-tabs > li > a {
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
     line-height: 1.42857;
     margin-right: 2px;
 }
-.project .nav-tabs > li > a:hover {
+.project .projectContent .nav-tabs > li > a:hover {
     border-color: #eee #eee #ddd;
 }
-.project .nav-tabs > li.active > a, .project .nav-tabs > li.active > a:focus, .project .nav-tabs > li.active > a:hover {
+.project .projectContent .nav-tabs > li.active {
+    background-color: #fff;
+    margin-bottom: -2px;
+    border: none;
+}
+.project .projectContent .nav-tabs > li.active > a, .project .projectContent .nav-tabs > li.active > a:focus, .project .projectContent .nav-tabs > li.active > a:hover {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -518,21 +524,24 @@ border-bottom: 1px solid #71c123; width: 100px;
     color: #555;
     cursor: default;
 }
-.project .nav-tabs.nav-justified {
+.project .projectContent .nav-tabs.nav-justified {
     border-bottom: 0 none;
     width: 100%;
 }
-.project .nav-tabs.nav-justified > li {
+.project .projectContent .nav-tabs.nav-justified > li {
     float: none;
 }
-.project .nav-tabs.nav-justified > li > a {
+.project .projectContent .nav-tabs.nav-justified > li > a {
     margin-bottom: 5px;
     text-align: center;
 }
-.project .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+.project .projectContent .nav-tabs.nav-justified > .dropdown .dropdown-menu {
     left: auto;
     top: auto;
 }
+.project .projectContent .nav-tabs li a span{display: inline-block; width: 23px; height: 23px; margin-left: 10px;}
+.project .projectContent .nav-tabs li.download a span{background: url(../images/download_icon.png) no-repeat;}
+.project .projectContent .nav-tabs li.showPopup a span{background: url(../images/zoom_plus.png) no-repeat;}
 .tab-content > .tab-pane {
     display: none;
 }
@@ -547,12 +556,12 @@ border-bottom: 1px solid #71c123; width: 100px;
     border-style: none solid solid;
     border-width: medium 1px 1px;
 }
-.project .nav-tabs .dropdown-menu {
+.project .projectContent .nav-tabs .dropdown-menu {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-top: -1px;
 }
-.project .navbar {
+.project .projectContent .navbar {
     border: 1px solid transparent;
     margin-bottom: 20px;
     min-height: 50px;
