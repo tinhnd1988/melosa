@@ -26,10 +26,10 @@ var sh_fullscreen = {
         a.type = "text/javascript";
         a.src = this.cssurl + "/slideshow/js/jquery.touchSwipe.min.js";
         document.body.appendChild(a);
-        a = document.createElement("script");
-        a.type = "text/javascript";
-        a.src = this.cssurl + "/slideshow/js/jquery.flexslider-min.js";
-        document.body.appendChild(a)
+        //a = document.createElement("script");
+        //a.type = "text/javascript";
+        //a.src = this.cssurl + "/slideshow/js/jquery.flexslider-min.js";
+        //document.body.appendChild(a)
     },
     run: function() {
         this.createhtml();
